@@ -1,0 +1,46 @@
+\frontmatter
+
+\input{subdocuments/title}
+\input{subdocuments/selbststaendigkeit}
+
+\input{subdocuments/abstract}
+
+\tableofcontents
+
+\mainmatter
+\comment
+\endcomment
+\edef\folder{subdocuments}
+
+%\mainmatter\setcounter{page}{1}
+%part 1: Theory
+\subfile{\folder/part1}
+
+%part2: practical stuff
+\subfile{\folder/part2}
+
+
+\appendix
+\part{Appendix}
+\subfile{\folder/appendix}
+
+
+\addcontentsline{toc}{chapter}{\listfigurename}
+\listoffigures
+
+\addcontentsline{toc}{chapter}{\listtablename}
+\listoftables
+
+\renewcommand{\lstlistingname}{List of Code Listings}
+\addcontentsline{toc}{chapter}{\lstlistingname}
+\lstlistoflistings
+
+%include manually created glossary file
+\subfile{\folder/glossary}
+
+
+%uses biblatex
+\printbibliography
+
+\comment
+\endcomment

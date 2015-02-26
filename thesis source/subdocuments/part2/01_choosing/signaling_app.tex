@@ -1,0 +1,39 @@
+\documentclass[../../../thesis.tex]{subfiles}
+%set currfolder to allow main file to compile and also this file to compile (\def does not work due to expansion issues)
+\ifcurrfiledir{}{\edef\currfolder{.}}{\edef\currfolder{\currfiledir}}
+\begin{document}
+
+\section{Signaling application}
+
+The signaling application was written for Node.js\footnote{Node.js\cite{node-js} is an application runtime and web server.} and uses the following node modules and JavaScript components.
+
+\begin{table}[htbp]
+\centering
+\caption{Third party code used in the signaling application}
+\begin{tabular}{l l l}
+    \toprule
+    \textbf{Component} & \textbf{License} & \textbf{Description}\\
+    \midrule
+    
+    Adapter.js\footnotemark[3] & Apache 2.0 & Unifies the browser interfaces for WebRTC functions\\ 
+    Bower\footnotemark[4] &	MIT & A package manager for Node.js and the web\\
+    Express\footnotemark[5]	& MIT & Web framework for node.js - used to serve files to client \\
+    Gulp\footnotemark[6] & MIT & Build tool to minify code and styles for production\\
+    Kurento-client\footnotemark[7] & LGPL & Needed for RPCs to the Kurento media server \\
+	Q\footnotemark[8] &	MIT & Library for promises\\
+    Socket.io\footnotemark[9] & MIT & WebSocket server and client\\
+
+		\bottomrule
+\end{tabular}%
+\label{tab:node-modules}%
+\end{table}%
+
+\footnotetext[3]{Adapter.js: \url{https://github.com/Temasys/AdapterJS}}
+\footnotetext[4]{Bower: \url{http://bower.io/}}
+\footnotetext[5]{Express: \url{https://github.com/strongloop/express}}
+\footnotetext[6]{Gulp: \url{https://github.com/gulpjs/gulp}}
+\footnotetext[7]{Kurento-client: \url{https://github.com/Kurento/kurento-client-js}}
+\footnotetext[8]{Q: \url{https://github.com/kriskowal/q}}
+\footnotetext[9]{Socket.io: \url{http://socket.io}}
+
+\end{document}

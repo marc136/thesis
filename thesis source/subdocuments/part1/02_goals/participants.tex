@@ -1,0 +1,21 @@
+\documentclass[../../../thesis.tex]{subfiles}
+%set currfolder to allow main file to compile and also this file to compile (\def does not work due to expansion issues)
+\ifcurrfiledir{}{\edef\currfolder{.}}{\edef\currfolder{\currfiledir}}
+\begin{document}
+
+\section{Multipoint conferencing with WebRTC}
+
+To achieve multipoint communication, several architectures have proven usable.
+\imgWithSource{multipoint-arch}{Possible multipoint communication architectures}{Ilya Grigorik\cite{Grigorik.2013}}
+
+As WebRTC is a technology that is used to create direct peer-to-peer connections between two entities, the most natural way of connecting multiple participants would be to use a full mesh network as displayed in figure~\ref{fig:multipoint-arch} for a four-way call.\par
+The figure also shows that the number of connections in a full mesh network increases exponentially with the number of participants, which limits the size of a reliably working conversation to about four\footnote{The tests conducted with the prototype implementation in section~\ref{sec:benchmark-bandwidth} on page~\pageref{sec:benchmark-bandwidth} showed that connecting more than four participants in a full mesh network would consume about 6.1 Mbit/s of bandwidth at a resolution of 640x480 pixels and 15 frames per second. The bandwidth needed for a conversation with seven participants would exceed the maximum possible bandwidth in a WLAN 802.11b network.}.
+
+Apart from the bandwidth the second limiting factor to a conversation size is the processing power of the used device.\par
+While most modern mobile devices have a hardware decoder for H.264, the support for VP8 is on most devices limited to the software which adds more processing strain.\\
+
+In a conference with four participants, the device needs to encode one outgoing media stream and upload it to three different destinations, and also decode three incoming video streams in real time or having a conversation will not work reliably.\\
+
+%In order to increase the number of participants in a conversation other architectures are needed. Theses are the subject of section~\ref{sec:multipoint-architectures} on page~\pageref{sec:multipoint-architectures}.
+
+\end{document}

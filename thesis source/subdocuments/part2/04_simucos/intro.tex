@@ -1,0 +1,13 @@
+\documentclass[../../../thesis.tex]{subfiles}
+%set currfolder to allow main file to compile and also this file to compile (\def does not work due to expansion issues)
+\ifcurrfiledir{}{\edef\currfolder{.}}{\edef\currfolder{\currfiledir}}
+\begin{document}
+
+The structure and implementation conform to an event-driven architecture\cite[chapter 2]{Etzion.2011}. This allows for a high concurrency of requests with high throughput while keeping the amount of side effects as low as possible.\\
+
+For tighter coupled components, like the inner workings of the main \textbf{serverState} module, promises were used instead of the Node.js standard way of using error-first callback functions.\\
+Because promises are not yet part of all ECMAScript implementations, the Q library\cite{q-library} was used. It allows to use promises and also provides a way to wrap error-first callback functions into promise objects conforming to the coming standard definition of promises\footnotemark .
+
+\footnotetext{Promises are part of ECMAScript 2015\cite[section 18.3.18]{es6-promises}, formerly known ES Harmony.}
+
+\end{document}

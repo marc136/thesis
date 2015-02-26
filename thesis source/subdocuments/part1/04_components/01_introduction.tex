@@ -1,0 +1,16 @@
+\documentclass[../../../thesis.tex]{subfiles}
+%set currfolder to allow main file to compile and also this file to compile (\def does not work due to expansion issues)
+\ifcurrfiledir{}{\edef\currfolder{.}}{\edef\currfolder{\currfiledir}}
+\begin{document}
+
+In order to achieve the goal of a web application that allows multiple participants to start and record conversations using WebRTC three components are needed:\\
+A media server, a signaling application and a STUN or TURN server.\\
+
+For media processing and handling a dedicated \textbf{media server} should be used, because the demands to processing power and network interface throughput are very high.\\
+
+The \textbf{signaling application} is the linking element between the participants in a conversation, and between the media server and the participants.
+It needs to create rooms on the media server and send participants' data to it. It may also be used as a load balancer to distribute participants to multiple media server instances.\\
+
+A \textbf{STUN or TURN server} is needed to provide the participants with their public IP addresses and ports if they are located behind a NAT router.
+
+\end{document}

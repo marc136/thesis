@@ -1,0 +1,2 @@
+All images belong to kurento
+Source: http://www.kurento.org/docs/5.1.0/Kurento.pdf

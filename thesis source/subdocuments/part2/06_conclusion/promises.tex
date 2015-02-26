@@ -1,0 +1,60 @@
+\documentclass[../../../thesis.tex]{subfiles}
+%set currfolder to allow main file to compile and also this file to compile (\def does not work due to expansion issues)
+\ifcurrfiledir{}{\edef\currfolder{.}}{\edef\currfolder{\currfiledir}}
+\begin{document}
+
+\chapter{Lessons learned}
+
+\section{Promises}
+Promises are a part of the coming ECMAScript 2015 standard\cite{es6-promises} to allow developers to implement data flow differently from using callback functions for dependency injection.\\
+
+\subsection{Example with promises}
+Listing~\ref{lst:example-promise.js} shows code that is used similarily in simucos to connect a user's WebRTC peer connection to a WebRTC endpoint on the media server and uses the kurento-client\cite{kurento-client-doc} JavaScript module.\par
+
+Several functions need to be called after another while executing them asynchronously. \\
+First, the user's WebRTC endpoint needs to be connected to the media server, then the recording of the video stream is started and in the end the user receives a message containing the SDP answer to actually start sending data to the media server.
+
+\code{example-promise.js}{caption=Example for promises}
+
+
+On line 2 in listing~\ref{lst:connect-promise.js} the Q library\cite{q-library} is used to create a new promise object. On line 7 an asynchronous call using an error-first callback function to retreive or create a media pipeline on the media server is started. Before this function is called on line 8, the promise object is returned on line 33.\par
+When the callback function is called, a test is used to check for errors during that function. If no errors occur, the promise object is resolved on line 24 and returns the SDP answer. \par
+If an error occurred a new exception is thrown in the context of the \texttt{connectToMediaServer} function that is caught in line 33 and rejects the promise object.\par
+If the promise object was resolved, the function proceeds to line 4 of listing~\ref{lst:example-promise.js} and continues the asynchronous function calls.\par
+If the promise object was rejected, or any other promises like \texttt{recordConnection} or \texttt{sendMessageTo} are rejected, the \texttt{fail} method is invoked in line 6 of listing~\ref{lst:example-promise.js} and centralized error handling can be used there.
+
+\code{connect-promise.js}{caption=Example to return a promise object from callbacks}
+
+\subsection{Example with callback functions}
+The same example function can also be written using callback functions and would look like listing~\ref{lst:example-callback.js} to inject the functions into the callbacks.
+
+\code{example-callback.js}{caption=Example for error-first callbacks}
+
+The function \texttt{connectToMediaServer} from listing~\ref{lst:connect-promise.js} would not change much as seen in listing~\ref{lst:connect-callback.js}, but it would not return a promise object and isntead call a callback function that is passed into it.
+
+\code{connect-callback.js}{caption=Example for error-first callbacks}
+
+
+\subsection{Benefits from using promises}
+These simple examples show the beauty of the cleaner syntax that is possible using a promise based API when compared to one based on callback functions.\\
+
+WebRTC will also benefit from this and will allow even faster development cycles while simplifying the code structure and improving its readability.
+
+
+\subsection{Combining the promise and error-first-callback approach}
+The Q library\cite{q-library} also allows to create functions or modules that can both return a promise object and call a callback function.\\
+This approach was actually used in simucos to allow other modules to keep using their approach when using the simucos module.\\
+
+A simple example for this functionality is provided in listing~\ref{lst:promise-nodeify.js}, where the Node.js File API is used to read a configuration file from disk.
+
+\code{promise-nodeify.js}{caption=Dual module that supports promises and callbacks}
+
+\noindent
+The function may then be used either with a promise-based approach as in listing~\ref{lst:promise-nodeify-promise.js} or using a callback-based approach as in listing~\ref{lst:promise-nodeify-callback.js}.
+
+\code{promise-nodeify-promise.js}{caption=Using a dual module with promises}
+
+\code{promise-nodeify-callback.js}{caption=Using a dual module with callbacks}
+
+
+\end{document}

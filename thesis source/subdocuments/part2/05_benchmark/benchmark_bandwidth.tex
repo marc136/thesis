@@ -1,0 +1,91 @@
+\documentclass[../../../thesis.tex]{subfiles}
+%set currfolder to allow main file to compile and also this file to compile (\def does not work due to expansion issues)
+\ifcurrfiledir{}{\edef\currfolder{.}}{\edef\currfolder{\currfiledir}}
+\begin{document}
+
+%this was originally planned for this section
+\comment
+\chapter{Benchmarking of the prototype}
+\section{H.264 v VP8}
+\todo{}
+\section{Mixed v Relayed}
+\todo{}
+\endcomment
+
+%instead this chapter was created
+\chapter{Benchmarking WebRTC bandwidth usage}
+
+%\section{Bandwidth benchmark}
+\label{sec:benchmark-bandwidth}
+The implemented simucos prototype was used to conduct benchmarks on the behavior the WebRTC video stream transmission.\\
+
+\noindent
+Several common video resolutions with aspect ratio of 4:3 or 16:9 ranging from 176x144 (QCIF) to 1080x720 (HD 720p) pixels were chosen and tested with different bandwidth limitations.\\
+
+\noindent
+The gathered data is used to create a benchmark and formulate recommendations for the different architecture options.
+
+\subsection{Limiting the bandwidth}
+In order to limit the bandwidth on the testing device, the Network Emulator Toolkit (NEWT)\footnotemark was used.
+\img[WebRTC video stream limited to 384kbps]{limit-bandwidth}{A WebRTC video stream at 176x144 with 15fps limited to 384kbps\footnotemark[2]}
+\footnotetext{A program that was created my Microsoft for Visual Studio\cite{newt} that allows to limit bandwidth, simulate high packet loss or high strain on network devices in windows by hooking up to the network interface driver.}
+
+Figure~\ref{fig:limit-bandwidth} shows how the WebSocket connection is established after eight seconds (the first spike), the SDP information is exchanged after 13 seconds, and after 15 seconds the video stream is sent over the connection and effectively limited to 384 kbps.\\
+
+Another feature of the WebRTC video transmission using VP8 can be seen in figure~\ref{fig:vp8-adaption} between 16 and 26 seconds, where the codec bit rate is adapted multiple times to the available bandwidth depending on the quality of the received video. After 26 seconds, WebRTC will still try to increase the quality, but the bandwidth is limited to 512 kbps, resulting in a rippled continued graph.
+\clearpage
+
+\img[WebRTC video stream limited to 512kbps]{vp8-adaption}{A WebRTC video stream at 352x288 with15fps limited to 512kbps\footnotemark[2]}
+
+\footnotetext[2]{Created with the Network Emulator Toolkit}
+
+
+\subsection{Bandwidth recommendations for one WebRTC stream}
+The bandwidth recommendations depicted in table~\ref{tab:recommendations} resulted of the gathered bandwidth data, where for each resolution at a constant rate of 15 frames per seconds, and the bandwidth limitations 200 kbps, 384 kbps, 512 kbps, 1024 kbps, 2048 kbps, 4096 kbps were used.\par
+Each conference was conducted for the duration of three minutes and the transmitted video was always similar with one person sitting in front of the camera and waving a hand slowly. The video was recorded on the media server.\\
+
+After that, each recorded video was analyzed and the number of stream freezes, transmission interruptions was noted down and used to find bandwidth recommendations for the specific resolutions.
+
+
+\begin{table}[htbp]
+  \centering
+  \caption{Bandwidth recommendations with different video resolutions}
+    \begin{tabular}{r r c c c}
+    \toprule
+    \textbf{Entry} & \textbf{Resolution} & \textbf{recommended} & \textbf{ok\footnotemark} & \textbf{maximum\footnotemark} \\
+    \midrule
+    QCIF  & 176x144 & 384kbit/s & 200kbit/s & 700kbit/s \\
+    CIF   & 352x288 & 700kbit/s & 384kbit/s & 2000kbit/s \\
+    VGA   & 640x480 & 1024kbit/s & 512kbit/s & 2100kbit/s \\
+    HD 720p & 1280x720 & 1900kbit/s & 1024kbit/s & 2500kbit/s \\
+    HD 1080p & 1920x1080 & -     & -     & - \\
+    \bottomrule
+    \end{tabular}%
+  \label{tab:recommendations}%
+\end{table}%
+
+\footnotetext[2]{Minor hickups in the stream at maximum one stream freeze per minute}
+\footnotetext[3]{Maximum used bandwidth in this configuration}
+
+\subsection{Needed bandwidth for different conference sizes}
+These figures are based on the recommended bandwidth for each video resolution with a fixed rate of 15 frames per second and calculated for different numbers of participants with the different multipoint architectures peer-to-peer (p2p), relayed and mixed.\par
+Table~\ref{tab:benchmark-client} shows the bandwidth that is needed on each client's side for a conversation, and table~\ref{tab:benchmark-server} shows the bandwidth that is needed on the server side for the whole conversation.
+
+%on the client side
+\input{\currfolder/res/table-client.tex}
+
+\clearpage
+\subsection{Recommendations for different network environments}
+Several conclusions can be drawn from the figures calcuated in table~\ref{tab:benchmark-client}\footnote{Information about data rates in Wifi\cite[chapter5-7]{Grigorik.2013}, 3G\cite{wiki-3g} and 4G\cite{wiki-4g} networks.}:\\
+
+In a \textbf{3G} network, a conversation between two participants, or a mixed conference might work with all tested resolutions.\\\\
+In a \textbf{4G} network, a peer-to-peer conversation with four participants might work with a resolution lower than VGA, a relayed conference might work with up to six participants on a VGA resolution.\\\\
+A p2p conversation with seven participants using a VGA resolution will most likely not work when using a \textbf{WLAN 802.11b} router.\\\\
+A \textbf{WLAN 802.11g} network is needed for a relayed conversation with 10 participants, while a p2p conference with seven participants with a HD 720p resolution will need a higher bandwidth.
+
+%on the server side
+\input{\currfolder/res/table-server.tex}
+
+
+
+\end{document}

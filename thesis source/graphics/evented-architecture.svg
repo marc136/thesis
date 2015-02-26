@@ -1,0 +1,1155 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   width="345.57074mm"
+   height="233.73579mm"
+   id="svg2"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="evented-architecture.svg">
+  <metadata
+     id="metadata440">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1280"
+     inkscape:window-height="1001"
+     id="namedview438"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:zoom="0.52149125"
+     inkscape:cx="570.80951"
+     inkscape:cy="390.39481"
+     inkscape:window-x="-8"
+     inkscape:window-y="48"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g6"
+     units="mm" />
+  <defs
+     id="defs4" />
+  <g
+     id="g6"
+     transform="translate(149.57106,83.343372)">
+    <g
+       transform="matrix(1.3455928,0,0,1.3455928,-52.24475,-12.71446)"
+       id="g12">
+      <image
+         width="104"
+         height="199"
+         preserveAspectRatio="none"
+         xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGgAAADHCAYAAAD1VhaaAAADDElEQVR4nO3YsU4UQRyAcUJDwxNoa/B2FisKn8ACWjNzWtHc/ReJUFpvYUdHfACfwPLewhfAwoTe2sKEs4AzJHIKJma/3f1+yfT/2S+TuZuNDUmSNHqpRJtKtF3PoTVSiWUqsex6Dq1hIDgDwRkIzkBwBoIzEJyB4AwEZyA4A8EZCM5AcAaCMxCcgeAMBGcgOAPBGQjOQHAGgjMQnIHgDARnIDgDwRkIzkBwBoIzEJyB4AwEZyA4A8EZCM5AcAaCMxCcgeAMBGcgOAPBGQjOQHAGgjMQnIHgDARnIDgDwRkIzkBwBoIzEJyB4AwEZyA4A8EZCM5AcAaCMxCcgeAMBGcgOAPBGQjOQHAGgjMQnIHgDARnIDgDwRkIzkBwBoIzEJyB4AwEZyA4A8EZCM5AcAaCMxCcgeAMBGcgOAPBGQjOQHAGgjMQnIHgDARnIDgDwRkIzkBwBoIzEJyB4AwEZyA4A8EZCM5AcAaCMxCcgeAMBGcgOAPBGQjOQHAGgjMQnIHgDARnIDgDwRkIzkBwBoIzEJyB4AwEZyA4A8EZCM5AcAaCMxCcgeAMBGcgOAPBGQjOQHAGgjMQnIHgDARnIDgDwRkIzkBwBoIzEJyB4AwEZyCytt00ENhkOt+5DjT/0vUsukNVmoNUYplyLLqe5Z9UuXmxO51VXc/xv6QSpzcn6LzrWR4kvYzndWk+pRLLgQf6fHMHnXY9y73sTmdVVeLj6uIccqBJnu2t9jjJb/a6nuePdvLR41Tm57fDDD1QyrG43mNz1vUsa9X5eLuexvtUmh93xRlioCf7J1upzM9u9nf5ZP9kq+uZ7lSVeJdKfFsXZnCB2nazLnGYSlyu9laXOOx6rN+k0hylEl//Fma1qhIfUom2n6s5TzkWaRoXqcTVr33lWEzyjHXv1Ncf+vt9wwxwXaUcF8hTc1sq8xGdoDitSnMwmc53Ntp2s+tv/yCju4P6qM7H23Ue16+4Xnr66u2jsf0P6qVnr2MylpeEXhvLW1zvVXk26NdsSZIkSZIkSZIkSZIkSX3xE5KxQPGS+ZkGAAAAAElFTkSuQmCC"
+         id="image14" />
+    </g>
+    <g
+       transform="matrix(1.3455928,0,0,1.3455928,13.016502,79.771163)"
+       id="g16">
+      <g
+         id="g18">
+        <rect
+           x="-2"
+           y="-3"
+           width="110"
+           height="18"
+           id="rect20"
+           style="fill:#ffffff;stroke:none" />
+      </g>
+      <text
+         font-size="12px"
+         font-style="normal"
+         font-weight="normal"
+         text-decoration="none"
+         x="0"
+         y="11"
+         id="text22"
+         style="font-style:normal;font-weight:normal;font-size:12px;font-family:Arial;text-decoration:none;text-decoration-line:none;fill:#000000;stroke:none">listen to messages</text>
+    </g>
+    <g
+       transform="matrix(1.3455928,0,0,1.3455928,297.60939,-60.483005)"
+       id="g24">
+      <g
+         id="g26">
+        <g
+           transform="scale(1.7,0.375)"
+           id="g28">
+          <g
+             id="g30">
+            <path
+               d="m 0,0 100,0 q 0,0 0,0 l 0,100 q 0,0 0,0 L 0,100 q 0,0 0,0 L 0,0 q 0,0 0,0 z"
+               id="path32"
+               inkscape:connector-curvature="0"
+               style="fill:#4b8598;stroke:none" />
+            <g
+               transform="scale(0.58823529,2.6666667)"
+               id="g34">
+              <path
+                 d="m 0,0 170,0 q 0,0 0,0 l 0,37.5 q 0,0 0,0 l -170,0 q 0,0 0,0 L 0,0 q 0,0 0,0 z"
+                 id="path36"
+                 inkscape:connector-curvature="0"
+                 style="fill:none;stroke:none" />
+              <path
+                 d="m 0,0 m 0,0 170,0 q 0,0 0,0 l 0,37.5 q 0,0 0,0 l -170,0 q 0,0 0,0 L 0,0 q 0,0 0,0 z"
+                 stroke-miterlimit="10"
+                 id="path38"
+                 inkscape:connector-curvature="0"
+                 style="fill:none;stroke:#2a5666;stroke-width:2;stroke-miterlimit:10" />
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g
+       transform="matrix(1.3455928,0,0,1.3455928,312.94914,-54.091439)"
+       id="g40">
+      <text
+         font-size="12px"
+         font-style="normal"
+         font-weight="normal"
+         text-decoration="none"
+         x="15.1"
+         y="11"
+         id="text42"
+         style="font-style:normal;font-weight:normal;font-size:12px;font-family:Arial;text-decoration:none;text-decoration-line:none;fill:#ffffff;stroke:none">a</text>
+      <text
+         font-size="12px"
+         font-style="normal"
+         font-weight="normal"
+         text-decoration="none"
+         x="22.1"
+         y="11"
+         id="text44"
+         style="font-style:normal;font-weight:normal;font-size:12px;font-family:Arial;text-decoration:none;text-decoration-line:none;fill:#ffffff;stroke:none">ppend sessionId (=</text>
+      <text
+         font-size="12px"
+         font-style="normal"
+         font-weight="normal"
+         text-decoration="none"
+         x="12.6"
+         y="25"
+         id="text46"
+         style="font-style:normal;font-weight:normal;font-size:12px;font-family:Arial;text-decoration:none;text-decoration-line:none;fill:#ffffff;stroke:none">socket id) to message</text>
+    </g>
+    <g
+       transform="matrix(1.3455928,0,0,1.3455928,297.60939,74.076278)"
+       id="g48">
+      <g
+         id="g50">
+        <g
+           transform="scale(1.7,0.375)"
+           id="g52">
+          <g
+             id="g54">
+            <path
+               d="m 0,0 100,0 q 0,0 0,0 l 0,100 q 0,0 0,0 L 0,100 q 0,0 0,0 L 0,0 q 0,0 0,0 z"
+               id="path56"
+               inkscape:connector-curvature="0"
+               style="fill:#4b8598;stroke:none" />
+            <g
+               transform="scale(0.58823529,2.6666667)"
+               id="g58">
+              <path
+                 d="m 0,0 170,0 q 0,0 0,0 l 0,37.5 q 0,0 0,0 l -170,0 q 0,0 0,0 L 0,0 q 0,0 0,0 z"
+                 id="path60"
+                 inkscape:connector-curvature="0"
+                 style="fill:none;stroke:none" />
+              <path
+                 d="m 0,0 m 0,0 170,0 q 0,0 0,0 l 0,37.5 q 0,0 0,0 l -170,0 q 0,0 0,0 L 0,0 q 0,0 0,0 z"
+                 stroke-miterlimit="10"
+                 id="path62"
+                 inkscape:connector-curvature="0"
+                 style="fill:none;stroke:#2a5666;stroke-width:2;stroke-miterlimit:10" />
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g
+       transform="matrix(1.3455928,0,0,1.3455928,312.94914,89.886994)"
+       id="g64">
+      <text
+         font-size="12px"
+         font-style="normal"
+         font-weight="normal"
+         text-decoration="none"
+         x="4.5999999"
+         y="11"
+         id="text66"
+         style="font-style:normal;font-weight:normal;font-size:12px;font-family:Arial;text-decoration:none;text-decoration-line:none;fill:#ffffff;stroke:none">received_message event</text>
+    </g>
+    <g
+       transform="matrix(1.3455928,0,0,1.3455928,371.61699,-16.078442)"
+       id="g68">
+      <image
+         width="60"
+         height="97"
+         preserveAspectRatio="none"
+         xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAABhCAYAAACK7MJbAAABQElEQVR4nO3WvW0CQRCGYRIqoAI74nb9J5HThHWzGRIWNxsQUAESORVQARXQCxVQATmOsByAOeC4kcbvI222wfcmq+10AOBKQXQRRBfWO1oTRA9B9GC9ozUEe0ewdwR7R7B3BHtHsHcEe0ewdwR7R7B3BHtHsHcEe0ewdwR7R7B3BHtHsHcEe0ewdwR7R7B3BHvnMvglTYpz5xj81x3r/TcJkjfHuPonb6x336yQPLw2uJA8tN59lyi6rhsbRdfWe+8Wy+qjdnDK79Z7GxGSri4GJ11Z72zM6+fX86Xgt3LyZL2zUUHy8nxwtbTe17j+aNoLovsTwfv+aNqz3vcQUXR+4mWeW+96mIFqN4jufgXvBqpd610PVZTV7OeTUVYz6z2tiKLbKLq13tGakPI4pDy23gEAAAAAAAAAAADgP/sG6vuIuxeM3xwAAAAASUVORK5CYII="
+         id="image70" />
+    </g>
+    <g
+       transform="matrix(1.3455928,0,0,1.3455928,391.12809,11.139232)"
+       id="g72">
+      <g
+         id="g74">
+        <rect
+           x="-0.5"
+           y="-3"
+           width="32"
+           height="18"
+           id="rect76"
+           style="fill:#ffffff;stroke:none" />
+      </g>
+      <text
+         font-size="12px"
+         font-style="normal"
+         font-weight="normal"
+         text-decoration="none"
+         x="1.5"
+         y="11"
+         id="text78"
+         style="font-style:normal;font-weight:normal;font-size:12px;font-family:Arial;text-decoration:none;text-decoration-line:none;fill:#332714;stroke:none">raise</text>
+    </g>
+    <g
+       transform="matrix(1.3455928,0,0,1.3455928,190.62073,-75.620925)"
+       id="g80">
+      <image
+         width="109"
+         height="60"
+         preserveAspectRatio="none"
+         xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAG0AAAA8CAYAAABsKjQEAAAA6UlEQVR4nO3ZwUnEQAAF0AErsAlxJ3qzAm1AwcmIB2+ZKNiBFyvxtjcrsAIr2Aq2Dz2oECGuEYQh5D349w8fwmQmBAAAAAAAAAAAAPg3x9d3+7U78Ecxl/UqlYeQ0l7tLkwUc1nHtrw1bdk2udzX7sMEX6MNsmlyf1O7FzuMjPaRVF5XbTmv3Y8RP472mabtXpp0e1q7JwO/jTbI89FVf1K77zexLY8Tyy89T4e5O6i9VwjBaLMcbalm/XlcqikHkXjZn9XuycDOI3/qLmr3Y4Sf6xlyjTVDLoxnyNMMAAAAAAAAAADA0rwDphqw8S4YpBsAAAAASUVORK5CYII="
+         id="image82" />
+    </g>
+    <g
+       transform="matrix(1.3455928,0,0,1.3455928,485.98187,57.256368)"
+       id="g84">
+      <image
+         width="134"
+         height="60"
+         preserveAspectRatio="none"
+         xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIYAAAA8CAYAAACjKMKCAAAA6klEQVR4nO3ZPUrEQBiA4Q/BE3gCrczEP7DfS0gmnaBsJoWFJxC29wSewBPsXTyBJ7BfC9lGTBBBEsjzwNdP8cL8RQAAAAAAAAAAAAAAwCTO2nU19RqYkSr3q5T7rTCIiIi66a7qXF5TLruUy04YC3d+c3+S2vKyD0IYC3d6+3CUcv/8PQhhLNR1KYd1Lk8pl4+hKISxMFXTPaZc3seCEMaCpLa/q3N5+00Q5v8nNpuDqZuICGHMbWYTxp6thEEOn4z6uq52rqv87KJZH3vgYlDd9peexBnkE41RwgAAAAAAAAAAAAAAgL/4BGnhF/4axyyMAAAAAElFTkSuQmCC"
+         id="image86" />
+    </g>
+    <g
+       transform="matrix(1.3455928,0,0,1.3455928,562.68591,88.205003)"
+       id="g88">
+      <g
+         id="g90">
+        <rect
+           x="-0.5"
+           y="-3"
+           width="47"
+           height="18"
+           id="rect92"
+           style="fill:#ffffff;stroke:none" />
+      </g>
+      <text
+         font-size="12px"
+         font-style="normal"
+         font-weight="normal"
+         text-decoration="none"
+         x="1.5"
+         y="11"
+         id="text94"
+         style="font-style:normal;font-weight:normal;font-size:12px;font-family:Arial;text-decoration:none;text-decoration-line:none;fill:#332714;stroke:none">listen to</text>
+    </g>
+    <g
+       transform="matrix(1.3455928,0,0,1.3455928,660.91945,70.712296)"
+       id="g96">
+      <g
+         id="g98">
+        <g
+           transform="scale(1.2,0.4)"
+           id="g100">
+          <g
+             id="g102">
+            <path
+               d="m 0,0 100,0 q 0,0 0,0 l 0,100 q 0,0 0,0 L 0,100 q 0,0 0,0 L 0,0 q 0,0 0,0 z"
+               id="path104"
+               inkscape:connector-curvature="0"
+               style="fill:#e69138;stroke:none" />
+            <g
+               transform="scale(0.83333333,2.5)"
+               id="g106">
+              <path
+                 d="m 0,0 120,0 q 0,0 0,0 l 0,40 q 0,0 0,0 L 0,40 q 0,0 0,0 L 0,0 q 0,0 0,0 z"
+                 id="path108"
+                 inkscape:connector-curvature="0"
+                 style="fill:none;stroke:none" />
+              <path
+                 d="m 0,0 m 0,0 120,0 q 0,0 0,0 l 0,40 q 0,0 0,0 L 0,40 q 0,0 0,0 L 0,0 q 0,0 0,0 z"
+                 stroke-miterlimit="10"
+                 id="path110"
+                 inkscape:connector-curvature="0"
+                 style="fill:none;stroke:#b45f06;stroke-width:2;stroke-miterlimit:10" />
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g
+       transform="matrix(1.3455928,0,0,1.3455928,674.91362,86.85941)"
+       id="g112">
+      <text
+         font-size="12px"
+         font-style="normal"
+         font-weight="normal"
+         text-decoration="none"
+         x="3.0999999"
+         y="11"
+         id="text114"
+         style="font-style:normal;font-weight:normal;font-size:12px;font-family:Arial;text-decoration:none;text-decoration-line:none;fill:#000000;stroke:none">commandVerifier</text>
+    </g>
+    <g
+       transform="matrix(1.3455928,0,0,1.3455928,593.63981,222.09149)"
+       id="g116">
+      <g
+         id="g118">
+        <g
+           id="g120">
+          <g
+             id="g122">
+            <g
+               id="g124">
+              <path
+                 d="M 50,0 100,50 50,100 0,50 50,0 Z"
+                 id="path126"
+                 inkscape:connector-curvature="0"
+                 style="fill:#9d3100;stroke:none" />
+              <path
+                 d="M 50,0 M 50,0 100,50 50,100 0,50 50,0 Z"
+                 stroke-miterlimit="10"
+                 id="path128"
+                 inkscape:connector-curvature="0"
+                 style="fill:none;stroke:#6f1c03;stroke-width:2;stroke-miterlimit:10" />
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g
+       transform="matrix(1.3455928,0,0,1.3455928,607.09574,270.53283)"
+       id="g130">
+      <text
+         font-size="12px"
+         font-style="normal"
+         font-weight="normal"
+         text-decoration="none"
+         x="5.5"
+         y="11"
+         id="text132"
+         style="font-style:normal;font-weight:normal;font-size:12px;font-family:Arial;text-decoration:none;text-decoration-line:none;fill:#ffffff;stroke:none">message is</text>
+      <text
+         font-size="12px"
+         font-style="normal"
+         font-weight="normal"
+         text-decoration="none"
+         x="27.5"
+         y="25"
+         id="text134"
+         style="font-style:normal;font-weight:normal;font-size:12px;font-family:Arial;text-decoration:none;text-decoration-line:none;fill:#ffffff;stroke:none">valid</text>
+    </g>
+    <g
+       transform="matrix(1.3455928,0,0,1.3455928,835.84652,264.14127)"
+       id="g136">
+      <g
+         id="g138">
+        <g
+           transform="scale(1.7,0.375)"
+           id="g140">
+          <g
+             id="g142">
+            <path
+               d="m 0,0 100,0 q 0,0 0,0 l 0,100 q 0,0 0,0 L 0,100 q 0,0 0,0 L 0,0 q 0,0 0,0 z"
+               id="path144"
+               inkscape:connector-curvature="0"
+               style="fill:#4b8598;stroke:none" />
+            <g
+               transform="scale(0.58823529,2.6666667)"
+               id="g146">
+              <path
+                 d="m 0,0 170,0 q 0,0 0,0 l 0,37.5 q 0,0 0,0 l -170,0 q 0,0 0,0 L 0,0 q 0,0 0,0 z"
+                 id="path148"
+                 inkscape:connector-curvature="0"
+                 style="fill:none;stroke:none" />
+              <path
+                 d="m 0,0 m 0,0 170,0 q 0,0 0,0 l 0,37.5 q 0,0 0,0 l -170,0 q 0,0 0,0 L 0,0 q 0,0 0,0 z"
+                 stroke-miterlimit="10"
+                 id="path150"
+                 inkscape:connector-curvature="0"
+                 style="fill:none;stroke:#2a5666;stroke-width:2;stroke-miterlimit:10" />
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g
+       transform="matrix(1.3455928,0,0,1.3455928,851.18628,279.95198)"
+       id="g152">
+      <text
+         font-size="12px"
+         font-style="normal"
+         font-weight="normal"
+         text-decoration="none"
+         x="2.5999999"
+         y="11"
+         id="text154"
+         style="font-style:normal;font-weight:normal;font-size:12px;font-family:Arial;text-decoration:none;text-decoration-line:none;fill:#ffffff;stroke:none">accepted_message event</text>
+    </g>
+    <g
+       transform="matrix(1.3455928,0,0,1.3455928,230.32974,264.14127)"
+       id="g156">
+      <g
+         id="g158">
+        <g
+           transform="scale(1.7,0.375)"
+           id="g160">
+          <g
+             id="g162">
+            <path
+               d="m 0,0 100,0 q 0,0 0,0 l 0,100 q 0,0 0,0 L 0,100 q 0,0 0,0 L 0,0 q 0,0 0,0 z"
+               id="path164"
+               inkscape:connector-curvature="0"
+               style="fill:#4b8598;stroke:none" />
+            <g
+               transform="scale(0.58823529,2.6666667)"
+               id="g166">
+              <path
+                 d="m 0,0 170,0 q 0,0 0,0 l 0,37.5 q 0,0 0,0 l -170,0 q 0,0 0,0 L 0,0 q 0,0 0,0 z"
+                 id="path168"
+                 inkscape:connector-curvature="0"
+                 style="fill:none;stroke:none" />
+              <path
+                 d="m 0,0 m 0,0 170,0 q 0,0 0,0 l 0,37.5 q 0,0 0,0 l -170,0 q 0,0 0,0 L 0,0 q 0,0 0,0 z"
+                 stroke-miterlimit="10"
+                 id="path170"
+                 inkscape:connector-curvature="0"
+                 style="fill:none;stroke:#2a5666;stroke-width:2;stroke-miterlimit:10" />
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g
+       transform="matrix(1.3455928,0,0,1.3455928,245.6695,279.95198)"
+       id="g172">
+      <text
+         font-size="12px"
+         font-style="normal"
+         font-weight="normal"
+         text-decoration="none"
+         x="5.5999999"
+         y="11"
+         id="text174"
+         style="font-style:normal;font-weight:normal;font-size:12px;font-family:Arial;text-decoration:none;text-decoration-line:none;fill:#ffffff;stroke:none">rejected_message event</text>
+    </g>
+    <g
+       transform="matrix(1.3455928,0,0,1.3455928,722.14392,249.00335)"
+       id="g176">
+      <image
+         width="114"
+         height="60"
+         preserveAspectRatio="none"
+         xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHIAAAA8CAYAAAC6j+5hAAAA7UlEQVR4nO3Zz0nEQBwF4MEKbEIwyUWwAivQSxJYEDy4Mwcr0FMK0btYgVZgBVawhejBXdd/S1ZXGGf5Pnj3Bw9C8ksIAAAAAAAAAAAAAF8cnJzt5u7AH2j6eFt36TIMw07uLmzgdcj4XHdx1nTxIncffundkIs8Ve30NHcvfuibIeeZPtZ9Os7djzWtHnKRdN908Sh3T0aMD/mWu/32/DB33w/qLg5rlpdPafp0XU3SXu4NQwiG3DA3/2ZIlop+tLI0NmTVxgcvOwVYPWTy+VESB4Et4US3JeZDXjmaF85vLAAAAAAAAAAAACjBC1ugxHQhQk7mAAAAAElFTkSuQmCC"
+         id="image178" />
+    </g>
+    <g
+       transform="matrix(1.3455928,0,0,1.3455928,766.54849,279.95198)"
+       id="g180">
+      <g
+         id="g182">
+        <rect
+           x="0"
+           y="-3"
+           width="23"
+           height="18"
+           id="rect184"
+           style="fill:#ffffff;stroke:none" />
+      </g>
+      <text
+         font-size="12px"
+         font-style="normal"
+         font-weight="normal"
+         text-decoration="none"
+         x="2"
+         y="11"
+         id="text186"
+         style="font-style:normal;font-weight:normal;font-size:12px;font-family:Arial;text-decoration:none;text-decoration-line:none;fill:#332714;stroke:none">yes</text>
+    </g>
+    <g
+       transform="matrix(1.3455928,0,0,1.3455928,418.71274,249.00335)"
+       id="g188">
+      <image
+         width="134"
+         height="60"
+         preserveAspectRatio="none"
+         xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIYAAAA8CAYAAACjKMKCAAAA5UlEQVR4nO3ZvUkEQRiA4UmswAo0cmf8A3ObOHY2E5TbmcDACqzACqzACuzlKrAC8zMQDdRdRJA9mOeBL5/ghfkLAQAAAAAAAAAAAAAAFnE8rLul18AO6XK9jLk+C4MQQgipH89TLk8xl23MZSuMxp2sbg7jUB4/ghBG446ubvdjrg9fgxBGoy5K2Uu53MdcXqeiEEZjun68i7m8zAUhjIbEoV6nXDa/CcL8/yzdwydh7NYs3cM3thImOXwy6/26Orqu8rPTfn3ggYtJaahnnsSZ5BONWcIAAAAAAAAAAAAAAIC/eAOK1BX6x5DFeAAAAABJRU5ErkJggg=="
+         id="image190" />
+    </g>
+    <g
+       transform="matrix(1.3455928,0,0,1.3455928,498.9703,279.95198)"
+       id="g192">
+      <g
+         id="g194">
+        <rect
+           x="0"
+           y="-3"
+           width="18"
+           height="18"
+           id="rect196"
+           style="fill:#ffffff;stroke:none" />
+      </g>
+      <text
+         font-size="12px"
+         font-style="normal"
+         font-weight="normal"
+         text-decoration="none"
+         x="2"
+         y="11"
+         id="text198"
+         style="font-style:normal;font-weight:normal;font-size:12px;font-family:Arial;text-decoration:none;text-decoration-line:none;fill:#332714;stroke:none">no</text>
+    </g>
+    <g
+       transform="matrix(1.3455928,0,0,1.3455928,654.86428,118.48084)"
+       id="g200">
+      <g
+         id="g202">
+        <g
+           transform="translate(-605.5,-173)"
+           id="g204">
+          <g
+             id="g206">
+            <path
+               d="m 670,177.5 0,26.25 q 0,10 -10,10 l -40,0 q -10,0 -10,10 l 0,26.25"
+               stroke-miterlimit="10"
+               id="path208"
+               inkscape:connector-curvature="0"
+               style="fill:none;stroke:#2a5666;stroke-width:2;stroke-miterlimit:10" />
+          </g>
+        </g>
+      </g>
+    </g>
+    <g
+       transform="matrix(1.3455928,0,0,1.3455928,642.75395,163.8946)"
+       id="g210">
+      <g
+         id="g212">
+        <rect
+           x="-2.5"
+           y="-3"
+           width="92"
+           height="18"
+           id="rect214"
+           style="fill:#ffffff;stroke:none" />
+      </g>
+      <text
+         font-size="12px"
+         font-style="normal"
+         font-weight="normal"
+         text-decoration="none"
+         x="-0.5"
+         y="11"
+         id="text216"
+         style="font-style:normal;font-weight:normal;font-size:12px;font-family:Arial;text-decoration:none;text-decoration-line:none;fill:#332714;stroke:none">check message</text>
+    </g>
+    <g
+       transform="matrix(1.3455928,0,0,1.3455928,-32.060858,450.84227)"
+       id="g218">
+      <g
+         id="g220">
+        <g
+           transform="scale(1.7,0.4)"
+           id="g222">
+          <g
+             id="g224">
+            <path
+               d="m 0,0 100,0 q 0,0 0,0 l 0,100 q 0,0 0,0 L 0,100 q 0,0 0,0 L 0,0 q 0,0 0,0 z"
+               id="path226"
+               inkscape:connector-curvature="0"
+               style="fill:#e69138;stroke:none" />
+            <g
+               transform="scale(0.58823529,2.5)"
+               id="g228">
+              <path
+                 d="m 0,0 170,0 q 0,0 0,0 l 0,40 q 0,0 0,0 L 0,40 q 0,0 0,0 L 0,0 q 0,0 0,0 z"
+                 id="path230"
+                 inkscape:connector-curvature="0"
+                 style="fill:none;stroke:none" />
+              <path
+                 d="m 0,0 m 0,0 170,0 q 0,0 0,0 l 0,40 q 0,0 0,0 L 0,40 q 0,0 0,0 L 0,0 q 0,0 0,0 z"
+                 stroke-miterlimit="10"
+                 id="path232"
+                 inkscape:connector-curvature="0"
+                 style="fill:none;stroke:#b45f06;stroke-width:2;stroke-miterlimit:10" />
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g
+       transform="matrix(1.3455928,0,0,1.3455928,-16.721099,468.33498)"
+       id="g234">
+      <text
+         font-size="12px"
+         font-style="normal"
+         font-weight="normal"
+         text-decoration="none"
+         x="22.1"
+         y="11"
+         id="text236"
+         style="font-style:normal;font-weight:normal;font-size:12px;font-family:Arial;text-decoration:none;text-decoration-line:none;fill:#000000;stroke:none">w</text>
+      <text
+         font-size="12px"
+         font-style="normal"
+         font-weight="normal"
+         text-decoration="none"
+         x="31.1"
+         y="11"
+         id="text238"
+         style="font-style:normal;font-weight:normal;font-size:12px;font-family:Arial;text-decoration:none;text-decoration-line:none;fill:#000000;stroke:none">ebsocketHandler</text>
+    </g>
+    <g
+       transform="matrix(1.3455928,0,0,1.3455928,190.63476,274.23321)"
+       id="g240">
+      <image
+         width="144"
+         height="155"
+         preserveAspectRatio="none"
+         xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJAAAACbCAYAAACNgRJ7AAAC90lEQVR4nO3YsW4UVxiGYXq4gkRpE88ZB0o6RMMV2HOWFO68ZxwrNWkpqKJUyOm5gfgWEi6BipIiaSlRCopNgY1M4iDIV5wZ6Xmkv9viK17Nzu6NGwAAAAAAAAAAAAAAAAAAAACwdGNtZ703sGKltr96b2ClSt2elNp2pc4nvbewQqW2V+8Caq96b2FlhtoeXcSzK7Xthtoe9d7ESozT6a1S2+urAZXaXo/T6a3e21iBcWpP/hHPrtS2GzftSe9tLNw3D3/4otT57XUBlTq//Xo6+bL3Rhas1O3T6+O5vO3T3htZqG+/a3sfj+fd7W+Oh95bWaChtmefEtBQ27PeW1mYctDufko87++g3e29mQUZ63z+OQGNdT7vvZmFGKbjB5/19Ln8KpvmB723swD7m+PhuhtqO7t45zn7r8/03s6CldoeXzxtHvfewgoJiIiAiAiIiICICIiIgIgIiIiAiAiIiICICIiIgIgIiIiAiAiIiICICIiIgIgIiIiAiAiIiICICIiIgIgIiIiAiAiIiICICIiIgIgIiIiAiAiIiICICIiIgIgIiIiAiAiIiICICIiIgIgIiIiAiAiIiICICIiIgIgIiIiAiAiIiICICIiIgIgIiIiAiAiIiICICIiIgIgIiIiAiAiIiICICIiIgIgIiIiAiAiIiICICIiIgIgIiIiAiAiIiICICIiIgIgIiIiAiAiIiICICIiIgIgIiIiAiAiIiICICIiIgIgIiIiAiAiIiICICIiIgIiMU/up1LYb6/xj7y2s0Fi35+8C2h703sIKDZv2otS2Gzfznd5bWKFS25tS2+720dHN3ltYmaHO90ptuzK1P3pvYYVKbc/9AuN/GTbt+1Lbrmzay95bWJkr//3sxmk+7L2Hhbt9dHRz3Mx3Sm0/l017+T6eOv/Se9sH9g6P7w/T9je3jBtr+32o7c/LYK7c86HO93r38i9XH41uUfdm2LQXw9R+HTbb096dfNTe4fF9t5zbf3j6Ve8mAJbnbxUHsptlyIXkAAAAAElFTkSuQmCC"
+         id="image242" />
+    </g>
+    <g
+       transform="matrix(1.3455928,0,0,1.3455928,313.51861,458.21942)"
+       id="g244">
+      <g
+         id="g246">
+        <rect
+           x="-0.5"
+           y="-3"
+           width="47"
+           height="18"
+           id="rect248"
+           style="fill:#ffffff;stroke:none" />
+      </g>
+      <text
+         font-size="12px"
+         font-style="normal"
+         font-weight="normal"
+         text-decoration="none"
+         x="1.5"
+         y="11"
+         id="text250"
+         style="font-style:normal;font-weight:normal;font-size:12px;font-family:Arial;text-decoration:none;text-decoration-line:none;fill:#332714;stroke:none">listen to</text>
+    </g>
+    <g
+       transform="matrix(1.3455928,0,0,1.3455928,-52.24475,174.99574)"
+       id="g252">
+      <image
+         width="104"
+         height="209"
+         preserveAspectRatio="none"
+         xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGgAAADRCAYAAAAg2fccAAAC9UlEQVR4nO3YPYoUURRA4UmMDZwNOMFgv/IPBDEyN5a+xUgjOHTdJxiYaChM7grMFAZcgXtQmAW4AjMzA7M2aAtBu1ud5B2mzgeV3+JQVbfe3p4kSZIkSZIkSZIkSZIkndv1fjlrPYM2mEW9X6J+MBBMNx9ud5HvS+SqRK4MBHHj4fFB6fPNGMZAENceP7tSor7+PYyBGruTeamLfFUiv22LY6BGZvPheYn8siuMgRoofX3SRX7+lzAX5Ppa+vxYop6WyJMSddG6wU4TDPTH1UU9K/3woHWLnabyijs8yv1Zv7xXoi5K5EkX9Wy8r1kM7w7mebn1jFtNdUkoUV+UyO/rSPm29Tx/tV6zh0mt2d2jp3fHSPjX3ejmfHl1Sj+qs3m+HL9JrWf5L11fb03lqOfXNwm+3W0yhcPS9eqdqxJ50nqWc7vYgeri5xN02noWbbBewXNVYvjUehZtcHiU++OJQ+tZtMW4DLWeQ1sYCM5AcAaCMxCcgeAMBGcgOAPBGQjOQHAGgjMQnIHgDARnIDgDwRkIzkBwBoIzEJyB4AwEZyA4A8EZCM5AcAaCMxCcgeAMBGcgOAPBGQjOQHAGgjMQnIHgDARnIDgDwRkIzkBwBoIzEJyB4AwEZyA4A8EZCM5AcAaCMxCcgeAMBGcgOAPBGQjOQHAGgjMQnIHgDARnIDgDwRkIzkBwBoIzEJyB4AwEZyA4A8EZCM5AcAaCMxCcgeAMBGcgOAPBGQjOQHAGgjMQnIHgDARnIDgDwRkIzkBwBoIzEJyB4AwEZyA4A8EZCM5AcAaCMxCcgeAMBGcgOAPBGQjOQHAGgjMQnIHgDARnIDgDwRkIzkBwBoIzEJyB4AwEZyA4A8EZCM5AcAaCMxCcgeAMBGcgOAPBGQjOQHAGgjMQnIHgDARnIDgDwRkIzkBwBoIzEJyB4AwEZyA4A8EZCM5AcAaCMxCcgeAMBGcgOAPBGQjOQHAGgjMQnIHgDARnIDgDwRkIzkBwBoIzkCSJ5AdBbjnDgwFoHwAAAABJRU5ErkJggg=="
+         id="image254" />
+    </g>
+    <g
+       transform="matrix(1.3455928,0,0,1.3455928,18.398873,269.70377)"
+       id="g256">
+      <g
+         id="g258">
+        <rect
+           x="-2"
+           y="-3"
+           width="104"
+           height="16"
+           id="rect260"
+           style="fill:#ffffff;stroke:none" />
+      </g>
+      <text
+         font-size="12px"
+         font-style="normal"
+         font-weight="normal"
+         text-decoration="none"
+         x="0"
+         y="11"
+         id="text262"
+         style="font-style:normal;font-weight:normal;font-size:12px;font-family:Arial;text-decoration:none;text-decoration-line:none;fill:#332714;stroke:none">send message to</text>
+      <g
+         id="g264">
+        <rect
+           x="10"
+           y="13"
+           width="80"
+           height="18"
+           id="rect266"
+           style="fill:#ffffff;stroke:none" />
+      </g>
+      <text
+         font-size="12px"
+         font-style="normal"
+         font-weight="normal"
+         text-decoration="none"
+         x="12"
+         y="25"
+         id="text268"
+         style="font-style:normal;font-weight:normal;font-size:12px;font-family:Arial;text-decoration:none;text-decoration-line:none;fill:#332714;stroke:none">correct socket</text>
+    </g>
+    <g
+       transform="matrix(1.3455928,0,0,1.3455928,856.03041,449.16028)"
+       id="g270">
+      <g
+         id="g272">
+        <g
+           transform="scale(1.4,0.375)"
+           id="g274">
+          <g
+             id="g276">
+            <path
+               d="m 0,0 100,0 q 0,0 0,0 l 0,100 q 0,0 0,0 L 0,100 q 0,0 0,0 L 0,0 q 0,0 0,0 z"
+               id="path278"
+               inkscape:connector-curvature="0"
+               style="fill:#e69138;stroke:none" />
+            <g
+               transform="scale(0.71428571,2.6666667)"
+               id="g280">
+              <path
+                 d="m 0,0 140,0 q 0,0 0,0 l 0,37.5 q 0,0 0,0 l -140,0 q 0,0 0,0 L 0,0 q 0,0 0,0 z"
+                 id="path282"
+                 inkscape:connector-curvature="0"
+                 style="fill:none;stroke:none" />
+              <path
+                 d="m 0,0 m 0,0 140,0 q 0,0 0,0 l 0,37.5 q 0,0 0,0 l -140,0 q 0,0 0,0 L 0,0 q 0,0 0,0 z"
+                 stroke-miterlimit="10"
+                 id="path284"
+                 inkscape:connector-curvature="0"
+                 style="fill:none;stroke:#b45f06;stroke-width:2;stroke-miterlimit:10" />
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g
+       transform="matrix(1.3455928,0,0,1.3455928,870.56281,464.971)"
+       id="g286">
+      <text
+         font-size="12px"
+         font-style="normal"
+         font-weight="normal"
+         text-decoration="none"
+         x="28.200001"
+         y="11"
+         id="text288"
+         style="font-style:normal;font-weight:normal;font-size:12px;font-family:Arial;text-decoration:none;text-decoration-line:none;fill:#000000;stroke:none">serverState</text>
+    </g>
+    <g
+       transform="matrix(1.3455928,0,0,1.3455928,909.85412,274.23321)"
+       id="g290">
+      <image
+         width="60"
+         height="134"
+         preserveAspectRatio="none"
+         xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAACGCAYAAACBrelhAAABdUlEQVR4nO3WvW3CYBSF4TRMwARJhT/nT6JnicjXHRIRXBcUTMAETMAETMAuTMAE9E6ROIqiEAgYrnTyPtLtXJy3+eSbGwAAAAAAAAAAAAAIk8pqlMpqFL3janLzTW6+id5xFVkxmSXzOpnXWTGZRe+5qL57J5lvm+Bkvu27d6J3XUxuPv8SWyfzOjefR++6iN5w2k3mu+/ByXzXG0670ftal2yy+CH246pF9L5WPRbj2/2x7/fw8noXvbM1qfTloeBU+jJ6Zyvysno6GNs8YMXkOXrv2XLz1dHB5qvovWfJrBocG/v5M2LVIHr3yZJV678GJ6vW0btPcl+Os33XxP32TfT+VjXB0TuuhmB1BKsjWB3B6ghWR7A6gtURrI5gdQSrI1gdweoIVkewOoLVEayOYHUEqyNYHcHqCFZHsDqC1RGsjmB1BKsjWB3B6ghWR7A6gtURrI5gdQSrI1gdweoIVkewOoLVEayOYHUEq/t3wQBa8wZ7JRX6kVEMwQAAAABJRU5ErkJggg=="
+         id="image292" />
+    </g>
+    <g
+       transform="matrix(1.3455928,0,0,1.3455928,919.27327,372.46149)"
+       id="g294">
+      <g
+         id="g296">
+        <rect
+           x="-0.5"
+           y="-3"
+           width="47"
+           height="18"
+           id="rect298"
+           style="fill:#ffffff;stroke:none" />
+      </g>
+      <text
+         font-size="12px"
+         font-style="normal"
+         font-weight="normal"
+         text-decoration="none"
+         x="1.5"
+         y="11"
+         id="text300"
+         style="font-style:normal;font-weight:normal;font-size:12px;font-family:Arial;text-decoration:none;text-decoration-line:none;fill:#332714;stroke:none">listen to</text>
+    </g>
+    <g
+       transform="matrix(1.3455928,0,0,1.3455928,526.36017,410.47449)"
+       id="g302">
+      <g
+         id="g304">
+        <g
+           id="g306">
+          <g
+             id="g308">
+            <g
+               id="g310">
+              <path
+                 d="M 50,0 100,50 50,100 0,50 50,0 Z"
+                 id="path312"
+                 inkscape:connector-curvature="0"
+                 style="fill:#9d3100;stroke:none" />
+              <path
+                 d="M 50,0 M 50,0 100,50 50,100 0,50 50,0 Z"
+                 stroke-miterlimit="10"
+                 id="path314"
+                 inkscape:connector-curvature="0"
+                 style="fill:none;stroke:#6f1c03;stroke-width:2;stroke-miterlimit:10" />
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g
+       transform="matrix(1.3455928,0,0,1.3455928,539.8161,468.33498)"
+       id="g316">
+      <text
+         font-size="12px"
+         font-style="normal"
+         font-weight="normal"
+         text-decoration="none"
+         x="16.5"
+         y="11"
+         id="text318"
+         style="font-style:normal;font-weight:normal;font-size:12px;font-family:Arial;text-decoration:none;text-decoration-line:none;fill:#ffffff;stroke:none">success</text>
+    </g>
+    <g
+       transform="matrix(1.3455928,0,0,1.3455928,432.16867,669.50111)"
+       id="g320">
+      <g
+         id="g322">
+        <g
+           transform="scale(1.7,0.375)"
+           id="g324">
+          <g
+             id="g326">
+            <path
+               d="m 0,0 100,0 q 0,0 0,0 l 0,100 q 0,0 0,0 L 0,100 q 0,0 0,0 L 0,0 q 0,0 0,0 z"
+               id="path328"
+               inkscape:connector-curvature="0"
+               style="fill:#4b8598;stroke:none" />
+            <g
+               transform="scale(0.58823529,2.6666667)"
+               id="g330">
+              <path
+                 d="m 0,0 170,0 q 0,0 0,0 l 0,37.5 q 0,0 0,0 l -170,0 q 0,0 0,0 L 0,0 q 0,0 0,0 z"
+                 id="path332"
+                 inkscape:connector-curvature="0"
+                 style="fill:none;stroke:none" />
+              <path
+                 d="m 0,0 m 0,0 170,0 q 0,0 0,0 l 0,37.5 q 0,0 0,0 l -170,0 q 0,0 0,0 L 0,0 q 0,0 0,0 z"
+                 stroke-miterlimit="10"
+                 id="path334"
+                 inkscape:connector-curvature="0"
+                 style="fill:none;stroke:#2a5666;stroke-width:2;stroke-miterlimit:10" />
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g
+       transform="matrix(1.3455928,0,0,1.3455928,447.50843,685.31182)"
+       id="g336">
+      <text
+         font-size="12px"
+         font-style="normal"
+         font-weight="normal"
+         text-decoration="none"
+         x="13.6"
+         y="11"
+         id="text338"
+         style="font-style:normal;font-weight:normal;font-size:12px;font-family:Arial;text-decoration:none;text-decoration-line:none;fill:#ffffff;stroke:none">send_message event</text>
+    </g>
+    <g
+       transform="matrix(1.3455928,0,0,1.3455928,620.52267,434.02236)"
+       id="g340">
+      <image
+         width="179"
+         height="60"
+         preserveAspectRatio="none"
+         xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALMAAAA8CAYAAAAt8ov+AAAA9ElEQVR4nO3avU3EMACGYTewABNARWz+JPpbAtnpkEAXp6BgAiZgAiZggtuFCZiA/ijQNQgQUopLrOeRvj7FWyR2QgAAAAAAAAAAAAAAAAAAAKAxZ/262/czwCRdGVexjBsxs1gpD1ep1NdY6jaWuhUzi3N+c38S+/qyi1jMLM7p7cNRLOPz94jFzGJc13qQSn2KpX78FrKYmb0uD4+x1Pe/IhYzsxb78S6V+vafiM1+Wsr5cN8dhxDEbNM3m5h3vGbQFB+ANOfraG5wNEc7LvL62KUJTUn9eOk6m6b40YjmiBkAAAAAAAAAAAAAAAAAAACm+gQLXcIy/a3cbgAAAABJRU5ErkJggg=="
+         id="image342" />
+    </g>
+    <g
+       transform="matrix(1.3455928,0,0,1.3455928,696.56316,464.971)"
+       id="g344">
+      <g
+         id="g346">
+        <rect
+           x="-3"
+           y="-3"
+           width="98"
+           height="18"
+           id="rect348"
+           style="fill:#ffffff;stroke:none" />
+      </g>
+      <text
+         font-size="12px"
+         font-style="normal"
+         font-weight="normal"
+         text-decoration="none"
+         x="-1"
+         y="11"
+         id="text350"
+         style="font-style:normal;font-weight:normal;font-size:12px;font-family:Arial;text-decoration:none;text-decoration-line:none;fill:#332714;stroke:none">handle message</text>
+    </g>
+    <g
+       transform="matrix(1.3455928,0,0,1.3455928,458.80044,471.69896)"
+       id="g352">
+      <image
+         width="59"
+         height="177"
+         preserveAspectRatio="none"
+         xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADsAAACxCAYAAAB6DsUNAAACPElEQVR4nO3dv0ojYRSGcRHEC/AKdhGZ+Wb/QdjWXttlznQGl8wZFlGvQEifzs4r8Ar0LrYXt7PwCqzNFpoQJLtJdGYPvPv84GtCivchYb50WVsD0LrhcD2r6p3cmv1kfpLMh8uc6NkrKcz7qfTbZP6YzMernqKqv0Y3LJSVg14q/Xpm+GOq/PbpteZc5pMtzPszkXeFeX9tOFyP3tW67b3jzWR+9xRaj7b3jjejN3UmWTNK5uNU+nX0lk5l5Y/e5OublYNe9J5OPV8p42T+M3pL55LV58+xJ9FbOje5anJr9qO3dC5Z/SuZj7Oq3one0rnJw0nyTn1pGvs/IFYVsaqIVUWsKmJVEauKWFXEqiJWFbGqiFVFrCpiVRGrilhVxKoiVhWxqohVRawqYlURq4pYVcSqIlYVsaqIVUWsKmJVEauKWFXEqiJWFbGqiFVFrCpiVRGrilhVxKoiVhWxqohVRawqYlURq4pYVcSqIlYVsaqIVUWsKmJVEauKWFXEqiJWFbGq5GI/VIP8T2cS+7f3RO9fWbLmahK2/Gmuone/Sm7N7qqxuTW70btfrTC/XDa0ML+M3vsmRVl/WTq2aj5H732zVPnFwtjKL6J3tuLjt+/vF8V+Kgfvone2Zvof0XNPPYre16rs4GgrmT/MiX3IDo62ove1rjA/m/MEPove1Yme+0Yyv5+Jve+5b0Tv6kxe1qfTHxBlfRq9p3OF+U1hfhO9459IVXOYquYwegcAAAAAAAAAAACAaL8B5vIOWKy4HOAAAAAASUVORK5CYII="
+         id="image354" />
+    </g>
+    <g
+       transform="matrix(1.3455928,0,0,1.3455928,483.69391,548.13819)"
+       id="g356">
+      <g
+         id="g358">
+        <rect
+           x="0"
+           y="-3"
+           width="23"
+           height="18"
+           id="rect360"
+           style="fill:#ffffff;stroke:none" />
+      </g>
+      <text
+         font-size="12px"
+         font-style="normal"
+         font-weight="normal"
+         text-decoration="none"
+         x="2"
+         y="11"
+         id="text362"
+         style="font-style:normal;font-weight:normal;font-size:12px;font-family:Arial;text-decoration:none;text-decoration-line:none;fill:#332714;stroke:none">yes</text>
+    </g>
+    <g
+       transform="matrix(1.3455928,0,0,1.3455928,553.27202,538.9786)"
+       id="g364">
+      <image
+         width="60"
+         height="127"
+         preserveAspectRatio="none"
+         xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAB/CAYAAACzMKGwAAABZElEQVR4nO3WvW0CQRRFYRIqoAI7Ymf9J5HThLWzGRIW+yYgoAIkciqgAiqgFyqgAnIcYTkAs8CyT7o+nzTZBPcko+l0AOBKIdoiRFt472hNiHYI0Q7eO1pDsDqC1RGsjmB1BKsjWB3B6ghWR7A6gtURrI5gdQSrI1gdweoIVkewOoLVEayOYHUEqyNYHcHqCFZHsDqC1RGsjmB1BKsjWB3B6ghWR7A6gtURrI5gdQSrI1idZPBLOcnOnWPwX3e8998kxLQ5xtU/aeO9+2ZZTMNrg7OYht6775JHW9eNzaOtvffeLS+qj9rBZXr33tuIUNrqYnBpK++djXn9/Hq+FPxWTJ68dzYqxLQ8H1wtvfc1rj+a9kK0/YngfX807Xnve4g82vzEyzz33vUwA7NuiLb7FbwbmHW9dz1UVlSzn09GUc2897Qij7bNo229d7QmlGkcyjT23gEAAAAAAAAAAADgP/sGlDf6Z021YtkAAAAASUVORK5CYII="
+         id="image366" />
+    </g>
+    <g
+       transform="matrix(1.3455928,0,0,1.3455928,509.54026,588.4293)"
+       id="g368">
+      <g
+         id="g370">
+        <rect
+           x="53.5"
+           y="-3"
+           width="18"
+           height="16"
+           id="rect372"
+           style="fill:#ffffff;stroke:none" />
+      </g>
+      <text
+         font-size="12px"
+         font-style="normal"
+         font-weight="normal"
+         text-decoration="none"
+         x="55.5"
+         y="11"
+         id="text374"
+         style="font-style:normal;font-weight:normal;font-size:12px;font-family:Arial;text-decoration:none;text-decoration-line:none;fill:#332714;stroke:none">no</text>
+      <g
+         id="g376">
+        <rect
+           x="-1"
+           y="13"
+           width="127"
+           height="18"
+           id="rect378"
+           style="fill:#ffffff;stroke:none" />
+      </g>
+      <text
+         font-size="12px"
+         font-style="normal"
+         font-weight="normal"
+         text-decoration="none"
+         x="1"
+         y="25"
+         id="text380"
+         style="font-style:normal;font-weight:normal;font-size:12px;font-family:Arial;text-decoration:none;text-decoration-line:none;fill:#332714;stroke:none">(wrap into error object)</text>
+    </g>
+    <g
+       transform="matrix(1.3455928,0,0,1.3455928,76.259365,498.61082)"
+       id="g382">
+      <image
+         width="294"
+         height="183"
+         preserveAspectRatio="none"
+         xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASYAAAC3CAYAAAC/ifOIAAAD6ElEQVR4nO3ZsascVRjG4dPY2QqWCqK7MwkIgpBCK8XGSpyzRrC4kDlzSWOnFgoB/TcUxYBWdnYWFilErCKCpZ2CKAhWIqzF3YQr6M0aF86b3OeBr3+3+TE7UwoAAAAAHNhQ27XeGwBuG2q7NtS2FScghjABcYQJiCNMQBxhAuIIExBHmIA4wgTEESYgjjABcYQJiCNMQBxhAuIIExBHmIA4wgTEESYgjjABcYQJiCNMQBxhAuIIExBHmIA4wgTEESYgjjABcYQJiCNMQBxhAuIIExBHmIA4wgTEESYgjjABcYQJiCNMQBxhAuIIExBHmIA4wgTEESYgjjABcYQJiCNMQBxhAuIIExBHmIA4wgTEESYgjjABcYQJiCNMQBxhAuIIExBHmIA4wgTEESYgjjABcYQJiCNMQBxhAuIIExBHmIA4wgTEESYgjjABcYQJiCNMQBxhAuIIExBHmIA4wgTEESYgjjABcYQJiCNMQBxhAuIIExBHmIA4wgTEESYgjjABcYQJiCNMQBxhAuIIExBHmIA4wgTEESYgjjABcYQJiCNMQBxhAuIIExBHmIA4wgTEESYgjjABcYQJiCNMQBxhAuIIExBHmIA4wgTEESYgjjABcYQJiCNMQBxhAuIIExBHmIA4wgTEESYgjjABcYQJiCNMQBxhAuIIExBHmIA4wgTEESYgjjABcYQJiCNMQBxhAuIIExBHmIA4wgTEESYgjjABcYQJiCNMQBxhAuIIExBHmIA4wgTEESYgjjABcW6Faazty95bAEoppayn+bWTJ6bleu8tAKWUUlbTcmmobTtM7aveWwBKKaU8Nh09tHvH9HPvLcBhjbW981RrD/TecVeG2n4ZatuuN8cXem8BDmfctE+H2n5cT/Prvbf8Z0NtH++emj7ovQU4nF2YticfuJbvh81y1HvT3lavHD8y1PbHyfj5hd57gMM4HaZT9/WFzfJS7217Gevy5sno+ff1tDzfew/w//1LmLa7D15frOv8XO+NdzTW5ZtTw99//HJb9d4E3L0zw3T7L9782TgdP91765nGTXtrXdufp4b/NNTlxrrOH+0K+7Zz7t64sbabdwrTrVvX9uHF5IeRJ6Yrjw51uT7U9tu+P8o5d9/ct6tpudS7Q2cap6sPDy9feWbYLEdjXd51zt07N9T23b5BGmv7ZJzmJ3s3B7jP7fOOaajL5+u6PNt7K3BOnB2m+cZqM7/YeyNwzvxTmMbabo5Te7X3NuCc+luYpvmHoS7HvTcB59wuTL+ua3uj9xaAUkop46a9N05XH+y9AwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKC/vwDAZfKTc7m5dwAAAABJRU5ErkJggg=="
+         id="image384" />
+    </g>
+    <g
+       transform="matrix(1.3455928,0,0,1.3455928,128.57012,695.76237)"
+       id="g386">
+      <g
+         id="g388">
+        <rect
+           x="-0.5"
+           y="-3"
+           width="47"
+           height="18"
+           id="rect390"
+           style="fill:#ffffff;stroke:none" />
+      </g>
+      <text
+         font-size="12px"
+         font-style="normal"
+         font-weight="normal"
+         text-decoration="none"
+         x="1.5"
+         y="11"
+         id="text392"
+         style="font-style:normal;font-weight:normal;font-size:12px;font-family:Arial;text-decoration:none;text-decoration-line:none;fill:#332714;stroke:none">listen to</text>
+    </g>
+    <g
+       transform="matrix(1.3455928,0,0,1.3455928,-32.060858,-60.483005)"
+       id="g394">
+      <g
+         id="g396">
+        <g
+           transform="scale(1.7,0.4)"
+           id="g398">
+          <g
+             id="g400">
+            <path
+               d="m 0,0 100,0 q 0,0 0,0 l 0,100 q 0,0 0,0 L 0,100 q 0,0 0,0 L 0,0 q 0,0 0,0 z"
+               id="path402"
+               inkscape:connector-curvature="0"
+               style="fill:#e69138;stroke:none" />
+            <g
+               transform="scale(0.58823529,2.5)"
+               id="g404">
+              <path
+                 d="m 0,0 170,0 q 0,0 0,0 l 0,40 q 0,0 0,0 L 0,40 q 0,0 0,0 L 0,0 q 0,0 0,0 z"
+                 id="path406"
+                 inkscape:connector-curvature="0"
+                 style="fill:none;stroke:none" />
+              <path
+                 d="m 0,0 m 0,0 170,0 q 0,0 0,0 l 0,40 q 0,0 0,0 L 0,40 q 0,0 0,0 L 0,0 q 0,0 0,0 z"
+                 stroke-miterlimit="10"
+                 id="path408"
+                 inkscape:connector-curvature="0"
+                 style="fill:none;stroke:#b45f06;stroke-width:2;stroke-miterlimit:10" />
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g
+       transform="matrix(1.3455928,0,0,1.3455928,-16.721099,-42.990298)"
+       id="g410">
+      <text
+         font-size="12px"
+         font-style="normal"
+         font-weight="normal"
+         text-decoration="none"
+         x="22.1"
+         y="11"
+         id="text412"
+         style="font-style:normal;font-weight:normal;font-size:12px;font-family:Arial;text-decoration:none;text-decoration-line:none;fill:#000000;stroke:none">w</text>
+      <text
+         font-size="12px"
+         font-style="normal"
+         font-weight="normal"
+         text-decoration="none"
+         x="31.1"
+         y="11"
+         id="text414"
+         style="font-style:normal;font-weight:normal;font-size:12px;font-family:Arial;text-decoration:none;text-decoration-line:none;fill:#000000;stroke:none">ebsocketHandler</text>
+    </g>
+    <g
+       transform="matrix(1.3455928,0,0,1.3455928,-132.98032,154.81185)"
+       id="g416">
+      <g
+         id="g418">
+        <g
+           transform="scale(0.9,0.9)"
+           id="g420">
+          <g
+             id="g422">
+            <path
+               d="m 100,50 a 50,50 0 1 0 -2.5e-5,0.05 z"
+               id="path424"
+               inkscape:connector-curvature="0"
+               style="fill:#867160;stroke:none" />
+            <g
+               transform="scale(1.1111111,1.1111111)"
+               id="g426">
+              <path
+                 d="m 45,0 m 0,0 C 69.852812,0 90,20.147189 90,45 90,69.852812 69.852812,90 45,90 20.147189,90 0,69.852812 0,45 0,20.147189 20.147189,0 45,0 Z"
+                 stroke-miterlimit="10"
+                 id="path428"
+                 inkscape:connector-curvature="0"
+                 style="fill:none;stroke:#58483b;stroke-width:2;stroke-miterlimit:10" />
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g
+       transform="matrix(1.3455928,0,0,1.3455928,-119.52439,187.10608)"
+       id="g430">
+      <text
+         font-size="12px"
+         font-style="normal"
+         font-weight="normal"
+         text-decoration="none"
+         x="4"
+         y="11"
+         id="text432"
+         style="font-style:normal;font-weight:normal;font-size:12px;font-family:Arial;text-decoration:none;text-decoration-line:none;fill:#ffffff;stroke:none">websocket</text>
+      <text
+         font-size="12px"
+         font-style="normal"
+         font-weight="normal"
+         text-decoration="none"
+         x="5"
+         y="25"
+         id="text434"
+         style="font-style:normal;font-weight:normal;font-size:12px;font-family:Arial;text-decoration:none;text-decoration-line:none;fill:#ffffff;stroke:none">connection</text>
+      <text
+         font-size="12px"
+         font-style="normal"
+         font-weight="normal"
+         text-decoration="none"
+         x="6.5"
+         y="39"
+         id="text436"
+         style="font-style:normal;font-weight:normal;font-size:12px;font-family:Arial;text-decoration:none;text-decoration-line:none;fill:#ffffff;stroke:none">(socket.io)</text>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,42 @@
+\addchap{WebRTC documents}%no number
+\label{chap:webrtc-documents}
+
+\section{Overview}
+Aim of the WebRTC projects is to enable real time communication in a web browser without needing plugins, platform dependent applications or specific servers.
+The browsers communicate and transmit data peer-to-peer.
+
+To enable real time communication in a web browser, three different components are needed:
+\begin{enumerate}
+\item An API useable on the client side inside the browser to both display and transmit media streams
+\item Functions to retrieve media streams from devices like camera or microphone and pass them on to the browser for further use
+\item Protocols and protocol stacks to ensure full duplex real time transmission
+\end{enumerate}
+
+\section{Maintained by the W3C WebRTC Working Group}
+\subsection{Browser API}
+To specify a proposed standard of the ECMAScript APIs for real time communications, the W3C WebRTC (Web Real-Time Communications) Working Group is working on the document "WebRTC 1.0: Real-time Communication Between Browsers".
+
+These standards will be implemented in all major browser in the future
+
+All information about the W3C efforts can be found at \url{http://www.w3.org/2011/04/webrtc/}.
+It contains
+\begin{itemize}
+\item API functions for encoding and processing (e.g. filters) of media streams
+\item API functions for establishing direct peer-to-peer connections, including firewall/NAT traversal
+\item API functions for decoding and processing media streams at the incoming end
+\item Delivery to the user of media streams, meaning displaying video and playing audio
+\end{itemize}
+
+Source: Charter, Working Draft
+Does not contain
+\begin{itemize}
+\item Network protocols to establish the connections between peers (protocol considerations are worked on by the IETF)
+\item Codecs for audio and video
+\end{itemize}
+
+Source: Charter
+
+\section{Maintained by the IETF RTCWEB Work Group}
+
+
+\todo{}

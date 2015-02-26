@@ -1,0 +1,49 @@
+
+\documentclass[../../../thesis.tex]{subfiles}
+%set currfolder to allow main file to compile and also this file to compile (\def does not work due to expansion issues)
+\ifcurrfiledir{}{\edef\currfolder{.}}{\edef\currfolder{\currfiledir}}
+\begin{document}
+
+
+\chapter{Conclusion}
+
+\section{Using WebRTC}
+It is shown, that WebRTC is a very mature technology despite its young age and the first approved W3C Working Draft was released in February 2015.\\
+
+The technology is needed, and it definitely has disruptive qualities as it enables web developers to create communication applications in a very short time. Using preexisting VoIP technology, expensive hardware and a lot more experience and time would have been needed to create a similar solution.\\
+
+The future will be very interesting concerning this technology, and especially the additional features that are discussed for ORTC\cite{ortc-api}: Allowing to exchange the unwieldy SDP messages with concise JSON objects. \\Also using stream quality data to further adapt the bit rate for the video codec and increase the options for developers to access lower level functions in order to detect speaking participants or to suppress background noise will even add to WebRTCs importance.\par 
+If WebRTC is adopted by VoIP engineers they will even be able to keep a substantial part of their current market and create better solutions at the same time.\\
+
+Another good feature that was already introduced into the current Working Draft is the switch from inversion-of-control callbacks for the browser API to a promised-based approach, which is not yet implemented into Mozilla Firefox nor Google Chrome.
+
+
+%kurento
+\section{Working with the Kurento media server}
+The Kurento media server is a very sophisticated piece of software that is in active development and provides extensive documentation and an active community.\\
+The API is very well thought out and even if the Java EE implementation is still needed when trying to integrate SIP, the JavaScript Client\cite{kurento-client-doc} allows for rapid development and prototyping without many obstacles.
+
+
+\section{Goals}
+Most of the goals for this thesis were achieved with the simucos prototype:\par
+Conferences can be recorded on the media server as VP8 or h.264 video files.\par
+Many clients may participate in a conference, the highest number tested was 25 in a mixed conference, and 14 in a relayed conference.\par
+Participants in restrictive network environments can connect to a conference using a STUN or TURN server.\par
+Only the optional goal to add support for SIP clients into simucos was not implemented due to the chosen Node.js architecture.
+
+\section{Future development}
+Right now simucos is being integrated into another prototype application that uses WebRTC peer-to-peer conferences. The new prototype will be able to start conferences either using a peer-to-peer full mesh network or a media server and also to switch the conference type.
+
+\subsection{Switching conference to the media server}
+The simplest option would be to switch the conference to a media server once a participant presses a record button in the conversation.
+
+\subsection{Switching conferences as needed}
+An interesting addition to the prototype would be to start a conversation as a full mesh. As more participants join into the conference, the conference switches first to a relayed and then to a mixed conference on the media server.\par
+This switch could occur either based on the number of participants alone or on the conference size and the stream quality each participant achieves.\\
+
+For the latter, the statistics module of WebRTC could be used and the signaling application would calculate the overall quality of the conference. Also this mechanism could be used to reduce the video resolution or bit rate, but functions like this are not yet part of the WebRTC specification\cite{webrtc-1.0}. These are considered for inclusion into ORTC\cite{ortc-api}.\\
+
+Also the conference should switch back to a full mesh architecture, if the number of participants has decreased below the threshold or only participants with sufficient bandwidth and processing power remain in the conference.\\
+
+
+\end{document}

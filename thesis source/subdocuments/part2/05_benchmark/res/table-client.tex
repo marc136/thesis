@@ -1,0 +1,55 @@
+\begin{table}[htbp]
+\centering
+\caption[Bandwidth requirements on client side of conversation]{\textbf{Client side:} \\Needed bandwidth depending on conference size and \\multipoint architecture}
+\begin{tabular}{r c c c c}
+
+    \toprule
+    & \multicolumn{4}{l}{\textbf{QCIF (168x144)} }\\
+    \toprule
+    participants & 2 & 4 & 7 & 10\\
+    \midrule
+    P2P & 0.8~Mbit/s & 2.3~Mbit/s & 4.6~Mbit/s & 6.9~MBit/s\\
+    Relay & 0.8~Mbit/s & 1.5~Mbit/s & 2.7~Mbit/s  & 3.8~MBit/s\\
+    Mixer & 0.8~Mbit/s & 0.8~Mbit/s & 0.8~Mbit/s  & 0.8~MBit/s\\
+    \bottomrule
+    
+    &&&&\\ &&&&\\
+    
+    \toprule
+    & \multicolumn{4}{l}{\textbf{CIF (376x288)} }\\
+    \toprule
+    participants & 2 & 4 & 7 & 10\\
+    \midrule
+    P2P & 1.4~Mbit/s & 4.2~Mbit/s & 8.4~Mbit/s & 12.6~MBit/s\\
+    Relay & 1.4~Mbit/s & 2.8~Mbit/s & 4.9~Mbit/s  & 7.0~MBit/s\\
+    Mixer & 1.4~Mbit/s & 1.4~Mbit/s & 1.4~Mbit/s  & 1.4~MBit/s\\
+    \bottomrule
+    
+    &&&&\\ &&&&\\
+    
+    \toprule
+    & \multicolumn{4}{l}{\textbf{VGA (640x480)} }\\
+    \toprule
+    participants & 2 & 4 & 7 & 10\\
+    \midrule
+    P2P & 2.0~Mbit/s & 6.1~Mbit/s & 12.3~Mbit/s & 18.4~MBit/s\\
+    Relay & 2.0~Mbit/s & 4.1~Mbit/s & 7.1~Mbit/s  & 10.2~MBit/s\\
+    Mixer & 2.0~Mbit/s & 2.0~Mbit/s & 2.0~Mbit/s  & 2.0~MBit/s\\
+    \bottomrule
+
+    &&&&\\ &&&&\\
+        
+    \toprule
+    & \multicolumn{4}{l}{\textbf{HD 720p (1080x720)} }\\
+    \toprule
+    participants & 2 & 4 & 7 & 10\\
+    \midrule
+    P2P & 3.8~Mbit/s & 11.4~Mbit/s & 22.8~Mbit/s & 34.2~MBit/s\\
+    Relay & 3.8~Mbit/s & 7.6~Mbit/s & 13.3~Mbit/s  & 19.0~MBit/s\\
+    Mixer & 3.8~Mbit/s & 3.8~Mbit/s & 3.8~Mbit/s  & 3.8~MBit/s\\
+    \bottomrule
+    
+
+    \end{tabular}%
+  \label{tab:benchmark-client}%
+\end{table}%

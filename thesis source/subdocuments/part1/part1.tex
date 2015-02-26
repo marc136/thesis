@@ -1,0 +1,44 @@
+\documentclass[../../thesis.tex]{subfiles}
+%set currfolder to allow main file to compile and also this file to compile (\def does not work due to expansion issues)
+\ifcurrfiledir{}{\edef\currfolder{.}}{\edef\currfolder{\currfiledir}}
+
+\begin{document}
+%Part1.1
+\chapter{Introduction}
+
+\edef\folder{\currfolder/01_introduction}
+\subfile{\folder/1_define_goals.tex}
+\subfile{\folder/2_intro_webrtc}
+
+%Part 1.2
+\chapter{Goals to achieve with the solution}
+\def\folder{\currfolder/02_goals}
+%full mesh is not feasible for this
+\subfile{\folder/participants}
+%recording either on client side or on server
+\subfile{\folder/recording}
+%STUN and TURN
+\subfile{\folder/ice}
+%possibilities for integration
+\subfile{\folder/sip}
+
+%summary of problems with goals if no media server is used
+\chapter{Benefits of using a central media server}
+\edef\folder{\currfolder/03_reasons_ms}
+\subfile{\folder/because_of_goals}
+\clearpage
+%possibilities when using a media server (don't choose a specific setup, just list them)
+\subfile{\folder/multipoint_conferencing_possibilities}
+
+%Part 1.3
+%what is needed to achieve goals (general information about the practical part)
+\chapter{Components for the solution}
+\edef\folder{\currfolder/04_components}
+
+\subfile{\folder/01_introduction}
+\subfile{\folder/media_server}
+\subfile{\folder/signaling_app}
+\subfile{\folder/stun}
+
+
+\end{document}

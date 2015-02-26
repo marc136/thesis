@@ -1,0 +1,68 @@
+\documentclass[../../../thesis.tex]{subfiles}
+%set currfolder to allow main file to compile and also this file to compile (\def does not work due to expansion issues)
+\ifcurrfiledir{}{\edef\currfolder{.}}{\edef\currfolder{\currfiledir}}
+\begin{document}
+
+\section{Introduction WebRTC}
+Web Real-Time Communication (WebRTC) is an effort that was started in 2011\cite{Manson.2013} to enable direct real-time communication between two browsers without needing to install any browser plug-ins or platform-specific applications.\par
+Neither does WebRTC place any restrictions on the type of devices like computers, mobile phones or TVs.
+\\
+
+Usually applications in a browser communicate with a web server to receive and send data, but when using WebRTC a direct communication channel between two peers is opened without using any servers for the transmission of data.\\
+The signaling that is needed for two browsers to communicate with each other is usually done using a web server, forming the WebRTC triangle as depicted in figure~\ref{fig:webrtc-triangle}.\\
+
+In order for WebRTC browsers to connect to another peer, signaling is needed. This is achieved using an SDP offer and answer mechanism, allowing the peers to exchange IP addresses, port numbers and other information like supported codecs.\par
+This signaling is not defined in WebRTC and usually a web server is used to help peers discover each other and to exchange the SDP information, forming the mentioned triangle. After the initial exchange, the web server is not needed anymore.\\
+\img[WebRTC triangle]{webrtc-triangle}{WebRTC triangle\cite[chapter 1]{Loreto.2014}}
+
+\subsection{What does WebRTC do}
+WebRTC exposes ECMAScript\footnote{JavaScript is one implementation of \cite{ECMAScript} as defined by ECMA-262} APIs that allow a participant to use a web application that retrieves audio and video streams from cameras or microphones.\par
+Also it allows to establish a peer-to-peer connection using standardized protocols between two compatible browsers. This connection may be used to send arbitrary data in both directions between the two peers, for instance a real-time video chat..
+
+\subsection{ECMAScript API}
+The API exposed by the browser contains three major interfaces:\par
+The \textbf{RTCPeerConnection} object is the main object used by a web application in the browser.\\
+It encapsulates the creation of connections between peers\cite{ietf-rtcweb-jsep}, handles and parses SDP\footnotemark offers and answers, has an associated ICE agent to find and negotiate usable IP addresses and port numbers, and both receives remote media streams and sends local media streams using the peer connection.\par
+
+\footnotetext{SDP contains information how to initialize multimedia communication sessions, like IP addresses, media types or media codecs and was defined in \rfc{4566}}
+
+A media stream is requested in the browser using the \textbf{MediaStream API}\cite[section 10.2.1]{mediacapture-streams} and can afterwards be used in the RTCPeerConnection.\par
+
+Arbitrary non-media data is sent between peers using the TCP based \textbf{RTCDataChannel}\cite{ietf-rtcweb-data-channel}. It is used to send files, information about the quality of the stream or arbitrary messages.
+
+\subsection{Types of WebRTC-compatible devices}
+The current standard defines different types of WebRTC-compatible devices\cite[section 2.2]{ietf-rtcweb-overview}.\\
+The most important ones are:\par
+First a \textbf{WebRTC device}, it conforms to the protocol specifications, meaning it supports  the needed UDP based protocols for the peer connection and the TCP based ones for the the data channel, including encryption for both packet types using TLS and DTLS.\\
+
+A \textbf{WebRTC browser} is the second type, which is a WebRTC device that also supports the full ECMAScript API.\\
+
+The third is a \textbf{WebRTC gateway}, which is a WebRTC device that mediates media traffic to non-WebRTC devices and may not conform to all protocol specifications.\\
+
+A \textbf{WebRTC gateway} might be used to enable audio-only communication between a PSTN telephone and a WebRTC browser or one-way communication between a participant using a WebRTC browser and another device that only shows the first participants stream, but cannot send anything on its own.
+
+\subsection{Is it ready yet?}
+In February 2015, three browsers (Google Chrome, Mozilla Firefox and Opera) support real-time communication with WebRTC directly, and the mobile platforms Android and iOS are also supported.\par
+That way 60-80\% of desktop browsers\footnotemark
+are compatible, and also about 90\%\footnotemark of all smart phones could use WebRTC.\\
+
+Additionally, browser plug-ins exist for both Internet Explorer and Safari to support \mbox{WebRTC\footnotemark}. This increases the number of potentially WebRTC compatible desktop browsers to about 90\%.\par
+
+\footnotetext{Statistic gathered by StatCounter \\\url{http://gs.statcounter.com/\#desktop-browser-ww-monthly-201408-201501-bar} }
+\footnotetext{This statistic was gathered by IDC\cite{mobile-os-idc}}
+\footnotetext{One of those is developed by temasys \url{https://www.temasys.com.sg/solution/webrtc-plugin}}
+
+Microsoft is also planning to support WebRTC in its coming browser and is actively contributing to the ORTC\cite{ortc} specification\cite{ortc-api} and its implementation, which is based on the \mbox{WebRTC 1.0} specification\cite{webrtc-1.0} with some minor changes\footnotemark and maintained by the \emph{W3C Object-RTC API Community Group}.
+
+\footnotetext{Differences between WebRTC and ORTC include exchanging the text-based SDP for a JavaScript Object Model, and access to lower level functions of the media stream transmission.\cite{ortc-api}.}
+
+
+\subsection{More information}
+Currently, two standards organizations collaborate to develop WebRTC:\par
+The browser API\cite{webrtc-1.0} is defined by the \emph{W3C WebRTC Working Group} and contains the expected behavior and functions a WebRTC compatible browser needs to implement.\par
+The \emph{IETF RTCWEB Work Group} defines the protocols used for the transmission of content, how connection management is initialized and security considerations\cite{ietf-rtcweb-overview}.\\
+
+%Further information about the WebRTC specifications and the different documents written by the IETF and W3C workgroups is located in the appendix on page~\pageref{chap:webrtc-documents}.
+
+
+\end{document}

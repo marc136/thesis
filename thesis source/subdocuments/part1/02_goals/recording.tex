@@ -1,0 +1,94 @@
+\documentclass[../../../thesis.tex]{subfiles}
+%set currfolder to allow main file to compile and also this file to compile (\def does not work due to expansion issues)
+\ifcurrfiledir{}{\edef\currfolder{.}}{\edef\currfolder{\currfiledir}}
+\begin{document}
+
+\comment
+Record conversations
+Three possible setups, that do not change the specifics of the record mechanism
+	- A Media Server is used (2 possibilities)
+		- Media Server connects to the conversation as a participant
+			+ MS is just another  participant
+			- one more connection for all participants to handle
+		- All media streams are sent over the MS (MS acts as a Hub)
+			+ no direct connection between participants needed -> only one upload for participant
+			- high load
+	- A user records the conversation
+		+ already receives all streams
+		- high processing power needed
+	- A turn server is used
+		- needs to break tls
+		- needs to decrypt media streams
+
+Record mechanism
+	- Record each participant stream
+		Pipe each received stream to file
+		(recording might also occur on the participant side and afterwards uploaded to a media server instance)
+			
+	- Record conference
+		- If each participant was saved
+			- Transcode into mkv with multiple video tracks afterwards
+			- Or mix video using aditional info
+				which track was shown at which time
+			- Or transcode video-wall-like
+		- If video was already mixed
+
+Save (highest quality) outgoing stream to file
+\endcomment
+
+
+\section{Recording conferences}
+In order to fulfill the goal of recording conferences two questions need consideration first: Where a recording is created, and how a recording is created.
+
+\subsection{Where to record conferences}
+To record a conference, three possible setup variants are possible, that do not change the specifics of the record mechanism.
+
+\subsubsection{A user records the conference}
+The simplest option would be to record a conversation on the client side. As each client already receives every participant's media stream in order to display it, the same videos that are displayed to the client might be recorded to the client's file system.\par
+Unfortunately, this would need a high amount of processing power on the client's side, that just might not exist on a mobile handset device or slow down another crucial application running on the clients computer.\par
+Also, it would complicate the distribution of the recorded conference, because each participant would need to request the specific file from the recording client or record the conference himself.
+
+\subsubsection{A dedicated client records the conference}
+A client connects to the conference without sending any data, but only receives the data sent by other participants.\par
+This would limit the amount of processing power needed on the recording device as it does not need to record, encode and transmit its own media stream, but only receives streams.\par
+Unfortunately it would also increase the number of connections needed to make the conference work as it increases the participant count by one.\par
+This client could be either another device one of the participants owns, or it might be a computer program on a server, which would also be able to distribute the recorded conference after it was ended.
+
+\subsubsection{A central entity records the conference}
+If each participant would send his stream to a central entity, that entity might be used to record the conference.\par
+The central entity could act like another participant, which would be just like option two, or it could be used to implement a centralized architecture.\\
+
+\noindent Two different types of devices may be used for this:\par
+The first would be a \textbf{TURN server} because it might already be needed for some networks to create a connection\footnotemark, but it needs to be able to break the TLS encryption of the communication in order to decode the media stream and save it.\par
+Or a \textbf{media server} might be used that additionally needs to support the WebRTC protocols and the two mandatory codecs VP8 and MP4.
+
+\footnotetext{A TURN server is needed in some NAT environments, as described in section~\ref{sec:ice} on page~\pageref{sec:turn}.}
+
+\subsection{Record mechanism}
+
+\comment
+	- Record each participant stream
+		Pipe each received stream to file
+		(recording might also occur on the participant side and afterwards uploaded to a media server instance)
+			
+	- Record conference
+		- If each participant was saved
+			- Transcode into mkv with multiple video tracks afterwards
+			- Or mix video using aditional info
+				which track was shown at which time
+			- Or transcode video-wall-like
+		- If video was already mixed
+\endcomment
+
+
+How to record a conference boils down to two possible actions:\par
+First, each participant's stream is saved directly to a file. This might also be done on a clients side, and the recorded file could be uploaded to a media server or just distributed to all other participants afterwards.\par
+The second option would be to record all participants in the conversation. In that case still each participant might be recorded separately and mixed together into one video file. Either as multiple tracks in one video\footnote{For example the matroska file format\cite{mkv-container} allows multiple tracks.}, or mixed into one video that shows for instance all videos next to each other like a video wall or another setup that shows for instance the current speaker and maybe the last few speakers, too. Some examples are depicted in figure~\ref{fig:video-wall}\\
+
+\img{video-wall}{Exemplary video wall configurations}
+
+If a custom video player tool is used, the information which participant is speaking at the moment might be saved and the tool can use either multiple files or the file with multiple streams to display the most active/important speaker correctly.\\
+
+
+
+\end{document}

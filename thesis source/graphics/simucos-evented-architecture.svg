@@ -1,0 +1,1194 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   width="954"
+   height="612"
+   id="svg2"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="simucos-evented-architecture.svg">
+  <metadata
+     id="metadata456">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1280"
+     inkscape:window-height="1001"
+     id="namedview454"
+     showgrid="false"
+     inkscape:zoom="0.70380053"
+     inkscape:cx="397.16533"
+     inkscape:cy="477.58422"
+     inkscape:window-x="-8"
+     inkscape:window-y="48"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g6"
+     fit-margin-top="1"
+     fit-margin-left="1"
+     fit-margin-right="1"
+     fit-margin-bottom="0" />
+  <defs
+     id="defs4" />
+  <g
+     id="g6"
+     transform="translate(-18,-26.5)">
+    <g
+       transform="translate(80,75.5)"
+       id="g12">
+      <image
+         width="104"
+         height="199"
+         preserveAspectRatio="none"
+         xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGgAAADHCAYAAAD1VhaaAAADDElEQVR4nO3YsU4UQRyAcUJDwxNoa/B2FisKn8ACWjNzWtHc/ReJUFpvYUdHfACfwPLewhfAwoTe2sKEs4AzJHIKJma/3f1+yfT/2S+TuZuNDUmSNHqpRJtKtF3PoTVSiWUqsex6Dq1hIDgDwRkIzkBwBoIzEJyB4AwEZyA4A8EZCM5AcAaCMxCcgeAMBGcgOAPBGQjOQHAGgjMQnIHgDARnIDgDwRkIzkBwBoIzEJyB4AwEZyA4A8EZCM5AcAaCMxCcgeAMBGcgOAPBGQjOQHAGgjMQnIHgDARnIDgDwRkIzkBwBoIzEJyB4AwEZyA4A8EZCM5AcAaCMxCcgeAMBGcgOAPBGQjOQHAGgjMQnIHgDARnIDgDwRkIzkBwBoIzEJyB4AwEZyA4A8EZCM5AcAaCMxCcgeAMBGcgOAPBGQjOQHAGgjMQnIHgDARnIDgDwRkIzkBwBoIzEJyB4AwEZyA4A8EZCM5AcAaCMxCcgeAMBGcgOAPBGQjOQHAGgjMQnIHgDARnIDgDwRkIzkBwBoIzEJyB4AwEZyA4A8EZCM5AcAaCMxCcgeAMBGcgOAPBGQjOQHAGgjMQnIHgDARnIDgDwRkIzkBwBoIzEJyB4AwEZyCytt00ENhkOt+5DjT/0vUsukNVmoNUYplyLLqe5Z9UuXmxO51VXc/xv6QSpzcn6LzrWR4kvYzndWk+pRLLgQf6fHMHnXY9y73sTmdVVeLj6uIccqBJnu2t9jjJb/a6nuePdvLR41Tm57fDDD1QyrG43mNz1vUsa9X5eLuexvtUmh93xRlioCf7J1upzM9u9nf5ZP9kq+uZ7lSVeJdKfFsXZnCB2nazLnGYSlyu9laXOOx6rN+k0hylEl//Fma1qhIfUom2n6s5TzkWaRoXqcTVr33lWEzyjHXv1Ncf+vt9wwxwXaUcF8hTc1sq8xGdoDitSnMwmc53Ntp2s+tv/yCju4P6qM7H23Ue16+4Xnr66u2jsf0P6qVnr2MylpeEXhvLW1zvVXk26NdsSZIkSZIkSZIkSZIkSX3xE5KxQPGS+ZkGAAAAAElFTkSuQmCC"
+         id="image14" />
+    </g>
+    <g
+       transform="translate(128.5,144.23225)"
+       id="g16">
+      <g
+         id="g18">
+        <rect
+           x="-3.5"
+           y="-3"
+           width="110"
+           height="18"
+           id="rect20"
+           style="fill:#ffffff;stroke:none" />
+      </g>
+      <text
+         font-size="12px"
+         font-style="normal"
+         font-weight="normal"
+         text-decoration="none"
+         x="-1.5"
+         y="11"
+         id="text22"
+         style="font-style:normal;font-weight:normal;font-size:12px;font-family:Arial;text-decoration:none;text-decoration-line:none;fill:#000000;stroke:none">listen to messages</text>
+    </g>
+    <g
+       transform="translate(340,40)"
+       id="g24">
+      <g
+         id="g26">
+        <g
+           transform="scale(1.7,0.375)"
+           id="g28">
+          <g
+             id="g30">
+            <path
+               d="m 0,0 100,0 q 0,0 0,0 l 0,100 q 0,0 0,0 L 0,100 q 0,0 0,0 L 0,0 q 0,0 0,0 z"
+               id="path32"
+               inkscape:connector-curvature="0"
+               style="fill:#4b8598;stroke:none" />
+            <g
+               transform="scale(0.58823529,2.6666667)"
+               id="g34">
+              <path
+                 d="m 0,0 170,0 q 0,0 0,0 l 0,37.5 q 0,0 0,0 l -170,0 q 0,0 0,0 L 0,0 q 0,0 0,0 z"
+                 id="path36"
+                 inkscape:connector-curvature="0"
+                 style="fill:none;stroke:none" />
+              <path
+                 d="m 0,0 m 0,0 170,0 q 0,0 0,0 l 0,37.5 q 0,0 0,0 l -170,0 q 0,0 0,0 L 0,0 q 0,0 0,0 z"
+                 stroke-miterlimit="10"
+                 id="path38"
+                 inkscape:connector-curvature="0"
+                 style="fill:none;stroke:#2a5666;stroke-width:2;stroke-miterlimit:10" />
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g
+       transform="translate(351.4,44.75)"
+       id="g40">
+      <text
+         font-size="12px"
+         font-style="normal"
+         font-weight="normal"
+         text-decoration="none"
+         x="15.1"
+         y="11"
+         id="text42"
+         style="font-style:normal;font-weight:normal;font-size:12px;font-family:Arial;text-decoration:none;text-decoration-line:none;fill:#ffffff;stroke:none">a</text>
+      <text
+         font-size="12px"
+         font-style="normal"
+         font-weight="normal"
+         text-decoration="none"
+         x="22.1"
+         y="11"
+         id="text44"
+         style="font-style:normal;font-weight:normal;font-size:12px;font-family:Arial;text-decoration:none;text-decoration-line:none;fill:#ffffff;stroke:none">ppend sessionId (=</text>
+      <text
+         font-size="12px"
+         font-style="normal"
+         font-weight="normal"
+         text-decoration="none"
+         x="12.6"
+         y="25"
+         id="text46"
+         style="font-style:normal;font-weight:normal;font-size:12px;font-family:Arial;text-decoration:none;text-decoration-line:none;fill:#ffffff;stroke:none">socket id) to message</text>
+    </g>
+    <g
+       transform="translate(340,140)"
+       id="g48">
+      <g
+         id="g50">
+        <g
+           transform="scale(1.7,0.375)"
+           id="g52">
+          <g
+             id="g54">
+            <path
+               d="m 0,0 100,0 q 0,0 0,0 l 0,100 q 0,0 0,0 L 0,100 q 0,0 0,0 L 0,0 q 0,0 0,0 z"
+               id="path56"
+               inkscape:connector-curvature="0"
+               style="fill:#4b8598;stroke:none" />
+            <g
+               transform="scale(0.58823529,2.6666667)"
+               id="g58">
+              <path
+                 d="m 0,0 170,0 q 0,0 0,0 l 0,37.5 q 0,0 0,0 l -170,0 q 0,0 0,0 L 0,0 q 0,0 0,0 z"
+                 id="path60"
+                 inkscape:connector-curvature="0"
+                 style="fill:none;stroke:none" />
+              <path
+                 d="m 0,0 m 0,0 170,0 q 0,0 0,0 l 0,37.5 q 0,0 0,0 l -170,0 q 0,0 0,0 L 0,0 q 0,0 0,0 z"
+                 stroke-miterlimit="10"
+                 id="path62"
+                 inkscape:connector-curvature="0"
+                 style="fill:none;stroke:#2a5666;stroke-width:2;stroke-miterlimit:10" />
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g
+       transform="translate(351.4,151.75)"
+       id="g64">
+      <text
+         font-size="12px"
+         font-style="normal"
+         font-weight="normal"
+         text-decoration="none"
+         x="4.5999999"
+         y="11"
+         id="text66"
+         style="font-style:normal;font-weight:normal;font-size:12px;font-family:Arial;text-decoration:none;text-decoration-line:none;fill:#ffffff;stroke:none">received_message event</text>
+    </g>
+    <g
+       transform="translate(395,73)"
+       id="g68">
+      <image
+         width="60"
+         height="97"
+         preserveAspectRatio="none"
+         xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAABhCAYAAACK7MJbAAABQElEQVR4nO3WvW0CQRCGYRIqoAI74nb9J5HThHWzGRIWNxsQUAESORVQARXQCxVQATmOsByAOeC4kcbvI222wfcmq+10AOBKQXQRRBfWO1oTRA9B9GC9ozUEe0ewdwR7R7B3BHtHsHcEe0ewdwR7R7B3BHtHsHcEe0ewdwR7R7B3BHtHsHcEe0ewdwR7R7B3BHvnMvglTYpz5xj81x3r/TcJkjfHuPonb6x336yQPLw2uJA8tN59lyi6rhsbRdfWe+8Wy+qjdnDK79Z7GxGSri4GJ11Z72zM6+fX86Xgt3LyZL2zUUHy8nxwtbTe17j+aNoLovsTwfv+aNqz3vcQUXR+4mWeW+96mIFqN4jufgXvBqpd610PVZTV7OeTUVYz6z2tiKLbKLq13tGakPI4pDy23gEAAAAAAAAAAADgP/sG6vuIuxeM3xwAAAAASUVORK5CYII="
+         id="image70" />
+    </g>
+    <g
+       transform="translate(409.5,93.227273)"
+       id="g72">
+      <g
+         id="g74">
+        <rect
+           x="-0.5"
+           y="-3"
+           width="32"
+           height="18"
+           id="rect76"
+           style="fill:#ffffff;stroke:none" />
+      </g>
+      <text
+         font-size="12px"
+         font-style="normal"
+         font-weight="normal"
+         text-decoration="none"
+         x="1.5"
+         y="11"
+         id="text78"
+         style="font-style:normal;font-weight:normal;font-size:12px;font-family:Arial;text-decoration:none;text-decoration-line:none;fill:#332714;stroke:none">raise</text>
+    </g>
+    <g
+       transform="translate(260.48958,28.75)"
+       id="g80">
+      <image
+         width="109"
+         height="60"
+         preserveAspectRatio="none"
+         xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAG0AAAA8CAYAAABsKjQEAAAA6UlEQVR4nO3ZwUnEQAAF0AErsAlxJ3qzAm1AwcmIB2+ZKNiBFyvxtjcrsAIr2Aq2Dz2oECGuEYQh5D349w8fwmQmBAAAAAAAAAAAAPg3x9d3+7U78Ecxl/UqlYeQ0l7tLkwUc1nHtrw1bdk2udzX7sMEX6MNsmlyf1O7FzuMjPaRVF5XbTmv3Y8RP472mabtXpp0e1q7JwO/jTbI89FVf1K77zexLY8Tyy89T4e5O6i9VwjBaLMcbalm/XlcqikHkXjZn9XuycDOI3/qLmr3Y4Sf6xlyjTVDLoxnyNMMAAAAAAAAAADA0rwDphqw8S4YpBsAAAAASUVORK5CYII="
+         id="image82" />
+    </g>
+    <g
+       transform="translate(479.99132,127.5)"
+       id="g84">
+      <image
+         width="124"
+         height="60"
+         preserveAspectRatio="none"
+         xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHwAAAA8CAYAAACkRt7SAAAA4klEQVR4nO3Zv0lEMRzA8SA4gRNo5Uv8B/YuIS+vE5R7SWHhBML1N4ETOIG7OIET2J+FHIigiIWHyecD6QNfCMkvIQAAAAAAAAAAAAAAHxxNi2Hbe+APDLlexFyfBG9cGuezlMtjzGUdc1kL3qjjy5uDOJWHTWjBG3V4dbsXc119Di14Y85L2U253MdcXr+KLXgjhnG+i7m8fBda8AbEqV6nXJ5/Etr6/QrL5c62W4cQBO8u+IYjvUMubZ16f5bNnmW9ORkX+wYvHUpTPTVa7ZDPk04JDgAAAAAAAAAAAAD/wRtus/ILKkMX6AAAAABJRU5ErkJggg=="
+         id="image86" />
+    </g>
+    <g
+       transform="translate(531.99566,150.5)"
+       id="g88">
+      <g
+         id="g90">
+        <rect
+           x="-0.5"
+           y="-3"
+           width="47"
+           height="18"
+           id="rect92"
+           style="fill:#ffffff;stroke:none" />
+      </g>
+      <text
+         font-size="12px"
+         font-style="normal"
+         font-weight="normal"
+         text-decoration="none"
+         x="1.5"
+         y="11"
+         id="text94"
+         style="font-style:normal;font-weight:normal;font-size:12px;font-family:Arial;text-decoration:none;text-decoration-line:none;fill:#332714;stroke:none">listen to</text>
+    </g>
+    <g
+       transform="translate(600,137.5)"
+       id="g96">
+      <g
+         id="g98">
+        <g
+           transform="scale(1.2,0.4)"
+           id="g100">
+          <g
+             id="g102">
+            <path
+               d="m 0,0 100,0 q 0,0 0,0 l 0,100 q 0,0 0,0 L 0,100 q 0,0 0,0 L 0,0 q 0,0 0,0 z"
+               id="path104"
+               inkscape:connector-curvature="0"
+               style="fill:#e69138;stroke:none" />
+            <g
+               transform="scale(0.83333333,2.5)"
+               id="g106">
+              <path
+                 d="m 0,0 120,0 q 0,0 0,0 l 0,40 q 0,0 0,0 L 0,40 q 0,0 0,0 L 0,0 q 0,0 0,0 z"
+                 id="path108"
+                 inkscape:connector-curvature="0"
+                 style="fill:none;stroke:none" />
+              <path
+                 d="m 0,0 m 0,0 120,0 q 0,0 0,0 l 0,40 q 0,0 0,0 L 0,40 q 0,0 0,0 L 0,0 q 0,0 0,0 z"
+                 stroke-miterlimit="10"
+                 id="path110"
+                 inkscape:connector-curvature="0"
+                 style="fill:none;stroke:#b45f06;stroke-width:2;stroke-miterlimit:10" />
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g
+       transform="translate(610.4,149.5)"
+       id="g112">
+      <text
+         font-size="12px"
+         font-style="normal"
+         font-weight="normal"
+         text-decoration="none"
+         x="3.0999999"
+         y="11"
+         id="text114"
+         style="font-style:normal;font-weight:normal;font-size:12px;font-family:Arial;text-decoration:none;text-decoration-line:none;fill:#000000;stroke:none">commandVerifier</text>
+    </g>
+    <g
+       transform="translate(610,240)"
+       id="g116">
+      <g
+         id="g118">
+        <g
+           id="g120">
+          <g
+             id="g122">
+            <g
+               id="g124">
+              <path
+                 d="M 50,0 100,50 50,100 0,50 50,0 Z"
+                 id="path126"
+                 inkscape:connector-curvature="0"
+                 style="fill:#9d3100;stroke:none" />
+              <path
+                 d="M 50,0 M 50,0 100,50 50,100 0,50 50,0 Z"
+                 stroke-miterlimit="10"
+                 id="path128"
+                 inkscape:connector-curvature="0"
+                 style="fill:none;stroke:#6f1c03;stroke-width:2;stroke-miterlimit:10" />
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g
+       transform="translate(620,276)"
+       id="g130">
+      <text
+         font-size="12px"
+         font-style="normal"
+         font-weight="normal"
+         text-decoration="none"
+         x="5.5"
+         y="11"
+         id="text132"
+         style="font-style:normal;font-weight:normal;font-size:12px;font-family:Arial;text-decoration:none;text-decoration-line:none;fill:#ffffff;stroke:none">message is</text>
+      <text
+         font-size="12px"
+         font-style="normal"
+         font-weight="normal"
+         text-decoration="none"
+         x="27.5"
+         y="25"
+         id="text134"
+         style="font-style:normal;font-weight:normal;font-size:12px;font-family:Arial;text-decoration:none;text-decoration-line:none;fill:#ffffff;stroke:none">valid</text>
+    </g>
+    <g
+       id="g4354">
+      <g
+         id="g136"
+         transform="translate(800,271.25)">
+        <g
+           id="g138">
+          <g
+             id="g140"
+             transform="scale(1.7,0.375)">
+            <g
+               id="g142">
+              <path
+                 style="fill:#4b8598;stroke:none"
+                 inkscape:connector-curvature="0"
+                 id="path144"
+                 d="m 0,0 100,0 q 0,0 0,0 l 0,100 q 0,0 0,0 L 0,100 q 0,0 0,0 L 0,0 q 0,0 0,0 z" />
+              <g
+                 id="g146"
+                 transform="scale(0.58823529,2.6666667)">
+                <path
+                   style="fill:none;stroke:none"
+                   inkscape:connector-curvature="0"
+                   id="path148"
+                   d="m 0,0 170,0 q 0,0 0,0 l 0,37.5 q 0,0 0,0 l -170,0 q 0,0 0,0 L 0,0 q 0,0 0,0 z" />
+                <path
+                   style="fill:none;stroke:#2a5666;stroke-width:2;stroke-miterlimit:10"
+                   inkscape:connector-curvature="0"
+                   id="path150"
+                   stroke-miterlimit="10"
+                   d="m 0,0 m 0,0 170,0 q 0,0 0,0 l 0,37.5 q 0,0 0,0 l -170,0 q 0,0 0,0 L 0,0 q 0,0 0,0 z" />
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+      <g
+         id="g152"
+         transform="translate(811.4,283)">
+        <text
+           style="font-style:normal;font-weight:normal;font-size:12px;font-family:Arial;text-decoration:none;text-decoration-line:none;fill:#ffffff;stroke:none"
+           id="text154"
+           y="11"
+           x="2.5999999"
+           text-decoration="none"
+           font-weight="normal"
+           font-style="normal"
+           font-size="12px">accepted_message event</text>
+      </g>
+    </g>
+    <g
+       transform="translate(340,271.25)"
+       id="g156">
+      <g
+         id="g158">
+        <g
+           transform="scale(1.7,0.375)"
+           id="g160">
+          <g
+             id="g162">
+            <path
+               d="m 0,0 100,0 q 0,0 0,0 l 0,100 q 0,0 0,0 L 0,100 q 0,0 0,0 L 0,0 q 0,0 0,0 z"
+               id="path164"
+               inkscape:connector-curvature="0"
+               style="fill:#4b8598;stroke:none" />
+            <g
+               transform="scale(0.58823529,2.6666667)"
+               id="g166">
+              <path
+                 d="m 0,0 170,0 q 0,0 0,0 l 0,37.5 q 0,0 0,0 l -170,0 q 0,0 0,0 L 0,0 q 0,0 0,0 z"
+                 id="path168"
+                 inkscape:connector-curvature="0"
+                 style="fill:none;stroke:none" />
+              <path
+                 d="m 0,0 m 0,0 170,0 q 0,0 0,0 l 0,37.5 q 0,0 0,0 l -170,0 q 0,0 0,0 L 0,0 q 0,0 0,0 z"
+                 stroke-miterlimit="10"
+                 id="path170"
+                 inkscape:connector-curvature="0"
+                 style="fill:none;stroke:#2a5666;stroke-width:2;stroke-miterlimit:10" />
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g
+       transform="translate(351.4,283)"
+       id="g172">
+      <text
+         font-size="12px"
+         font-style="normal"
+         font-weight="normal"
+         text-decoration="none"
+         x="5.5999999"
+         y="11"
+         id="text174"
+         style="font-style:normal;font-weight:normal;font-size:12px;font-family:Arial;text-decoration:none;text-decoration-line:none;fill:#ffffff;stroke:none">rejected_message event</text>
+    </g>
+    <g
+       transform="translate(705.5,260)"
+       id="g176">
+      <image
+         width="124"
+         height="60"
+         preserveAspectRatio="none"
+         xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHwAAAA8CAYAAACkRt7SAAAA8UlEQVR4nO3ZwUkDQQAF0MEKbEJwdy+CFViBXnYWBMGDmTlYgZ62EL2LFWgFVmAFFqIHE4lgiJFkx2Tfg3//8GHYnQkBAAAAAAAAAAAAANgCR2eX+6U7MKCmSw91zDeh7/dKd2EAn4On9zqmtyam69J92LC5wWd5rdrJRelebMgPg08zeam7fFq6H2u2ePBZ8lMT00npnqzJ8sG/8njYXh2X7vtNHVP/y/LyxzRdvqvO80HprUMIBh8o9/9mcFa31Uc6q1s2eNWmZx9tO2Tx4Nlv2S5y8TIyrlZHZjr4rceTkfA8CgAAAAAAAAAAAADzPgCT5upYIgN6RwAAAABJRU5ErkJggg=="
+         id="image178" />
+    </g>
+    <g
+       transform="translate(743.5,283)"
+       id="g180">
+      <g
+         id="g182">
+        <rect
+           x="0"
+           y="-3"
+           width="23"
+           height="18"
+           id="rect184"
+           style="fill:#ffffff;stroke:none" />
+      </g>
+      <text
+         font-size="12px"
+         font-style="normal"
+         font-weight="normal"
+         text-decoration="none"
+         x="2"
+         y="11"
+         id="text186"
+         style="font-style:normal;font-weight:normal;font-size:12px;font-family:Arial;text-decoration:none;text-decoration-line:none;fill:#332714;stroke:none">yes</text>
+    </g>
+    <g
+       transform="translate(480,260)"
+       id="g188">
+      <image
+         width="134"
+         height="60"
+         preserveAspectRatio="none"
+         xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIYAAAA8CAYAAACjKMKCAAAA5UlEQVR4nO3ZvUkEQRiA4UmswAo0cmf8A3ObOHY2E5TbmcDACqzACqzACuzlKrAC8zMQDdRdRJA9mOeBL5/ghfkLAQAAAAAAAAAAAAAAFnE8rLul18AO6XK9jLk+C4MQQgipH89TLk8xl23MZSuMxp2sbg7jUB4/ghBG446ubvdjrg9fgxBGoy5K2Uu53MdcXqeiEEZjun68i7m8zAUhjIbEoV6nXDa/CcL8/yzdwydh7NYs3cM3thImOXwy6/26Orqu8rPTfn3ggYtJaahnnsSZ5BONWcIAAAAAAAAAAAAAAIC/eAOK1BX6x5DFeAAAAABJRU5ErkJggg=="
+         id="image190" />
+    </g>
+    <g
+       transform="translate(539.64476,283)"
+       id="g192">
+      <g
+         id="g194">
+        <rect
+           x="0"
+           y="-3"
+           width="18"
+           height="18"
+           id="rect196"
+           style="fill:#ffffff;stroke:none" />
+      </g>
+      <text
+         font-size="12px"
+         font-style="normal"
+         font-weight="normal"
+         text-decoration="none"
+         x="2"
+         y="11"
+         id="text198"
+         style="font-style:normal;font-weight:normal;font-size:12px;font-family:Arial;text-decoration:none;text-decoration-line:none;fill:#332714;stroke:none">no</text>
+    </g>
+    <g
+       transform="translate(655.5,173)"
+       id="g200">
+      <g
+         id="g202">
+        <g
+           transform="translate(-655.5,-173)"
+           id="g204">
+          <g
+             id="g206">
+            <path
+               d="m 660,177.5 0,10.83333 q 0,10 0,20 l 0,0.83334 q 0,10 0,20 L 660,240"
+               stroke-miterlimit="10"
+               id="path208"
+               inkscape:connector-curvature="0"
+               style="fill:none;stroke:#2a5666;stroke-width:2;stroke-miterlimit:10" />
+          </g>
+        </g>
+      </g>
+    </g>
+    <g
+       transform="translate(616.5,201.75)"
+       id="g210">
+      <g
+         id="g212">
+        <rect
+           x="-2.5"
+           y="-3"
+           width="92"
+           height="18"
+           id="rect214"
+           style="fill:#ffffff;stroke:none" />
+      </g>
+      <text
+         font-size="12px"
+         font-style="normal"
+         font-weight="normal"
+         text-decoration="none"
+         x="-0.5"
+         y="11"
+         id="text216"
+         style="font-style:normal;font-weight:normal;font-size:12px;font-family:Arial;text-decoration:none;text-decoration-line:none;fill:#332714;stroke:none">check message</text>
+    </g>
+    <g
+       transform="translate(95,420)"
+       id="g218">
+      <g
+         id="g220">
+        <g
+           transform="scale(1.7,0.4)"
+           id="g222">
+          <g
+             id="g224">
+            <path
+               d="m 0,0 100,0 q 0,0 0,0 l 0,100 q 0,0 0,0 L 0,100 q 0,0 0,0 L 0,0 q 0,0 0,0 z"
+               id="path226"
+               inkscape:connector-curvature="0"
+               style="fill:#e69138;stroke:none" />
+            <g
+               transform="scale(0.58823529,2.5)"
+               id="g228">
+              <path
+                 d="m 0,0 170,0 q 0,0 0,0 l 0,40 q 0,0 0,0 L 0,40 q 0,0 0,0 L 0,0 q 0,0 0,0 z"
+                 id="path230"
+                 inkscape:connector-curvature="0"
+                 style="fill:none;stroke:none" />
+              <path
+                 d="m 0,0 m 0,0 170,0 q 0,0 0,0 l 0,40 q 0,0 0,0 L 0,40 q 0,0 0,0 L 0,0 q 0,0 0,0 z"
+                 stroke-miterlimit="10"
+                 id="path232"
+                 inkscape:connector-curvature="0"
+                 style="fill:none;stroke:#b45f06;stroke-width:2;stroke-miterlimit:10" />
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g
+       transform="translate(106.4,433)"
+       id="g234">
+      <text
+         font-size="12px"
+         font-style="normal"
+         font-weight="normal"
+         text-decoration="none"
+         x="22.1"
+         y="11"
+         id="text236"
+         style="font-style:normal;font-weight:normal;font-size:12px;font-family:Arial;text-decoration:none;text-decoration-line:none;fill:#000000;stroke:none">w</text>
+      <text
+         font-size="12px"
+         font-style="normal"
+         font-weight="normal"
+         text-decoration="none"
+         x="31.1"
+         y="11"
+         id="text238"
+         style="font-style:normal;font-weight:normal;font-size:12px;font-family:Arial;text-decoration:none;text-decoration-line:none;fill:#000000;stroke:none">ebsocketHandler</text>
+    </g>
+    <g
+       transform="translate(260.5,278.75)"
+       id="g240">
+      <image
+         width="194"
+         height="165"
+         preserveAspectRatio="none"
+         xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMIAAAClCAYAAAAOECLTAAADRUlEQVR4nO3Zv65c1R2G4beHKwhKm3jvcaCkQzRcgT1rSOHunDXGSk1aCipEhZyeG4hvgXAJVJQUSUuJUlBMCtvICY4F0jleUvI80q+b4iv2O/v8KQAAAAAAAAAAAAAAAAAAAAAAAAAAAAD+9x3GfLx6Ayy3j/nP1RtgqX1cP9zHvOzj/HD1FlhmH/O7pyHM71ZvgSW2MT9+FsFlH/Oyjfnx6k3wWh2Oj97cx/z+xRD2Mb8/HB+9uXobvDaH4/z0PyK47GNeDqf56ept8Fr8/sM//WYf5x9fFsI+zj/+7vjwrdUb4dbt4/qLl0fw/K6/WL0RbtUf/jjvvDqCp3f3dLWt3gq3Zhvzy18Swjbml6u3wq3Y7813f0kEP929+e7qzXDjDuP85NeEcBjnJ6s3w43ajlcf/Kq3wfMfkY7nD1Zvhxtz93S1vey2MR8/+53g8X/7zOrtcOv2MT959u3/yeotsIwQICFAJQSohACVEKASAlRCgEoIUAkBKiFAJQSohACVEKASAlRCgEoIUAkBKiFAJQSohACVEKASAlRCgEoIUAkBKiFAJQSohACVEKASAlRCgEoIUAkBKiFAJQSohACVEKASAlRCgEoIUAkBKiFAJQSohACVEKASAlRCgEoIUAkBKiFAJQSohACVEKASAlRCgEoIUAkBKiFAJQSohACVEKASAlRCgEoIUAkBKiFAJQSohACVEKASAlRCgEoIUAkBKiFAJQSohACVEKASAlRCgEoIUAkBKiFAJQSohACVEKASAlRCgEoIUAkBKiFAJQSohACVEKASAlRCgEoIUAkBKiFAJQSohACVEKASAlRCgEoIUAkBKiFAVYfj/Gwf83IY5z+v3gLLHMb1k6chXN9bvQWW2U7zm33My+F0fmf1FlhmH/OHfczL2w8evLF6CyyxjfN7+5iX/Tj/vnoLLLOP+bW/GPF/bTvNj/YxL/tpfrt6Cyzxwv8OLofj+f7qPfBavP3gwRuH0/mdfczP99P89qcIxvkvq7f9mzv3r97fjtdfOXeTdxjzb9uY/3j+4L9wX2/j/N7q5/5nXnxVOXcL98N2mt9sx/nX7XT9aPXz/kp37l+979xN390PH/129bMNAK/2L9B4yjI0FfdZAAAAAElFTkSuQmCC"
+         id="image242" />
+    </g>
+    <g
+       transform="translate(385.74113,433)"
+       id="g244">
+      <g
+         id="g246">
+        <rect
+           x="-0.5"
+           y="-3"
+           width="47"
+           height="18"
+           id="rect248"
+           style="fill:#ffffff;stroke:none" />
+      </g>
+      <text
+         font-size="12px"
+         font-style="normal"
+         font-weight="normal"
+         text-decoration="none"
+         x="1.5"
+         y="11"
+         id="text250"
+         style="font-style:normal;font-weight:normal;font-size:12px;font-family:Arial;text-decoration:none;text-decoration-line:none;fill:#332714;stroke:none">listen to</text>
+    </g>
+    <g
+       transform="translate(80,215)"
+       id="g252">
+      <image
+         width="104"
+         height="209"
+         preserveAspectRatio="none"
+         xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGgAAADRCAYAAAAg2fccAAAC9UlEQVR4nO3YPYoUURRA4UmMDZwNOMFgv/IPBDEyN5a+xUgjOHTdJxiYaChM7grMFAZcgXtQmAW4AjMzA7M2aAtBu1ud5B2mzgeV3+JQVbfe3p4kSZIkSZIkSZIkSZIkndv1fjlrPYM2mEW9X6J+MBBMNx9ud5HvS+SqRK4MBHHj4fFB6fPNGMZAENceP7tSor7+PYyBGruTeamLfFUiv22LY6BGZvPheYn8siuMgRoofX3SRX7+lzAX5Ppa+vxYop6WyJMSddG6wU4TDPTH1UU9K/3woHWLnabyijs8yv1Zv7xXoi5K5EkX9Wy8r1kM7w7mebn1jFtNdUkoUV+UyO/rSPm29Tx/tV6zh0mt2d2jp3fHSPjX3ejmfHl1Sj+qs3m+HL9JrWf5L11fb03lqOfXNwm+3W0yhcPS9eqdqxJ50nqWc7vYgeri5xN02noWbbBewXNVYvjUehZtcHiU++OJQ+tZtMW4DLWeQ1sYCM5AcAaCMxCcgeAMBGcgOAPBGQjOQHAGgjMQnIHgDARnIDgDwRkIzkBwBoIzEJyB4AwEZyA4A8EZCM5AcAaCMxCcgeAMBGcgOAPBGQjOQHAGgjMQnIHgDARnIDgDwRkIzkBwBoIzEJyB4AwEZyA4A8EZCM5AcAaCMxCcgeAMBGcgOAPBGQjOQHAGgjMQnIHgDARnIDgDwRkIzkBwBoIzEJyB4AwEZyA4A8EZCM5AcAaCMxCcgeAMBGcgOAPBGQjOQHAGgjMQnIHgDARnIDgDwRkIzkBwBoIzEJyB4AwEZyA4A8EZCM5AcAaCMxCcgeAMBGcgOAPBGQjOQHAGgjMQnIHgDARnIDgDwRkIzkBwBoIzEJyB4AwEZyA4A8EZCM5AcAaCMxCcgeAMBGcgOAPBGQjOQHAGgjMQnIHgDARnIDgDwRkIzkBwBoIzEJyB4AwEZyA4A8EZCM5AcAaCMxCcgeAMBGcgOAPBGQjOQHAGgjMQnIHgDARnIDgDwRkIzkBwBoIzkCSJ5AdBbjnDgwFoHwAAAABJRU5ErkJggg=="
+         id="image254" />
+    </g>
+    <g
+       transform="translate(132.5,285.38387)"
+       id="g256">
+      <g
+         id="g258">
+        <rect
+           x="-4.5"
+           y="-3"
+           width="104"
+           height="16"
+           id="rect260"
+           style="fill:#ffffff;stroke:none" />
+      </g>
+      <text
+         font-size="12px"
+         font-style="normal"
+         font-weight="normal"
+         text-decoration="none"
+         x="-2.5"
+         y="11"
+         id="text262"
+         style="font-style:normal;font-weight:normal;font-size:12px;font-family:Arial;text-decoration:none;text-decoration-line:none;fill:#332714;stroke:none">send message to</text>
+      <g
+         id="g264">
+        <rect
+           x="10"
+           y="13"
+           width="80"
+           height="18"
+           id="rect266"
+           style="fill:#ffffff;stroke:none" />
+      </g>
+      <text
+         font-size="12px"
+         font-style="normal"
+         font-weight="normal"
+         text-decoration="none"
+         x="12"
+         y="25"
+         id="text268"
+         style="font-style:normal;font-weight:normal;font-size:12px;font-family:Arial;text-decoration:none;text-decoration-line:none;fill:#332714;stroke:none">correct socket</text>
+    </g>
+    <g
+       transform="translate(815,418.75)"
+       id="g270">
+      <g
+         id="g272">
+        <g
+           transform="scale(1.4,0.375)"
+           id="g274">
+          <g
+             id="g276">
+            <path
+               d="m 0,0 100,0 q 0,0 0,0 l 0,100 q 0,0 0,0 L 0,100 q 0,0 0,0 L 0,0 q 0,0 0,0 z"
+               id="path278"
+               inkscape:connector-curvature="0"
+               style="fill:#e69138;stroke:none" />
+            <g
+               transform="scale(0.71428571,2.6666667)"
+               id="g280">
+              <path
+                 d="m 0,0 140,0 q 0,0 0,0 l 0,37.5 q 0,0 0,0 l -140,0 q 0,0 0,0 L 0,0 q 0,0 0,0 z"
+                 id="path282"
+                 inkscape:connector-curvature="0"
+                 style="fill:none;stroke:none" />
+              <path
+                 d="m 0,0 m 0,0 140,0 q 0,0 0,0 l 0,37.5 q 0,0 0,0 l -140,0 q 0,0 0,0 L 0,0 q 0,0 0,0 z"
+                 stroke-miterlimit="10"
+                 id="path284"
+                 inkscape:connector-curvature="0"
+                 style="fill:none;stroke:#b45f06;stroke-width:2;stroke-miterlimit:10" />
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g
+       transform="translate(825.8,430.5)"
+       id="g286">
+      <text
+         font-size="12px"
+         font-style="normal"
+         font-weight="normal"
+         text-decoration="none"
+         x="28.200001"
+         y="11"
+         id="text288"
+         style="font-style:normal;font-weight:normal;font-size:12px;font-family:Arial;text-decoration:none;text-decoration-line:none;fill:#000000;stroke:none">serverState</text>
+    </g>
+    <g
+       transform="translate(855,278.75)"
+       id="g290">
+      <image
+         width="60"
+         height="144"
+         preserveAspectRatio="none"
+         xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAACQCAYAAABUIgjnAAABgUlEQVR4nO3WvW3CYBSF4TRMwARJhT/nT6JnicjXHRIRXBcUTMAETMAETMAuTMAE9E6ROIqiEAgYrnTyPtLtXJy3+eSbGwAAAAAAAAAAAAAIk8pqlMpqFL3janLzTW6+id5xFVkxmSXzOpnXWTGZRe+5qL57J5lvm+Bkvu27d6J3XUxuPv8SWyfzOjefR++6iN5w2k3mu+/ByXzXG0670ftal2yy+CH246pF9L5WPRbj2/2x7/fw8noXvbM1qfTloeBU+jJ6Zyvysno6GNs8YMXkOXrv2XLz1dHB5qvovWfJrBocG/v5M2LVIHr3yZJV678GJ6vW0btPcl+Os33XxP32TfT+VjXB0TuuhmB1BKsjWB3B6ghWR7A6gtURrI5gdQSrI1gdweoIVkewOoLVEayOYHUEqyNYHcHqCFZHsDqC1RGsjmB1BKsjWB3B6ghWR7A6gtURrI5gdQSrI1gdweoIVkewOoLVEayOYHUEqyNYHcHqCFZHsDqC1f27YACteQNsxzve2fuShgAAAABJRU5ErkJggg=="
+         id="image292" />
+    </g>
+    <g
+       transform="translate(862,356.75)"
+       id="g294">
+      <g
+         id="g296">
+        <rect
+           x="-0.5"
+           y="-3"
+           width="47"
+           height="18"
+           id="rect298"
+           style="fill:#ffffff;stroke:none" />
+      </g>
+      <text
+         font-size="12px"
+         font-style="normal"
+         font-weight="normal"
+         text-decoration="none"
+         x="1.5"
+         y="11"
+         id="text300"
+         style="font-style:normal;font-weight:normal;font-size:12px;font-family:Arial;text-decoration:none;text-decoration-line:none;fill:#332714;stroke:none">listen to</text>
+    </g>
+    <g
+       transform="translate(510,390)"
+       id="g302">
+      <g
+         id="g304">
+        <g
+           id="g306">
+          <g
+             id="g308">
+            <g
+               id="g310">
+              <path
+                 d="M 50,0 100,50 50,100 0,50 50,0 Z"
+                 id="path312"
+                 inkscape:connector-curvature="0"
+                 style="fill:#9d3100;stroke:none" />
+              <path
+                 d="M 50,0 M 50,0 100,50 50,100 0,50 50,0 Z"
+                 stroke-miterlimit="10"
+                 id="path314"
+                 inkscape:connector-curvature="0"
+                 style="fill:none;stroke:#6f1c03;stroke-width:2;stroke-miterlimit:10" />
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g
+       transform="translate(520,433)"
+       id="g316">
+      <text
+         font-size="12px"
+         font-style="normal"
+         font-weight="normal"
+         text-decoration="none"
+         x="16.5"
+         y="11"
+         id="text318"
+         style="font-style:normal;font-weight:normal;font-size:12px;font-family:Arial;text-decoration:none;text-decoration-line:none;fill:#ffffff;stroke:none">success</text>
+    </g>
+    <g
+       transform="translate(440,582.5)"
+       id="g320">
+      <g
+         id="g322">
+        <g
+           transform="scale(1.7,0.375)"
+           id="g324">
+          <g
+             id="g326">
+            <path
+               d="m 0,0 100,0 q 0,0 0,0 l 0,100 q 0,0 0,0 L 0,100 q 0,0 0,0 L 0,0 q 0,0 0,0 z"
+               id="path328"
+               inkscape:connector-curvature="0"
+               style="fill:#4b8598;stroke:none" />
+            <g
+               transform="scale(0.58823529,2.6666667)"
+               id="g330">
+              <path
+                 d="m 0,0 170,0 q 0,0 0,0 l 0,37.5 q 0,0 0,0 l -170,0 q 0,0 0,0 L 0,0 q 0,0 0,0 z"
+                 id="path332"
+                 inkscape:connector-curvature="0"
+                 style="fill:none;stroke:none" />
+              <path
+                 d="m 0,0 m 0,0 170,0 q 0,0 0,0 l 0,37.5 q 0,0 0,0 l -170,0 q 0,0 0,0 L 0,0 q 0,0 0,0 z"
+                 stroke-miterlimit="10"
+                 id="path334"
+                 inkscape:connector-curvature="0"
+                 style="fill:none;stroke:#2a5666;stroke-width:2;stroke-miterlimit:10" />
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g
+       transform="translate(451.4,594.25)"
+       id="g336">
+      <text
+         font-size="12px"
+         font-style="normal"
+         font-weight="normal"
+         text-decoration="none"
+         x="13.6"
+         y="11"
+         id="text338"
+         style="font-style:normal;font-weight:normal;font-size:12px;font-family:Arial;text-decoration:none;text-decoration-line:none;fill:#ffffff;stroke:none">send_message event</text>
+    </g>
+    <g
+       transform="translate(579.98476,407.5)"
+       id="g340">
+      <image
+         width="239"
+         height="60"
+         preserveAspectRatio="none"
+         xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAO8AAAA8CAYAAACO2u04AAABBUlEQVR4nO3bP0rEQBiH4RR6Ak+glZn4D+yXvYNk0gnK5kth4QkW7D2BJ9gTeBdP4AnsYyHbCIoLws7A88CvT/NCyEyaBgAAAAAAAAAAAAAAAAAAAAAAAAAA/sXZsGr3/QzADto8LVKeXsULlej68arLsUk55pRjFi8U7vzm/iQN8bKNVrxQuNPbh6OUp+fv0YoXCnUdcdjlWKccHz+FK14oTNuPjynH+2/RihcKkobprsvx9pdozSzm5fLpYN/dNk0jXrNdV0y8W16boWI+WEHlvo6KRkdFUKuLfnXskgZUrBumS9cjoWJ+TIDKiRcAAAAAAAAAAAAAAAAAAAAAAAAAAKjDJ4mppetCqKwlAAAAAElFTkSuQmCC"
+         id="image342" />
+    </g>
+    <g
+       transform="translate(666.49238,430.5)"
+       id="g344">
+      <g
+         id="g346">
+        <rect
+           x="-3"
+           y="-3"
+           width="98"
+           height="18"
+           id="rect348"
+           style="fill:#ffffff;stroke:none" />
+      </g>
+      <text
+         font-size="12px"
+         font-style="normal"
+         font-weight="normal"
+         text-decoration="none"
+         x="-1"
+         y="11"
+         id="text350"
+         style="font-style:normal;font-weight:normal;font-size:12px;font-family:Arial;text-decoration:none;text-decoration-line:none;fill:#332714;stroke:none">handle message</text>
+    </g>
+    <g
+       transform="translate(459.79185,435.5)"
+       id="g352">
+      <image
+         width="59"
+         height="177"
+         preserveAspectRatio="none"
+         xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADsAAACxCAYAAAB6DsUNAAACPElEQVR4nO3dv0ojYRSGcRHEC/AKdhGZ+Wb/QdjWXttlznQGl8wZFlGvQEifzs4r8Ar0LrYXt7PwCqzNFpoQJLtJdGYPvPv84GtCivchYb50WVsD0LrhcD2r6p3cmv1kfpLMh8uc6NkrKcz7qfTbZP6YzMernqKqv0Y3LJSVg14q/Xpm+GOq/PbpteZc5pMtzPszkXeFeX9tOFyP3tW67b3jzWR+9xRaj7b3jjejN3UmWTNK5uNU+nX0lk5l5Y/e5OublYNe9J5OPV8p42T+M3pL55LV58+xJ9FbOje5anJr9qO3dC5Z/SuZj7Oq3one0rnJw0nyTn1pGvs/IFYVsaqIVUWsKmJVEauKWFXEqiJWFbGqiFVFrCpiVRGrilhVxKoiVhWxqohVRawqYlURq4pYVcSqIlYVsaqIVUWsKmJVEauKWFXEqiJWFbGqiFVFrCpiVRGrilhVxKoiVhWxqohVRawqYlURq4pYVcSqIlYVsaqIVUWsKmJVEauKWFXEqiJWFbGq5GI/VIP8T2cS+7f3RO9fWbLmahK2/Gmuone/Sm7N7qqxuTW70btfrTC/XDa0ML+M3vsmRVl/WTq2aj5H732zVPnFwtjKL6J3tuLjt+/vF8V+Kgfvone2Zvof0XNPPYre16rs4GgrmT/MiX3IDo62ove1rjA/m/MEPove1Yme+0Yyv5+Jve+5b0Tv6kxe1qfTHxBlfRq9p3OF+U1hfhO9459IVXOYquYwegcAAAAAAAAAAACAaL8B5vIOWKy4HOAAAAAASUVORK5CYII="
+         id="image354" />
+    </g>
+    <g
+       transform="translate(478.29185,492.3071)"
+       id="g356">
+      <g
+         id="g358">
+        <rect
+           x="0"
+           y="-3"
+           width="23"
+           height="18"
+           id="rect360"
+           style="fill:#ffffff;stroke:none" />
+      </g>
+      <text
+         font-size="12px"
+         font-style="normal"
+         font-weight="normal"
+         text-decoration="none"
+         x="2"
+         y="11"
+         id="text362"
+         style="font-style:normal;font-weight:normal;font-size:12px;font-family:Arial;text-decoration:none;text-decoration-line:none;fill:#332714;stroke:none">yes</text>
+    </g>
+    <g
+       transform="translate(530,485.5)"
+       id="g364">
+      <image
+         width="60"
+         height="127"
+         preserveAspectRatio="none"
+         xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAB/CAYAAACzMKGwAAABZElEQVR4nO3WvW0CQRRFYRIqoAI7Ymf9J5HThLWzGRIW+yYgoAIkciqgAiqgFyqgAnIcYTkAs8CyT7o+nzTZBPcko+l0AOBKIdoiRFt472hNiHYI0Q7eO1pDsDqC1RGsjmB1BKsjWB3B6ghWR7A6gtURrI5gdQSrI1gdweoIVkewOoLVEayOYHUEqyNYHcHqCFZHsDqC1RGsjmB1BKsjWB3B6ghWR7A6gtURrI5gdQSrI1idZPBLOcnOnWPwX3e8998kxLQ5xtU/aeO9+2ZZTMNrg7OYht6775JHW9eNzaOtvffeLS+qj9rBZXr33tuIUNrqYnBpK++djXn9/Hq+FPxWTJ68dzYqxLQ8H1wtvfc1rj+a9kK0/YngfX807Xnve4g82vzEyzz33vUwA7NuiLb7FbwbmHW9dz1UVlSzn09GUc2897Qij7bNo229d7QmlGkcyjT23gEAAAAAAAAAAADgP/sGlDf6Z021YtkAAAAASUVORK5CYII="
+         id="image366" />
+    </g>
+    <g
+       transform="translate(497.5,522.25012)"
+       id="g368">
+      <g
+         id="g370">
+        <rect
+           x="53.5"
+           y="-3"
+           width="18"
+           height="16"
+           id="rect372"
+           style="fill:#ffffff;stroke:none" />
+      </g>
+      <text
+         font-size="12px"
+         font-style="normal"
+         font-weight="normal"
+         text-decoration="none"
+         x="55.5"
+         y="11"
+         id="text374"
+         style="font-style:normal;font-weight:normal;font-size:12px;font-family:Arial;text-decoration:none;text-decoration-line:none;fill:#332714;stroke:none">no</text>
+      <g
+         id="g376">
+        <rect
+           x="-1"
+           y="13"
+           width="127"
+           height="18"
+           id="rect378"
+           style="fill:#ffffff;stroke:none" />
+      </g>
+      <text
+         font-size="12px"
+         font-style="normal"
+         font-weight="normal"
+         text-decoration="none"
+         x="1"
+         y="25"
+         id="text380"
+         style="font-style:normal;font-weight:normal;font-size:12px;font-family:Arial;text-decoration:none;text-decoration-line:none;fill:#332714;stroke:none">(wrap into error object)</text>
+    </g>
+    <g
+       transform="translate(175.5,455.5)"
+       id="g382">
+      <image
+         width="294"
+         height="183"
+         preserveAspectRatio="none"
+         xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASYAAAC3CAYAAAC/ifOIAAAD6ElEQVR4nO3ZsascVRjG4dPY2QqWCqK7MwkIgpBCK8XGSpyzRrC4kDlzSWOnFgoB/TcUxYBWdnYWFilErCKCpZ2CKAhWIqzF3YQr6M0aF86b3OeBr3+3+TE7UwoAAAAAHNhQ27XeGwBuG2q7NtS2FScghjABcYQJiCNMQBxhAuIIExBHmIA4wgTEESYgjjABcYQJiCNMQBxhAuIIExBHmIA4wgTEESYgjjABcYQJiCNMQBxhAuIIExBHmIA4wgTEESYgjjABcYQJiCNMQBxhAuIIExBHmIA4wgTEESYgjjABcYQJiCNMQBxhAuIIExBHmIA4wgTEESYgjjABcYQJiCNMQBxhAuIIExBHmIA4wgTEESYgjjABcYQJiCNMQBxhAuIIExBHmIA4wgTEESYgjjABcYQJiCNMQBxhAuIIExBHmIA4wgTEESYgjjABcYQJiCNMQBxhAuIIExBHmIA4wgTEESYgjjABcYQJiCNMQBxhAuIIExBHmIA4wgTEESYgjjABcYQJiCNMQBxhAuIIExBHmIA4wgTEESYgjjABcYQJiCNMQBxhAuIIExBHmIA4wgTEESYgjjABcYQJiCNMQBxhAuIIExBHmIA4wgTEESYgjjABcYQJiCNMQBxhAuIIExBHmIA4wgTEESYgjjABcYQJiCNMQBxhAuIIExBHmIA4wgTEESYgjjABcYQJiCNMQBxhAuIIExBHmIA4wgTEESYgjjABcYQJiCNMQBxhAuIIExBHmIA4wgTEESYgjjABcW6Faazty95bAEoppayn+bWTJ6bleu8tAKWUUlbTcmmobTtM7aveWwBKKaU8Nh09tHvH9HPvLcBhjbW981RrD/TecVeG2n4ZatuuN8cXem8BDmfctE+H2n5cT/Prvbf8Z0NtH++emj7ovQU4nF2YticfuJbvh81y1HvT3lavHD8y1PbHyfj5hd57gMM4HaZT9/WFzfJS7217Gevy5sno+ff1tDzfew/w//1LmLa7D15frOv8XO+NdzTW5ZtTw99//HJb9d4E3L0zw3T7L9782TgdP91765nGTXtrXdufp4b/NNTlxrrOH+0K+7Zz7t64sbabdwrTrVvX9uHF5IeRJ6Yrjw51uT7U9tu+P8o5d9/ct6tpudS7Q2cap6sPDy9feWbYLEdjXd51zt07N9T23b5BGmv7ZJzmJ3s3B7jP7fOOaajL5+u6PNt7K3BOnB2m+cZqM7/YeyNwzvxTmMbabo5Te7X3NuCc+luYpvmHoS7HvTcB59wuTL+ua3uj9xaAUkop46a9N05XH+y9AwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKC/vwDAZfKTc7m5dwAAAABJRU5ErkJggg=="
+         id="image384" />
+    </g>
+    <g
+       transform="translate(214.37562,602.0165)"
+       id="g386">
+      <g
+         id="g388">
+        <rect
+           x="-0.5"
+           y="-3"
+           width="47"
+           height="18"
+           id="rect390"
+           style="fill:#ffffff;stroke:none" />
+      </g>
+      <text
+         font-size="12px"
+         font-style="normal"
+         font-weight="normal"
+         text-decoration="none"
+         x="1.5"
+         y="11"
+         id="text392"
+         style="font-style:normal;font-weight:normal;font-size:12px;font-family:Arial;text-decoration:none;text-decoration-line:none;fill:#332714;stroke:none">listen to</text>
+    </g>
+    <g
+       transform="translate(95,40)"
+       id="g394">
+      <g
+         id="g396">
+        <g
+           transform="scale(1.7,0.4)"
+           id="g398">
+          <g
+             id="g400">
+            <path
+               d="m 0,0 100,0 q 0,0 0,0 l 0,100 q 0,0 0,0 L 0,100 q 0,0 0,0 L 0,0 q 0,0 0,0 z"
+               id="path402"
+               inkscape:connector-curvature="0"
+               style="fill:#e69138;stroke:none" />
+            <g
+               transform="scale(0.58823529,2.5)"
+               id="g404">
+              <path
+                 d="m 0,0 170,0 q 0,0 0,0 l 0,40 q 0,0 0,0 L 0,40 q 0,0 0,0 L 0,0 q 0,0 0,0 z"
+                 id="path406"
+                 inkscape:connector-curvature="0"
+                 style="fill:none;stroke:none" />
+              <path
+                 d="m 0,0 m 0,0 170,0 q 0,0 0,0 l 0,40 q 0,0 0,0 L 0,40 q 0,0 0,0 L 0,0 q 0,0 0,0 z"
+                 stroke-miterlimit="10"
+                 id="path408"
+                 inkscape:connector-curvature="0"
+                 style="fill:none;stroke:#b45f06;stroke-width:2;stroke-miterlimit:10" />
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g
+       transform="translate(106.4,53)"
+       id="g410">
+      <text
+         font-size="12px"
+         font-style="normal"
+         font-weight="normal"
+         text-decoration="none"
+         x="22.1"
+         y="11"
+         id="text412"
+         style="font-style:normal;font-weight:normal;font-size:12px;font-family:Arial;text-decoration:none;text-decoration-line:none;fill:#000000;stroke:none">w</text>
+      <text
+         font-size="12px"
+         font-style="normal"
+         font-weight="normal"
+         text-decoration="none"
+         x="31.1"
+         y="11"
+         id="text414"
+         style="font-style:normal;font-weight:normal;font-size:12px;font-family:Arial;text-decoration:none;text-decoration-line:none;fill:#000000;stroke:none">ebsocketHandler</text>
+    </g>
+    <g
+       transform="translate(620.5,28)"
+       id="g416">
+      <g
+         id="g418">
+        <g
+           transform="scale(3.5,0.4)"
+           id="g420">
+          <g
+             id="g422">
+            <g
+               transform="scale(0.28571429,2.5)"
+               id="g424">
+              <path
+                 d="m 0,0 340,0 10,10 -10,0 0,-10 10,10 0,30 -350,0 z"
+                 stroke-miterlimit="10"
+                 id="path426"
+                 inkscape:connector-curvature="0"
+                 style="fill:#ffffff;stroke:#000000;stroke-linejoin:round;stroke-miterlimit:10" />
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g
+       transform="translate(633,40.5)"
+       id="g428">
+      <text
+         font-size="12px"
+         font-style="normal"
+         font-weight="normal"
+         text-decoration="none"
+         x="90.5"
+         y="11"
+         id="text430"
+         style="font-style:normal;font-weight:normal;font-size:12px;font-family:Arial;text-decoration:none;text-decoration-line:none;fill:#000000;stroke:none">How events work in app.js</text>
+    </g>
+    <g
+       transform="translate(20,200)"
+       id="g432">
+      <g
+         id="g434">
+        <g
+           transform="scale(0.9,0.9)"
+           id="g436">
+          <g
+             id="g438">
+            <path
+               d="m 100,50 a 50,50 0 1 0 -2.5e-5,0.05 z"
+               id="path440"
+               inkscape:connector-curvature="0"
+               style="fill:#867160;stroke:none" />
+            <g
+               transform="scale(1.1111111,1.1111111)"
+               id="g442">
+              <path
+                 d="m 45,0 m 0,0 C 69.852812,0 90,20.147189 90,45 90,69.852812 69.852812,90 45,90 20.147189,90 0,69.852812 0,45 0,20.147189 20.147189,0 45,0 Z"
+                 stroke-miterlimit="10"
+                 id="path444"
+                 inkscape:connector-curvature="0"
+                 style="fill:none;stroke:#58483b;stroke-width:2;stroke-miterlimit:10" />
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g
+       transform="translate(30,224)"
+       id="g446">
+      <text
+         font-size="12px"
+         font-style="normal"
+         font-weight="normal"
+         text-decoration="none"
+         x="4"
+         y="11"
+         id="text448"
+         style="font-style:normal;font-weight:normal;font-size:12px;font-family:Arial;text-decoration:none;text-decoration-line:none;fill:#ffffff;stroke:none">websocket</text>
+      <text
+         font-size="12px"
+         font-style="normal"
+         font-weight="normal"
+         text-decoration="none"
+         x="5"
+         y="25"
+         id="text450"
+         style="font-style:normal;font-weight:normal;font-size:12px;font-family:Arial;text-decoration:none;text-decoration-line:none;fill:#ffffff;stroke:none">connection</text>
+      <text
+         font-size="12px"
+         font-style="normal"
+         font-weight="normal"
+         text-decoration="none"
+         x="6.5"
+         y="39"
+         id="text452"
+         style="font-style:normal;font-weight:normal;font-size:12px;font-family:Arial;text-decoration:none;text-decoration-line:none;fill:#ffffff;stroke:none">(socket.io)</text>
+    </g>
+  </g>
+</svg>

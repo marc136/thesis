@@ -1,0 +1,10 @@
+\documentclass[../../../thesis.tex]{subfiles}
+%set currfolder to allow main file to compile and also this file to compile (\def does not work due to expansion issues)
+\ifcurrfiledir{}{\edef\currfolder{.}}{\edef\currfolder{\currfiledir}}
+\begin{document}
+
+\section{STUN server}
+For this prototype a list of free STUN servers\cite{free-stun-servers} was used instead of setting up an own STUN server.\\
+In production several STUN servers should be used, or one STUN server should be deployed to each instance of the media server in order to be certain about the quality of service.
+
+\end{document}

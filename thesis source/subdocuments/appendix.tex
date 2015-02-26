@@ -1,0 +1,16 @@
+\documentclass[../thesis.tex]{subfiles}
+\begin{document}
+
+%set currfolder to allow main file to compile and also this file to compile (\def does not work due to expansion issues)
+\ifcurrfiledir{}{\edef\currfolder{.}}{\edef\currfolder{\currfiledir}}
+\edef\folder{\currfolder /part3}
+
+\input{\folder/comparison-media-servers}
+
+
+%\input{\folder/webrtc-documents}
+
+
+%\subfile{\folder/part1.tex}
+
+\end{document}

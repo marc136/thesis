@@ -1,0 +1,15 @@
+\documentclass[../../../thesis.tex]{subfiles}
+%set currfolder to allow main file to compile and also this file to compile (\def does not work due to expansion issues)
+\ifcurrfiledir{}{\edef\currfolder{.}}{\edef\currfolder{\currfiledir}}
+\begin{document}
+
+The prototype of a WebRTC multipoint conferencing solution for more than four participants that allowed recording using a Media Server was implemented as simucos - \textbf{si}mple \textbf{mu}ltipoint \textbf{co}nferencing \textbf{s}olution.\\
+As depicted in figure~\ref{fig:simucos-architecture-overview} it consists of a media server, a signaling application on the server and a web application on the client's side.
+
+\img{simucos-architecture-overview}{Prototype application overview}
+
+\subsection{Copyright}
+The rights to simucos belong to BeamYourScreen GmbH and the source code is not enclosed in this document.\\
+General information about different parts of the solution, lessons learned and challenges during the development are documented in this part of the thesis.
+
+\end{document}

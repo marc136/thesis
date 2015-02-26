@@ -1,0 +1,20 @@
+\comment
+\addchap{Comparison of media server solutions}%no number
+This list was composed in October and November 2014, and some informations in it might be already outdated.\\
+
+Most solutions may be deployed to user owned machines:
+Doubango Telepresence, FlashPhoner Web Call Server, Jitsi Videobridge, Kurento Media Server, Medooze MTU, NG Media Server, Powermedia XMS
+\endcomment
+
+\renewcommand{\leftmark}{Comparsion of media servers}
+\renewcommand{\rightmark}{Media server solutions for self deployment}
+\includepdf[pages=1,pagecommand=\addcontentsline{toc}{chapter}{Comparison of media servers}\addcontentsline{toc}{section}{Media server solutions for self deployment}\label{chap:compare-media-servers}]{\folder/media-servers-self-hosted.pdf}
+\includepdf[pages=2]{\folder/media-servers-self-hosted.pdf}
+
+\comment
+Also, a number of cloud based services were evaluated: Bistri, MCU One, OpenClove, OpenTok/Tokbox, Requestec, SightCall, Temasys, Twilio.
+\endcomment
+
+\renewcommand{\rightmark}{Cloud based media server solutions}
+\includepdf[pages=1,pagecommand=\sectionmark{hellau}\addcontentsline{toc}{section}{Cloud based media server solutions}]{\folder/media-servers-cloud-hosted.pdf}
+\includepdf[pages=2,pagecommand=\sectionmark{hellau}]{\folder/media-servers-cloud-hosted.pdf}

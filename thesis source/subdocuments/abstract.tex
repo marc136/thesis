@@ -1,0 +1,39 @@
+
+\clearpage
+% start a group that keeps changes local and disable \clearpage
+\begingroup\let\clearpage\relax
+\thispagestyle{empty} %no header and footer
+
+
+\noindent{\sffamily \textbf{\huge{Abstract}}}\\\\
+\noindent
+Goal is to both research and implement a multipoint communication solution that uses WebRTC for audio and video transmission. The conference size should be arbitrary but support at least four participants and allow multiple conferences at the same time. 
+The solution should contain recording functionality and allow participation of devices in restrictive network environments.\\
+
+These goals were met by using a a media server that allows to significantly increase the conference size from the maximum of four when using a full mesh peer-to-peer architecture.\\
+
+This thesis is separated into two parts: The first consists of an introduction to WebRTC, research and theoretical assumptions that lead to an implementation strategy. The second part contains information about the selected media server, follows the implementation of the prototype solution and describes parts of its architecture.\\
+The prototype itself is not part of this thesis.\\
+
+Included are benchmark results for WebRTC conferences concerning the bandwidth requirements for different multipoint architecture patterns and screen resolutions. Those were conducted using the prototype application.\par
+
+
+
+\vspace{3cm}
+
+\selectlanguage{ngerman}% ensure the right hyphenation patterns for German
+\noindent{\sffamily \textbf{\huge{Zusammenfassung}}}\\\\
+\noindent 
+Ausgangspunkt für diese Thesis ist das Ziel, eine auf WebRTC basierende Web\-anwendung als Kommunikationslösung zu schaffen, die mindestens vier Teilnehmer in einer Konferenz kommunizieren lässt, mehrere Konferenzen gleichzeitig unterstützt, die Aufnahme der Konferenzen ermöglicht und bei der auch Teilnehmer in restriktiven Netzwerkumgebungen teilnehmen können. Dieses Ziel wurde in vollem Umfang erreicht.\\
+
+Hierbei wird ein Media Server eingesetzt, um die maximale Teilnehmeranzahl bei Konferenzen im Vergleich zu direkten Peer-To-Peer Verbindungen, die bei vier Teilnehmern je nach Verbindungsgeschwindigkeit an ihre Grenzen stoßen, fast beliebig zu vergrößern.\\
+
+Nach einer Einführung in WebRTC und Vorüberlegungen für die gewünschte Kommunikationslösung im ersten Teil dieser Thesis werden im zweiten Teil die Auswahl eines Media Servers sowie der Prototyp und dessen Architektur beschrieben.\\
+Diese Prototypanwendung ist jedoch nicht Teil dieser Thesis.\\
+
+Des Weiteren wurden mit der Prototyp-Anwendung Vergleiche zu Bandbreitenanforderungen von WebRTC bei der Verwendung von verschiedenen Kommunikationsarchitekturen und Bildgrößen der Videoaufnahmen durchgeführt und dokumentiert.\par
+
+\vspace{\fill}
+
+% end group
+\endgroup

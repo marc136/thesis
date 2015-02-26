@@ -1,0 +1,2 @@
+Source of sip.png, sip-1.png, sip-2.png:
+Alan B. Johnston: "Sip: Understanding the Session Initiation Protocol"

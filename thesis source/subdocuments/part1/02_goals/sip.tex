@@ -1,0 +1,37 @@
+\documentclass[../../../thesis.tex]{subfiles}
+%set currfolder to allow main file to compile and also this file to compile (\def does not work due to expansion issues)
+\ifcurrfiledir{}{\edef\currfolder{.}}{\edef\currfolder{\currfiledir}}
+\begin{document}
+
+\clearpage
+\section{Connecting SIP compatible devices with WebRTC devices}
+
+\subsection{About the Session Instantiation Protocol (SIP)}
+SIP is a standard to facilitate Voice over IP or video chat communication sessions defined in \rfc{3261}.\par
+SIP clients exist for instance as Software or hardware IP telephones. Also many Teleconferencing systems use the SIP protocol. Each device or client is called a User Agent (UA).\\
+
+\noindent
+Figure~\ref{fig:sip} shows how a connection is established by first sending an \texttt{INVITE} message to the other party. This message also contains the SDP information as defined in \rfc{4566} that could look like depicted in the same figure. This information is used by the called UA to select the communication channel and codecs to be used. Then he returns an \texttt{OK} message and after the caller has sent an acknowledgment, the media session is established.\par
+The codecs are passed as a sorted-by-preference-list, so the callee can choose the codec that fits both UAs best.
+\imgWithSource{sip}{SIP session establishment example with excerpt of SDP data}{\cite[chapter 2]{Johnston.2009}}
+
+
+\subsection{Problems when connecting SIP and WebRTC devices}
+\subsubsection{Codecs}
+Mandatory codecs of WebRTC\footnote{Mandatory Codecs for WebRTC are defined by the IETF\cite{ietf-rtcweb-audio}} are Opus as defined in \rfc{6716} and G.711 in PCMA and PCMU as defined in \cite[section 4.5.14]{rfc3551}.
+
+There are no restriction on the codec that a SIP device may use, but also there is no mandatory codec that all devices must understand. This may cause problems when WebRTC and SIP devices try to communicate.
+
+\subsubsection{Types of devices}
+SIP does not enforce specific requirements on its User Agent devices, for instance a PSTN telephone would be treated equally to a teleconferencing solution that supports five different cameras and as many microphones.
+
+\subsection{How to connect SIP and WebRTC}
+To include SIP compatible devices into a WebRTC conference, either the SIP UA needs to support one of the mandatory WebRTC codecs, or a media bridge is needed to transcode the streams to formats that the endpoints understand.\\
+
+\noindent
+A WebRTC gateway could be used for instance to convert the H.323 standard to an Opus or G.711 audio stream and connect a PSTN telephone to the WebRTC session.\\
+
+\noindent
+This media bridge functionality could also be provided by a central dedicated media server, where direct support for any needed codecs could be installed.
+
+\end{document}

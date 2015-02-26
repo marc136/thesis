@@ -1,0 +1,13 @@
+\documentclass[../../thesis.tex]{subfiles}
+%set currfolder to allow main file to compile and also this file to compile (\def does not work due to expansion issues)
+\ifcurrfiledir{}{\edef\currfolder{.}}{\edef\currfolder{\currfiledir}}
+\begin{document}
+
+\chapter{The prototype}
+
+\subfile{\currfolder/intro}
+\subfile{\currfolder/media_server}
+\subfile{\currfolder/signaling_app}
+\subfile{\currfolder/stun}
+
+\end{document}

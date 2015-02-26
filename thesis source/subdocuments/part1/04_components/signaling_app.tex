@@ -1,0 +1,65 @@
+\documentclass[../../../thesis.tex]{subfiles}
+%set currfolder to allow main file to compile and also this file to compile (\def does not work due to expansion issues)
+\ifcurrfiledir{}{\edef\currfolder{.}}{\edef\currfolder{\currfiledir}}
+\begin{document}
+
+\section{Signaling application}
+
+The signaling application can be divided into multiple parts: \par
+Some are only relevant on the server side of the signaling application, some are only relevant for the client, and some parts are needed both on the server and the client side, but need different implementations, like the messaging system.\par
+\comment
+Server side and Client Side
+	Send/Receive
+		Chat messages
+		ICE candidates
+		SDP offers/answers
+\endcomment
+If the messaging system is to be used for the signaling of WebRTC peer connections, it needs to be implemented so that arbitrary messages can be exchanged between the clients and the signaling application\footnote{Right now text-based SDP is used, but in the future a JavaScript Object Model will be used\cite{ortc-api}.}. It is used to supply all clients with needed SDP information and ICE candidates of the other peers or WebRTC endpoints on the media server to establish peer connections to the media server and to receive media streams.\\
+
+In order to create a WebRTC connection, ICE candidates need to be passed between two peers. The fastest way would be to store the candidates in the signaling application so if another user tries to connect, he could receive the gathered candidates and try to establish a connection.\par
+
+Also the SDP offer of each participant can be saved in the signaling application, which also contains some ICE candidates.\\
+
+The clients should be able to send and receive chat messages in the group. This should work without creating new connections. Each client should send the messages to the signaling application and it should relay the messages to the other participants. That way, a persistent chat log could be created instead of a system, where the user only sees messages that were posted to a room while he was inside that room.\\
+
+\subsection{Connecting the media server and a participant}
+The media server should act like a normal WebRTC device and use a WebRTC peer connection to connect to a participant. This includes that it must receive an SDP offer, generate an answer and send it to the other peer. This sending of offer and answer messages is done by the signaling application.\par
+The signaling application should be enabled to create WebRTC endpoints on the media server for the participants of a conference to connect to. A wrapper for remote procedure calls is needed.
+
+\comment
+Server side only
+	Rooms
+	Keep state of participants
+	Let users download saved streams
+\endcomment
+On the server side a system that supports rooms or groups conference is needed.\\
+The state of participants needs to be kept, too. This includes a display name, a unique user id, and an optional room id.\par
+One room id will suffice because a use case where one person might speak in two or more conferences is not considered feasible.\\
+The room id could also be used to provide a way for the users to download the recorded conferences after they have finished.\par
+
+Additionally, the WebRTC endpoints that were created for a user on the media server should be kept in order to close and release them after a user has exited from a conversation to keep unnecessary memory consumption on the media server to a minimum.\\
+
+\comment
+Client side (JS) only 
+	Display chat messages
+	Show Videos
+UI (web front end) (2 pages - extra)
+	Example UI and UX flow
+\endcomment
+\subsection{Client side}
+On the clients' side a way is needed to display chat messages and to show videos.\\
+Also the client needs to be able to create rooms (or group conferences), and to enter or leave existing rooms.
+
+\subsubsection{User interaction flow}
+First a user enters the main page of the signaling application. A list of rooms is displayed that the user may join or additionally he may create a new one.\par
+After the user clicked on the room, the room view is displayed. There he may choose to start the capturing of a video from his camera and microphone. Once the WebRTC peer connection to the media server is established, he should be displayed in the room for other users to see. Also his captured stream should be displayed on the page, but muted.\par
+As other users join the room, their name should be displayed and once they also transmit their streams, they should also be displayed in the room.\par
+The user may also hit the leave button to exit the conference and continue on to the main page to join another room.
+
+
+\subsection{Additional tasks in a production environment}
+In a production environment, further things should be considered, for instance could the signaling application be used for load balancing capabilities and to ensure security measures.\par
+The signaling application is of light weight and may also be used as a load balancer to distribute participants to multiple media server instances.\par
+The signaling application and its load balancing abilities could also be used to protect the media server from malicious (D)DOS attacks.
+
+\end{document}

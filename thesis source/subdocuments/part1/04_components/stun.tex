@@ -1,0 +1,16 @@
+\documentclass[../../../thesis.tex]{subfiles}
+%set currfolder to allow main file to compile and also this file to compile (\def does not work due to expansion issues)
+\ifcurrfiledir{}{\edef\currfolder{.}}{\edef\currfolder{\currfiledir}}
+\begin{document}
+
+\section{STUN and TURN server}
+For WebRTC to work reliably, a STUN server is needed to provide the public IP addresses of the participants.\\
+To use that service, a free STUN server\footnote{A list of free to use STUN servers\cite{free-stun-servers}}, a bought one or a self hosted might be used.\\
+As written before, according to a study released by Bryan Ford\ref{Bry2005}, in about 18\% of the tested networks, a TURN server is needed to establish a peer to peer connection that may be used for WebRTC.\\
+If the STUN server uses the same IP address as the media server, it is even more unlikely that a TURN server is needed, as shown in section~\ref{subsec:stun-and-ms} on page~\pageref{subsec:stun-and-ms}.\\
+
+The best option would be to use a server that is both a TURN and a media server, but as of February 2015, no such option implementation exists yet.\\
+To use two different applications on one machine to achieve this goal would use a lot of resources\footnotemark and most likely not work in a reliable way.
+\footnotetext{The amount of data that needs to be processed on the machine would be be doubled, because the TURN server forwards the encrypted data stream in a new encrypted connection and the media server needs to decode the new stream and send it back to the TURN server where it will be embedded into another connection again.} 
+
+\end{document}

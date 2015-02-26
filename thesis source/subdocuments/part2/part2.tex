@@ -1,0 +1,32 @@
+\documentclass[../../thesis.tex]{subfiles}
+%set currfolder to allow main file to compile and also this file to compile (\def does not work due to expansion issues)
+\ifcurrfiledir{}{\edef\currfolder{.}}{\edef\currfolder{\currfiledir}}
+
+\begin{document}
+
+%Part 2.1 the prototype
+\subfile{\currfolder/01_choosing/index}
+
+%Part 2.2
+\chapter{Kurento media server}
+\subfile{\currfolder/02_kurento/kurento}
+
+%Part 2.3
+\chapter{Signaling application}
+\edef\folder{\currfolder/04_simucos}
+\subfile{\folder/intro}
+\subfile{\folder/evented-architecture}
+\subfile{\folder/example-flow}
+
+
+%Part 2.4 Benchmarks
+\subfile{\currfolder/05_benchmark/benchmark_bandwidth}
+
+%Conclusion
+%Part 2.5 Lessons learned
+\subfile{\currfolder/06_conclusion/promises}
+
+%Part 2.6 Conclusion
+\subfile{\currfolder/06_conclusion/conclusion}
+
+\end{document}

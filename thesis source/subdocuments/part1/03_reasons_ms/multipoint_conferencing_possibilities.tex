@@ -1,0 +1,156 @@
+\documentclass[../../../thesis.tex]{subfiles}
+%set currfolder to allow main file to compile and also this file to compile (\def does not work due to expansion issues)
+\ifcurrfiledir{}{\edef\currfolder{.}}{\edef\currfolder{\currfiledir}}
+\begin{document}
+
+
+\section{Possible multipoint conferencing architectures}
+\label{sec:multipoint-architectures}
+All multipoint conferencing architectures in this section are based on a generic star structure, as depicted in figure~\ref{fig:star} and use the media server as a central hub.
+\imgWithHeight{star}{Star network}{5cm}
+
+\subsection{Full mesh network}
+Without a central hub, the only option to connect all participants would be using a full mesh.\par
+It would also be possible to use one participant as a central point but that would add too much strain on the device for conferences with many participants.
+
+In a full mesh, each participant sustains one full-duplex connection to every other participant as shown in figure~\ref{fig:full-mesh}\footnote{This limits the maximum feasible conference size as shown in section~\ref{sec:benchmark-bandwidth} on page~\pageref{sec:benchmark-bandwidth}.}.
+\imgWithHeight{full-mesh}{full mesh network with four participants}{66mm}\\
+
+
+\subsection{Clarifications}
+\subsubsection{About media streams and media tracks in WebRTC}
+The WebRTC standard allows one media stream to contain multiple audio and video tracks.\cite[section 4]{mediacapture-streams}\par
+This would allow the media server to add multiple participants to one file stream without needing to recode the entire stream.\par
+Unfortunately, this feature is not usable for this solution yet. Even though both Google Chrome and Mozilla Firefox (nightly build) support multiple tracks, the implementation and interaction differs too much to be compatible. \\
+Also Mozilla Firefox has trouble adding tracks to an existing media stream.\\
+The current state of support for multiple media tracks in one stream as of \today~is depicted in figure~\ref{fig:multiple-tracks}, where the feature is called \emph{Multiple Streams}.
+\imgWithSource{multiple-tracks}{Current multiple track support in a media stream}{\&yet\cite{webrtcready}}
+
+
+\subsection{Architecture definition}
+Three properties can be used to define the different types of media servers and their network architecture. Since multiple sources were used to gather this list, and most sources use different naming schemes or meanings for specific words, this part will first explain what each property means in this document\footnote{Naming is kept close to the naming used in the IETF document about RTP topologies defined in \rfc{5117} and the draft of the obsoleting document for \rfc{5117}, in its current state\cite{ietf-multipoint-arch}.}.
+\par
+
+\subsubsection{Stream transmission}
+A media server transmits streams either in a \textbf{specific} or a \textbf{general} manner: \\In a \textbf{specific} transmission mode, each participant receives one or more streams tailored for that participant, he would never receive the video stream he sent to the media server. The media server needs to either duplicate or transcode all incoming streams and create a new stream for each participant, resulting in a high workload.\\
+When all participants receive the same stream(s) from the media server, this is called a \textbf{general} transmission. It is possible that a participant receives the same stream that he already sent to the media server.\newline
+
+\subsubsection{Stream handling on the media server}
+Relay or Mixer: 
+A \textbf{relaying} media server sends multiple media streams to each participant. Also a media server that uses one media stream to send multiple media tracks to each participant is considered a \textbf{relay}.\\
+A \textbf{mixing} media server sends only one media stream to each participant. If it sends only the video of one participant or mixes multiple streams into one new video is not relevant.
+
+\subsubsection{Selection of streams}
+A media server could act either as a \textbf{Selective Forwarding Unit (SFU)} or a \textbf{Multipoint Control Unit (MCU)}: While a \textbf{MCU} would ensure that every participant receives the stream of every other participant, a \textbf{SFU} would only forward a selected number of streams.\par
+For instance could a \textbf{SFU} be configured to only forward the streams of the currently speaking participants and to drop the other participants' streams.\\
+Another Option would be to display four participants in a grid and only forward the audio streams of the additional participants.\\
+This would limit the transferred data to what is actually needed, and as only one mixed video is sent to all participants, the media server only needs to encode this one stream resulting in lower server costs.\par
+A \textbf{MCU} would ensure that each participant receives all data streams, but would have high requirements concerning the network interface, which would result in high server costs.
+
+\clearpage
+\subsection{Examples}
+How would a certain type of media server behave?\\
+Some examples:
+\begin{enumerate}
+      \item \textbf{A relayed specific MCU (RSM)}\\
+      		The media server receives the media streams of each participant and sends it to every other participant. Before sending the stream to a participant the stream is transcoded to another resolution depending on the recipient's screen size.
+      \item \textbf{A mixed general SFU (MGS)}\\
+      		The media server receives the media streams of each participant and transcodes them as necessary. It sends the same video to every participant, but the video shows a grid with the video feeds of the last nine speakers and contains all mixed audio channels.
+      \item \textbf{A relayed general SFU (RGS)}\\
+      		The media server receives the media streams of each participant and transcodes them as necessary. It sends the same four video streams to every participant, but each as its own media stream. Three of the streams show the first three participants in the conference, the fourth shows the currently speaking participant.
+ \end{enumerate}
+
+\clearpage
+
+\subsection{Comparison of multipoint architectures}
+Whether a media server is used as a MCU or a SFU does not affect the following comparison much, thus it is omitted for brevity.
+\label{subsec:multipoint-architectures}
+
+\subsubsection{Relay}
+A \textbf{relaying} media server sends multiple media streams to each participant. Also a media server that uses one media stream to send multiple media tracks to each participant is considered a \textbf{relay}\footnotemark.\\
+\footnotetext{Instead of relay, very often the term router is used}
+
+\imgWithHeight{relay}{A relaying media server}{80mm}
+\noindent
+The media server is used as a relay and sends multiple streams to each participant. The needed processing power on the server is low, but the bandwidth requirements are high.\par
+For a participant, a relay is similar to a full mesh network between all peers as he receives one stream per other peer in the network. But each participant only needs to upload one stream, resulting in a lower needed bandwidth on the client's side.\\
+\clearpage
+
+\begin{table}[h]
+\caption{Comparison relaying media server}
+\centering
+\begin{tabular}{ r p{6cm} p{6cm} }
+	\hline
+	\multicolumn{3}{|c|}{Relayed Specific MCU/SFU} \\
+	\hline
+	& \textbf{Pros} & \textbf{Cons} \\
+	\cline{2-3}
+	\textbf{participant} & handle two media streams & decode \(n-1\) video tracks and (\(n-1\) or \(1\)) audio tracks \\ 
+	& & Mobile phone might receive an UHD stream\\
+	\cline{2-3}
+	\textbf{media server} & no transcoding\footnotemark & handle many streams (\(n\) incoming and \((n-1) \cdot n\) outgoing)\\
+	& & \\[1.4em]
+	\hline
+	\multicolumn{3}{|c|}{Relayed Specific MCU/SFU} \\
+	\hline
+	& \textbf{Pros} & \textbf{Cons} \\
+	\cline{2-3}
+	\textbf{participant} & handle two media streams & decode \(n-1\) video tracks and (\(n-1\) or \(1\)) audio tracks \\ 
+	& Media tracks are generated for the participant (network settings, screen size) & \\
+	\cline{2-3}
+	\textbf{media server} & & handle many streams ( \(n\) incoming and \((n-1) \cdot n\) outgoing)\\
+	& & transcode many streams\footnotemark \\
+	& & detect participant performance indicator\footnotemark\\
+\end{tabular}
+\end{table}
+
+
+\footnotetext[9]{The media server would need to transcode between codecs if the participants do not support the same codec. But in WebRTC both H.264 and VP8 are mandatory for the participants' devices to implement.}
+\footnotetext[10]{Either for each participant or for a number of presets}
+\footnotetext{network speed, screen size}
+
+\clearpage
+\subsubsection{Mixer}
+A \textbf{mixing} media server sends only one media stream to each participant. If it sends only the video of one participant or mixes multiple streams into one new video is not relevant.\par
+A media server that uses one media stream to send multiple media tracks to each participant is considered a \textbf{relay}.\\
+\imgWithHeight{mixer}{A mixing media server}{80mm}\\
+
+\noindent
+The media server receives all participants' media streams and sends one media stream in return. The needed processing power on the server is very high if a new video stream is created, but the bandwidth requirements are low.\par
+For a participant, a mixer is similar to a direct peer-to-peer connection. Each participant uploads one stream and downloads one stream. The bandwidth requirement on the client's side remains the same no matter how many participants attend the conversation.\\
+
+\clearpage
+\begin{table}[h]
+\caption{Comparison mixing media server}
+\centering
+\begin{tabular}{ r p{6cm} p{6cm} }
+	\hline
+	\multicolumn{3}{|c|}{Mixed Specific MCU/SFU} \\
+	\hline
+	& \textbf{Pros} & \textbf{Cons} \\
+	\cline{2-3}
+	\textbf{participant} & handle two media streams & Participant might receive himself \\ 
+	& decode 1 video track and 1 audio track & Mobile phone might receive an UHD stream\\
+	\cline{2-3}
+	\textbf{media server} & stream one video to all participants & mix all incoming video streams into new one\\
+	& number of connections (n incoming and n outgoing) & One codec must be available on all devices\\[1.4em]
+	\hline
+	\multicolumn{3}{|c|}{Mixed Specific MCU/SFU} \\
+	\hline
+	& \textbf{Pros} & \textbf{Cons} \\
+	\cline{2-3}
+	\textbf{participant} & handle two media streams & cannot record all participants of conference locally \\ 
+	& decode 1 video track and 1 audio track & \\
+	& Media tracks are generated for the participant (network settings, screen size) & \\
+	\cline{2-3}
+	\textbf{media server} & number of connections (n incoming and n outgoing) & mix all incoming video streams into new one\\
+	& & transcode many streams\footnotemark \\
+	& & detect participant performance indicator\footnotemark\\
+\end{tabular}
+\end{table}
+
+\footnotetext[12]{Either for each participant or for a number of presets}
+\footnotetext[13]{network speed, screen size}
+
+\clearpage
+\end{document}

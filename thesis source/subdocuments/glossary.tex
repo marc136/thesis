@@ -1,0 +1,61 @@
+\documentclass[../thesis.tex]{subfiles}
+%set currfolder to allow main file to compile and also this file to compile (\def does not work due to expansion issues)
+\ifcurrfiledir{}{\edef\currfolder{.}}{\edef\currfolder{\currfiledir}}
+\begin{document}
+
+%this file contains all glossary items
+\addchap{Glossary}%no number
+
+%this environment allows creation of the glossary
+%source: http://tex.stackexchange.com/questions/149708/simple-list-of-abbreviations-manually
+\makeatletter
+\newcommand{\tocfill}{\cleaders\hbox{$\m@th \mkern\@dotsep mu . \mkern\@dotsep mu$}\hfill}
+\makeatother
+\newcommand{\abbrlabel}[1]{\makebox[3cm][l]{\textbf{#1}\ \tocfill}}
+\newenvironment{abbreviations}{\begin{list}{}{\renewcommand{\makelabel}{\abbrlabel}%
+        \setlength{\labelwidth}{3cm}\setlength{\leftmargin}{\labelwidth+\labelsep}%
+                                              \setlength{\itemsep}{0pt}}}{\end{list}}
+
+\begin{abbreviations}
+\item[1080p] A video format with a resolution of 1920x1080 pixels. Commonly referred to as Full-HD.
+\item[720p] A video format with resolution of 1280x720 pixels.
+\item[API] Application Programming Interface
+\item[DOS] Denial of Service \\Often also Distributed Denial of Service (DDOS) an attack that overwhelms a server by sending more requests than it can handle.
+\item[DTLS] Datagram Transport Layer Security \\A cryptographic protocol that is used to encrypt UDP connections.
+\item[ECMA] Ecma International, an organization dedicated to the standardization of information and communication systems.
+\item[ECMAScript] Abbreviation for a scripting language specified in ECMA-262, implemented for instance as JavaScript or JScript.
+\item[H.264] Also known as MPEG-4 Advanced Video Coding (MPEG-4 AVC)\\is a video format that is mandatory for WebRTC and licensed by the MPEG LA
+\item[H.264 SVC] SVC features for the H.264 video codec.
+\item[H.265] See HEVC
+\item[HEVC] High Efficiency Video Coding \\A successor to the H.264 video format and sometimes referred to as H.265.
+\item[IETF] Internet Engineering Task Force \\An open standards organization that develops and promotes Internet standards.
+\item[ITU] International Telecommunication Union \\A United Nations agency dedicated to information and communication technologies. Standardized for instance the G.711 audio codec\cite{g.x} used in WebRTC.
+\item[Java EE] Java Platform, Enterprise Edition \\A java based computing platform used for Web services.
+\item[JSEP] JavaScript Session Establishment Protocol
+\item[JSON] JavaScript Object Notation \\Data structure format that wraps ECMAScript objects to string and back.
+\item[MCU] Multipoint Control Unit \\Is used in multipoint conferencing solutions. It forwards all streams to all participants.
+\item[MP4] MPEG 4 a video compression format
+\item[MPEG LA] MPEG Licensing Administration \\A company that administrates patent pools for multiple multimedia standards, for instance H.264 or HEVC
+\item[Node.js] An application framework often used for web applications, uses V8 and an Event Loop at its core.
+\item[ORTC] Object RTC \\Compatible to WebRTC, sometimes called WebRTC 1.1. Main difference to WebRTC 1.0 is to exchange text-based SDP with JSON-objects, also the web programmers have more control over the media stream.
+\item[PSTN] Public Switched Telephone Network.
+\item[RPC] Remote Procedure Call
+\item[SDP] Session Description Protocol \\A text based format to describe streaming media initialization parameters, both used with SIP and WebRTC.
+\item[SFU] Selective Forwarding Unit \\Is used in multipoint conferencing solutions. It forwards only selected streams to the participants.
+\item[SIP] Session Initialization Protocol \\A signaling protocol for multimedia communication, is often used for VoIP.
+\item[SVC] Scalable Video Coding, features a base layer that provides a specific resolution of a video and different sub-layers that enhance the base layer to increase the video quality, resolution or frame rate. Adapts very well to different bandwidths.
+\item[TLS] Transport Layer Security \\A cryptographic protocol that is used to encrypt TCP connections.
+\item[UHD] Ultra High Definition Video \\Also known as 4K, is used for a video format with four times as many pixels as Full-HD 1080p
+\item[V8] ECMAScript runtime developed by Google for the Chrome browser. Is also used for Node.js.
+\item[VoIP] Voice over IP \\Internet telephony.
+\item[VP8] One of the mandatory codecs of WebRTC, is released by Google free of licensing fees.
+\item[VP9] Successor of VP8, will feature Scalable Video Coding.
+\item[WebRTC] Web Real-Time Communication \\Is defined in version 1.0 and currently has the status of a W3C Working Draft
+\item[WebSocket] A protocol that provides full-duplex communication using a single TCP connection.
+\item[W3C] World Wide Web Consortium \\Organization that formulates standards to be used in the world wide web.
+\item[W3C WD] W3C Working Draft \\Multiple stages are needed to formulate a new W3C standard: First a Working Draft is formulated. After that a \textbf{Candidate Recommendation} then a \textbf{Proposed Recommendation} and in the end the document receives the status of an official \textbf{W3C Recommendation}.
+\item[WebRTC] Web Real-Time Communication \\An effort by the W3C, IETF and several companies to enable real time communication between browsers without needing any additional plugins. \textit{Currently still under development}.
+\end{abbreviations}
+
+
+\end{document}

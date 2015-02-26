@@ -1,0 +1,68 @@
+\documentclass[../../../thesis.tex]{subfiles}
+%set currfolder to allow main file to compile and also this file to compile (\def does not work due to expansion issues)
+\ifcurrfiledir{}{\edef\currfolder{.}}{\edef\currfolder{\currfiledir}}
+\begin{document}
+\section{Media server}
+
+\comment
+Main purpose of Media Servers: Stream handling
+	Transcode Stream
+	Multiplexing of Stream?
+\endcomment
+The main purpose of media servers is the handling of many media streams while increasing the delay of the stream as little as possible.\par
+It needs to transcode media streams between different resolutions and codecs as fast as possible. Transcoding of media streams in real time is needed if it should be used in a communication application.\par
+And it allows multiplexing of one stream, a resources-saving way of splitting or multiplying a media stream and sending it via its network interface to multiple recipients.
+
+\subsection{Hardware or software based}
+Both hardware and software based media servers exist, but for this document only software based media servers are relevant, because specific hardware is very expensive and not easily obtainable.\par
+
+\comment
+2 types of media servers: hardware based and software based.
+Hardware based 
+	Find examples
+	Has special cards for media encoding/transcoding or maybe graphics cards
+	Special processor - e.g. RISC (reduced instruction set)
+Software based
+	Usually written in c
+	Optimized for speed and only media handling
+\endcomment
+
+A \textbf{hardware based} media server would for instance use a customized processor architecture and an adjusted operating system\footnote{For instance a RISC based one like the HP 9000 series\cite{risc-example}.}. In the last years, many graphics cards were added to a server to allow faster video encoding and decoding, but the algorithms are often not optimized for the massive parallelization that is possible when programming graphic cards.\\
+Also, hardware cards exist for encoding for instance H.264 video streams faster than would be possible using multiple CPU cores.\par
+
+A \textbf{software based} media server uses multiple CPU cores to achieve parallelization and the media server programs are usually written in C and optimized for speed and only media handling.\par
+
+
+\subsection{For the purpose of a WebRTC media server}
+\comment
+Connect to WebRTC browser
+	Receive/Send Video/Audio Stream
+	Receive/Send Data Channel (e.g. chat messages)
+
+Connect to SIP Devices
+	Receive/Send Video/Audio Stream
+\endcomment
+In this case, the media server needs to be able to act as a WebRTC device and create a peer connection to a WebRTC browser. \\
+It needs to negotiate and establish the encrypted connection to the other peer and receive and send the media stream containing both audio and video tracks.\par
+The ability to receive arbitrary messages using a data channel is not needed, so the media server may also be classified as a WebRTC gateway.\\
+
+Another good option would be the ability to support the session instantiation protocol (SIP), to connect to SIP compatible devices and connect them directly to WebRTC compatible devices.
+
+\subsubsection{Stream handling}
+\comment
+save stream to disk -> fast ram, fast hard drive
+\endcomment
+The media server needs to save streams to a file system, both to local disks and network shares. That way the participants may download the recorded conference after it is finished.\par
+In order to handle and save the media streams, the RAM should be generously sized and fast, and also the writing speed of the connected hard drives is crucial. This server will not be cheap if it needs to support more than three or four conversations at the same time.\\
+
+\subsubsection{Transcoding capabilities}
+\comment
+Transcode stream
+	Vp8 and h.264 support
+	In the future: vp9 and h.265 or HEVC
+\endcomment
+As WebRTC defines H.264 and VP8 as mandatory codecs\cite{ietf-rtcweb-video}, the media server needs to support both. For H.264 a license should be obtained\footnote{Cisco has open sourced their implementation of H.264 under a permissive BSD license and pays the needed licensing fees to MPEG LA if the compiled binary is used\cite{open-h264}}.\par
+In the future the respective succeeding video codecs, VP9 and H.265 need to be supported, too.\\
+The transcoding of these formats, and maybe some additional codecs that are used in the communication of legacy SIP communication systems needs to be supported in real time without adding additional delay to the streams.
+
+\end{document}

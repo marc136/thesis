@@ -1,0 +1,252 @@
+%
+% IMPORTANT:
+% this document contains packages and styles, the content of this thesis is located in file thesis-content.tex
+%
+
+\documentclass[
+a4paper, 11pt,
+toc=bibliography,
+chapterprefix=true, numbers=noenddot,% prints ``Chapter 1'' instead of just ``1.''
+%page formatting, BCOR-> binding correction
+DIV=15,BCOR=4mm,headinclude=true,footinclude=false
+]{scrbook}
+
+\areaset[12mm]{469pt}{710pt}
+
+%returns the current file name/structure
+\usepackage{currfile}
+%to allow to generate pdf files for subsections of this thesis
+\usepackage{subfiles}
+
+%needed for prettier tables
+\usepackage{tabularx,booktabs}
+%for merged cells in tables
+\usepackage{multirow,multicol}
+
+%generates dummy text
+\usepackage{lipsum}
+%supplies text colors and text highlighting, underlining,...
+\usepackage{xcolor, soul}
+
+%needed to include images
+\usepackage{graphicx}
+
+%used in the appendix to include pdf pages
+\usepackage{pdfpages}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+
+\usepackage[bookmarks]{hyperref}
+
+%for bibtex citation
+%\usepackage[backend=bibtex,style=alphabetic]{biblatex}
+\usepackage[backend=bibtex,style=ieee,urldate=comp]{biblatex}
+\bibliography{websources,rfc,sources}
+
+%language in document
+\usepackage[ngerman, english]{babel}
+\selectlanguage{english}
+
+
+%this is a shorthand to citing RFCs
+\newcommand{\rfc}[1]{{\cite{rfc#1}}}
+
+%this is used to write comments in the text, that will not be displayed
+\long\def\comment #1\endcomment{}
+%this is used to highlight todo items
+\newcommand{\todo}[1]{{\LARGE\textbf{\hl{#1!!}}}}
+
+%allows to use figures with multi-line captions
+\usepackage[margin=0.1\textwidth,font=small,labelfont=bf,singlelinecheck=false]{caption}
+
+\usepackage{xparse}
+%this allows to insert an image like this:
+%\img[short caption for tableoffigures]{filename in \currfolder/res/}{caption}
+%or
+%\img{filename in \currfolder/res/}{caption}
+\DeclareDocumentCommand \img { o m m } {%
+	\begin{figure}[h]
+		\centering
+		{\includegraphics[width=0.9\textwidth,keepaspectratio]{\currfolder/res/{#2}}}%
+		\IfNoValueTF{#1}%
+			{\caption{#3}}%
+			{\caption[#1]{#3}}%
+		\label{fig:#2}
+  	\end{figure}
+}
+
+%specify heigh as the fourth parameter
+\DeclareDocumentCommand \imgWithHeight { o m m m } {%
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=0.9\textwidth,height={#4},keepaspectratio]{\currfolder/res/{#2}}%
+		\captionsetup{singlelinecheck=on}%if image width is smaller than caption, center caption
+
+		\IfNoValueTF{#1}%
+			{\caption{#3}}%
+			{\caption[#1]{#3}}%
+		\label{fig:#2}
+  	\end{figure}
+}
+
+
+\newcommand*{\captionsource}[2]{%
+  \caption[{#1}]{%
+    {#1}%
+    \\\hspace{\textwidth}%
+    \textbf{Source:} {#2}%
+  }%
+}
+
+
+\DeclareDocumentCommand \imgWithSource { m m m } {%
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=0.9\textwidth]{\currfolder/res/{#1}}
+		\captionsource{{#2}}{{#3}}
+		\label{fig:#1}
+  	\end{figure}
+}
+
+\DeclareDocumentCommand \imgWithSourceAndHeight { m m m m } {%
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=0.9\textwidth,height={#4},keepaspectratio]{\currfolder/res/{#1}}
+		\captionsource{{#2}}{{#3}}
+		\label{fig:#1}
+  	\end{figure}
+}
+
+
+%needed for url display
+\usepackage{url}
+
+%used to display the glossary from file glossary.tex
+\usepackage{calc}
+
+
+%header and footer styles
+\usepackage[headsepline, automark]{scrlayer-scrpage}
+
+\clearpairofpagestyles 
+\ihead{\headmark} 
+\ohead[\pagemark]{\pagemark}
+%\chead{\automark*[part]{} ppp}
+%\ofoot[\pagemark]{\pagemark}
+
+%end header and footer styles
+
+%chapter styles
+\renewcommand{\chapterheadstartvskip}{\vspace*{-.5\topskip}}
+\addtokomafont{chapterprefix}{\raggedleft}
+%\addtokomafont{chapter}{\fontsize{30}{38}\selectfont}
+
+\renewcommand*{\chapterformat}{%
+\underline{
+\color{gray}\mbox{%
+%\scalebox{1.5}{\color{black}\raisebox{.7ex}{\chapappifchapterprefix{}}}%
+\scalebox{1.5}{\color{black}{\chapappifchapterprefix{\nobreakspace}}}%
+%\scalebox{1.5}{\color{black}\raisebox{.7ex}{\chapappifchapterprefix{\nobreakspace}}}%
+%\scalebox{3}{\color{gray}\thechapter\autodot\rule[1pt]{.3pt}{.55em}}\enskip}%} %number
+\scalebox{3}{\color{gray}\thechapter\autodot}\enskip}%} %number
+}
+}
+%end chapter styles
+
+%command for code listings
+\newcommand{\code}[2]{\lstinputlisting[language=JavaScript,label={lst:#1},#2]{\currfolder/res/#1}}
+%command
+
+%styles for code listings
+\usepackage{listings}
+%\definecolor{lightgray}{rgb}{.9,.9,.9}
+\definecolor{darkblue}{rgb}{.2,.2,.5}
+\definecolor{olive}{rgb}{.25, .52, .08}
+\definecolor{purple}{rgb}{0.65, 0.12, 0.82}
+\lstdefinelanguage{JavaScript}{
+  keywords={break, case, catch, continue, debugger, default, delete, do, else, finally, for, function, if, in, instanceof, new, return, switch, this, throw, try, typeof, var, void, while, with},
+  morecomment=[l]{//},
+  morecomment=[s]{/*}{*/},
+  morestring=[b]',
+  morestring=[b]",
+  ndkeywords={class, export, true, false, implements, import, null this},
+  keywordstyle=\color{blue}\bfseries,
+  ndkeywordstyle=\color{darkblue}\bfseries,
+  identifierstyle=\color{black},
+  commentstyle=\color{purple}\ttfamily,
+  stringstyle=\color{olive}\ttfamily,
+  sensitive=true,
+  frame=tb,
+  framesep=5pt,
+  framexleftmargin=2em, %include line numbers in frame
+  framexrightmargin=.5em,
+  xleftmargin=20mm,
+  xrightmargin=10mm,
+  aboveskip=1em%,  belowskip=.5em
+}
+
+\lstset{
+   language=JavaScript,
+   extendedchars=true,
+   basicstyle=\footnotesize\ttfamily,
+   showstringspaces=false,
+   showspaces=false,
+   numbers=left,
+   numberstyle=\footnotesize,
+   numbersep=9pt,
+   tabsize=2,
+   breaklines=true,
+   showtabs=false,
+   captionpos=b
+}
+%end styles for code listings
+
+
+
+\begin{document}
+
+
+%to test citation styles
+\comment
+%\endcomment
+\chapter{test citations}
+abc\cite{Doyle.2001}
+
+using rfc command\rfc{5766}
+adfa\cite{rfc5766}
+another rfc(without shorthand)\cite{rfc2}
+rfc001\cite{rfc1}
+an internet page citation\cite{Bry2005}
+a missing bibtex entry to an internet page\cite{thz_ne}
+\comment
+\endcomment
+
+%test code listing style
+\comment
+\begin{lstlisting}[caption=My Javascript Example]
+Name.prototype = {
+  methodName: function(params){
+    var doubleQuoteString = "some text";
+    var singleQuoteString = 'some more text';
+    // this is a comment
+    if(this.confirmed != null && typeof(this.confirmed) == Boolean && this.confirmed == true){
+      document.createElement('h3');
+      $('#system').append("This looks great");
+      return false;
+    } else {
+      throw new Error;
+    }
+  }
+}
+\end{lstlisting}
+\endcomment
+
+
+%includes all needed files without adding a page break
+\input{thesis-subdocuments}
+
+
+
+\end{document}

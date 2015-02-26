@@ -1,0 +1,37 @@
+\documentclass[../../../thesis.tex]{subfiles}
+%set currfolder to allow main file to compile and also this file to compile (\def does not work due to expansion issues)
+\ifcurrfiledir{}{\edef\currfolder{.}}{\edef\currfolder{\currfiledir}}
+\begin{document}
+
+This chapter is a summary of the official Kurento 5.1.0 documentation\cite{kurento-doc} and contains information how the media server works and explains the concept of pluggable media pipelines that allows for a lot of flexibility in implementation.
+
+\imgWithHeight[Connection of Kurento Clients to Kuento Media Server]
+							{kurento-clients-connection}
+							{Kurento clients and Kurento media server\cite[chapter 3]{kurento-doc}}
+							{6cm}
+
+\noindent
+The Kurento media server has two different clients that may be used in a signaling application: One for the Java EE environment, and one for Node.js. Both allow to trigger remote procedure calls on the media server.\\
+
+\noindent
+This allows to create media pipelines that contain several components. Figure~\ref{fig:recording-pipeline} shows a pipeline that is used for a two-way WebRTC conference that also records each participant's stream to a file.
+
+\imgWithHeight[A recording pipeline for a two person WebRTC chat]
+							{recording-pipeline}
+							{A recording pipeline for a two person WebRTC chat\cite[chapter 9]{kurento-doc}}
+							{6cm}
+
+\noindent
+Each participant sends his stream to a WebRtcEndpoint in the media pipeline and receives another stream back. The output point of the incoming transmission on a WebRtcEndpoint is in both cases connected to a RecorderEndpoint and the input point of the outgoing transmission of the other WebRtcEndpoint.\\
+
+\noindent
+Also other components exists, for instance the Composite hub can be used to combine multiple streams into a video wall and send this new video stream to multiple participants.
+
+Media pipeline components
+\imgWithHeight[Components on a media pipeline]
+							{components}
+							{Several components usable on media pipelines\cite[chapter 3]{kurento-doc}}
+							{12cm}
+
+
+\end{document}

@@ -1,0 +1,27 @@
+\documentclass[../../../thesis.tex]{subfiles}
+%set currfolder to allow main file to compile and also this file to compile (\def does not work due to expansion issues)
+\ifcurrfiledir{}{\edef\currfolder{.}}{\edef\currfolder{\currfiledir}}
+\begin{document}
+
+\section{Evented architecture}
+The signaling application is split into multiple independent node modules that communicate using events\footnote{For events the Node.js EventEmitter \cite[chapter 4]{node-upandrunning} is used}.\\
+The three major modules and the events they use for communication are depicted in figure~\ref{fig:evented-architecture}\footnotemark.
+\footnotetext{The diagram was created with the web tool gliffy \url{http://www.gliffy.com/}}
+\img[Evented architecture in simucos]{evented-architecture}{Evented architecture of the simucos signaling application}
+
+\subsection{websocketHandler}
+All communication between the signaling application and the client, and between the signaling application and the media server is done using WebSockets as defined in \rfc{6455}. The functionality is located in the \textbf{websocketHandler} module, which abstracts the socket.io\cite[chapter 4]{socket-io} library and raises \texttt{received\_message} events when one of the WebSocket connections receives data.\par
+Each event contains the sending client's unique id to identify the source and to allow a truly asynchronous event propagation.
+
+\subsection{commandVerifier}
+The \textbf{commandVerifier} module listens to these events and verifies their structure and content. Depending on the verification of the message either a \texttt{rejected\_message} or a \texttt{accepted\_message} event are triggered.\par
+Each rejected message is picked up by the \textbf{websocketHandler} and is used to send an error message to the client that tried to send that message. An accepted message is read by the main module, called \textbf{serverState}.\par
+That way both partial messages and messages with malicious intent are not passed on to the main application. Also the accepted messages are copied so that only the desired properties are set, which also adds to the security of the application.
+
+\subsection{serverState}
+The \textbf{serverState} module consists of multiple sub modules that are not further described here but are separated into functions for a relayed or a mixed conversation and also abstraction layers for the media server and handling of the command messages.\par
+After the message was parsed by the \textbf{serverState} module and the demanded actions were executed, a \texttt{send\_message} event is raised that either contains an answer to the client or an error object that specifies a problem that occurred during executing the desired command.\par
+The \textbf{websocketHandler} listens to these events and passes them on to the destination client.
+
+\clearpage
+\end{document}

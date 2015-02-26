@@ -1,0 +1,46 @@
+\documentclass[../../../thesis.tex]{subfiles}
+%set currfolder to allow main file to compile and also this file to compile (\def does not work due to expansion issues)
+\ifcurrfiledir{}{\edef\currfolder{.}}{\edef\currfolder{\currfiledir}}
+\begin{document}
+
+\section{Concerning the goals}
+
+As the title of the thesis already suggests, a media server was chosen to work as a central hub in the setup.\par
+This decision simplifies reaching the goals defined in section~\ref{sec:define-goals} and results in some additional side benefits like additional architecture options\footnote{Relayed and mixed architecture as described in section~\ref{sec:multipoint-architectures}.}.
+
+\subsection{Recording}
+Even though for recording no central media server is needed, each participant's stream would have to be sent to the recording entity, adding to the total number of connections.\par
+Also, because not every participating device might have the necessary processing power and free space in its file system to record the conversation, no participant should be chosen as a recorder without their consent.\par
+Adding recording to the media server is simple because the connection between the peer and the media server is already decrypted on the server and the encryption does not need to be broken as it would be the case when a TURN server would be used.
+
+\subsection{Number of participants}
+As each participant sends one stream to the recorder, it would also be a good idea to use the recorder as a central multicast point to reduce the number of needed connections.\par
+Even if each participant were to receive the unaltered stream of every other participant, at least the number of outgoing streams would be reduced to one on the clients' side.\par
+The media server, with a faster connection and higher processing power than any of the participants, would handle the multicasting of the stream and distribute it to all other participants.\\
+
+Each media stream is decrypted end-to-end, which is why a simple hub would not suffice in order to reduce the strain on the clients' side, because to multiply the stream, the distributing hub needs to be able to access the decrypted data streams. \par
+Just like the recorder, the multiplexer would need to break the encryption. When using a media server this is not necessary as each peer connection ends at a WebRTC endpoint on the media server anyway.
+
+\subsection{Enabling a connection in a NAT environment}
+\label{subsec:stun-and-ms}
+Ensuring participants behind a NAT to connect is easier when a Media Server is used, because the Media Server itself will have a publicly available IP address and connecting to it will not be  a problem for any participant.\par
+In order to retrieve a public IP and port combination, a STUN server will be needed.
+A great option would also be to use the media server as the STUN server, as even if the participant is located behind a symmetric NAT\footnotemark, the connection would be established.\par
+That way the number of networks where a TURN server is needed to establish a connection with the media server would be further decreased\footnote{The number of networks needing a TURN server would be lower than the 18\% that Bryan Ford\cite{Bry2005} measured.}\par
+
+\footnotetext{A NAT where each connection to  another server is routed through another IP and port combination, as depicted in figure~\ref{fig:symmetric-nat}}
+
+
+\subsection{Connecting to SIP networks/devices}
+In order to connect SIP compatible devices to a conversation on the media server, a WebRTC gateway could be used that will connect to a WebRTC endpoint on the media server.\\
+Also ensuring a connection between a telephone switching system\footnotemark and one WebRTC gateway or media server lends fewer obstacles than connecting the telephone switching system to each WebRTC compatible device.\par
+
+\footnotetext{For example Asterisk \url{http://www.asterisk.org/}, an open source telephone PBX (private branch exchange) system}
+
+Another benefit of using a Media Server is, that it can act as a media bridge and transcode the streams between proprietary or open codecs to the supported WebRTC codecs and allow conferences with otherwise not compatible SIP clients or even the inclusion of PSTN telephones.\par
+For instance trancoding between the widely used ITU codecs\footnotemark that are available in H.323 or SIP environments\cite{Hersent.2005}, but are not supported by WebRTC compatible browsers as of now, or any other number of proprietary audio or multimedia codecs.
+
+\footnotetext{Several audio codecs are specified by the ITU\cite{g.x}, for instance G.722 and G.729}
+
+
+\end{document}

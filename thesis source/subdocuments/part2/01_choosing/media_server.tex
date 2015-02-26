@@ -1,0 +1,25 @@
+\documentclass[../../../thesis.tex]{subfiles}
+%set currfolder to allow main file to compile and also this file to compile (\def does not work due to expansion issues)
+\ifcurrfiledir{}{\edef\currfolder{.}}{\edef\currfolder{\currfiledir}}
+\begin{document}
+
+\section{Media server}
+Main focus of this thesis is to find out how multipoint conferencing with recording can be achieved for multiple participants using WebRTC.
+
+That is why the implementation of a new media server is out of the scope of this thesis and it was decided at the beginning to evaluate existing media server solutions and use one.
+
+\subsection{Comparison of existing media server solutions}
+Many different possibilities were evaluated and a short listing of that evaluation is located in the appendix on page~\pageref{chap:compare-media-servers}.\\
+Most of those solutions may be deployed for self-hosting, but also a number of cloud based hosted services were investigated and documented.
+
+\subsection{Selection of Kurento media server}
+After careful consideration, the \textbf{Kurento media server}\cite{kurento} was chosen because it supports transcoding between the two required codecs H.264 and VP8\cite{ietf-rtcweb-video}, and is released under the permissive LGPL license that allows to use it unaltered in a commercial environment.\par
+It also supports the concept of pluggable media pipelines that allows the implementation of both mixed and relayed media servers\footnotemark, and extensive documentation.
+\footnotetext{Mixed and relayed media servers are defined in section~\ref{sec:multipoint-architectures} starting on page~\pageref{subsec:multipoint-architectures}}\par
+Also a JavaScript API and interface implementation is included, that allows the same functionality as connecting to the media server from a Java Application Server, without needing to implement a new wrapper for remote procedure calls.\\
+
+The Kurento media server can be built on any Linux machine and a pre-compiled Debian package of the stable version is also available, which makes it very easy to set up.\\
+
+In the programmed prototype, the media server and signaling application are running on the same machine. The media server is started as a system service and the signaling application is started as a Node.js application.
+
+\end{document}

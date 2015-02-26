@@ -1,0 +1,68 @@
+\documentclass[../../../thesis.tex]{subfiles}
+%set currfolder to allow main file to compile and also this file to compile (\def does not work due to expansion issues)
+\ifcurrfiledir{}{\edef\currfolder{.}}{\edef\currfolder{\currfiledir}}
+\begin{document}
+
+\clearpage
+\section{Enabling a connection in a NAT environment}
+\label{sec:ice}
+
+\subsection{Network Address Translation (NAT)}
+NAT is a mechanism that is in wide adoption both because the number of IP addresses is finite and due to security concerns: The routing device translates IP addresses from one space to another and is both able to masquerade the internal IP addresses, and to provide a convenient way to send data to the desired host.\\
+
+%place figure roughly at position in source code
+\img[Network Address Translation]{nat}{Network Address Translation\footnotemark[4]}
+
+
+If a direct connection between peer A and peer B should be started, it will not work if only a signaling application is used, because the signaling application only knows the public IP address, which belongs to a routing device.\par
+Even if the peer were to pass his local IP address to the signaling application, still no connection could be created because the clients' IP address would not lead to the client in the signaling application's address space, or like in figure~\ref{fig:nat} both devices could even propagate the same local IP address.
+
+
+Masquerading an IP address behind the router's IP address and a specific port number is often call port address translation (PAT) or network address and port translation (NAPT) and very common, because the number of IP addresses is finite.
+The router uses the port number on incoming connections to reroute the packet to the specific host without allowing any direct connections to this host or publicly announcing its IP address.\cite{Doyle.2001}
+\par
+\footnotetext{The diagram was created with the web tool gliffy \url{http://www.gliffy.com/}}
+In order to establish a two-way connection the signaling application needs to gain access to a reliable IP address and port number combination, which will arrive at the desired peer.
+
+
+\subsection{Interactive Connectivity Establishment (ICE)}
+To achieve this, the Interactive Connectivity Establishment technique was standardized in \rfc{5245}, and provides a protocol to enable NAT traversal for UDP-based multimedia sessions with an offer/answer model.\\
+
+It consists of two sub protocols: The \textbf{Session Traversal Utilities for NAT (STUN)} protocol and in case the \textbf{STUN} protocol does not return usable IP candidates, \textbf{Traversal Using Relays around NAT (TURN)}, which is actually an extension to \textbf{STUN} may be used.\\
+Both protocols communicate with a publicly available server.\par
+
+\subsubsection{STUN}
+The STUN protocol uses the server to open connections from the peer using UDP packets.\\First it sends an offer and the server responds with an answer containing the public IP address of the client and a port number.\par
+This process is repeated several times to ensure all possible IP candidates are gathered and the client may try multiple combinations before not being able to establish a connection.\\
+
+\noindent
+For most cases\footnotemark, STUN is enough to establish a connection, but sometimes the NAT router is too restrictive and a connection won't be able to created.
+
+\footnotetext{In 2005, a huge number of networks were tested by ISPs and Bryan Ford\cite{Bry2005}, and 82\% of them worked with STUN}
+
+\subsubsection{Problems finding public IP candidates using STUN}
+An example for such a setup is a symmetric NAT\cite[section 5]{rfc3489}, where every time when a client tries to access another server, another port is used for the mapping.
+\img[Example for a symmetric NAT]{symmetric-nat}{Example for a symmetric NAT\footnotemark[4]}
+
+In this case, the STUN server will return an IP candidate that can establish a connection to the STUN server, but if the client uses this candidate to open a connection to another server, that server's answer will be rejected by the router because it would need to use the port assigned to the new connection and not the one to the STUN server.
+
+
+\subsubsection{TURN}
+\label{sec:turn}
+To create a two-way connection in such an environment, all data needs to be routed over another relay server. This is achieved using the TURN protocol and a TURN server.\\
+\imgWithSource{turn}{Traversal Using Relays Around NAT (TURN)}{\rfc{5766}}
+
+\noindent
+Figure~\ref{fig:turn} shows how a connection between the TURN client and Peer A or Peer B is established using the TURN server as a connector, relaying all data over it.\par
+That way it is possible to create a connection to the peers, but the TURN server adds more delay to the transmission and has high maintenance costs. \par
+Using TURN servers should generally be kept to a minimum.
+
+\subsection{Specifics about the ICE protocol in WebRTC}
+WebRTC uses the gathered IP and port candidates to establish a direct connection to the other peer.\par
+First the peer connection object tries to connect to all candidates using UDP, if that fails it tries to open a connection using TCP, then http and in the end https\cite[chapter 18]{Grigorik.2013}.\\
+
+\noindent
+If all of these tries do not result in an opened connection, a TURN server will be used if one was defined or communication between the two peers will not be possible.
+
+
+\end{document}

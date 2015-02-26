@@ -1,0 +1,33 @@
+\documentclass[../../../thesis.tex]{subfiles}
+%set currfolder to allow main file to compile and also this file to compile (\def does not work due to expansion issues)
+\ifcurrfiledir{}{\edef\currfolder{.}}{\edef\currfolder{\currfiledir}}
+\begin{document}
+
+\section{Example: Start a conversation}
+
+Figure~\ref{fig:start-a-conference}\footnotemark shows an overview of the sequence of events and user interactions that are needed to start a conversation in simucos and connect a clients' WebRTC browser to a WebRTC endpoint on the Kurento media server. \par
+
+\footnotetext{The diagram was created with the web tool gliffy \url{http://www.gliffy.com/}}
+
+\img[Starting a conversation in simucos]{start-a-conference}{Sequence diagram: How to start a conversation in simucos}
+
+\noindent Error handling and the verification of commands is omitted for brevity.
+
+\subsection{Step 1: Join a room}
+Simucos uses the concept of conversation rooms to support multiple conferences at the same time. First the user needs to join a room by selecting one of the existing rooms that are displayed on the landing page or by creating a new one. A third option is to join or create a room using a direct link.\par
+If either the room or the user does not yet exist in the simucos database, it is created.\par
+After the user was successfully added to the room, it  and all participants in it are displayed to the user. After that the user may choose to send a video to the room.
+
+\subsection{Step 2: Send a video stream}
+The user triggers the WebRTC getUserMedia()\footnotemark request. After the user has chosen camera and/or microphone an SDP offer is generated. That offer is sent as part of a send video message to simucos.\par
+The signaling application checks if a media pipeline was already saved to its database for the user's conversation room. If not, it triggers a remote procedure call on the media server to generate a media pipeline and stores its id after it was successfully created for further use.\par
+Then a WebRTC endpoint is created on that media pipeline and its id is also stored. After that the SDP offer is sent to the endpoint where it is processed to generate an SDP answer that is returned to simucos and then delivered to the client.\par
+
+\subsection{Step 3: Communication stream}
+After that the client and the WebRTC endpoint on the media server negotiate a WebRTC peer connection and the client sends his video stream to the media server.\par
+If the conference type of the room was set to mixed, the media server sends the mixed video of all participants back to the user. That way, only one connection is needed between the client and the media server.\par
+If a relayed conference was chosen, the media server sends the user's own stream back while in development mode or it does not return a stream in production mode. To display the other participants in a relayed conversation, the client starts a new WebRTC peer connection for each other participant and connects to their WebRTC endpoints on the media server.
+
+
+\footnotetext{This call returns a media stream for use in WebRTC\cite[section 10.2.1]{mediacapture-streams}}
+\end{document}
